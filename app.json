@@ -1,12 +1,56 @@
 {
-  "pages":[
+  "pages": [
     "pages/index/index",
-    "pages/logs/logs"
+    "pages/qa/index",
+    "pages/logs/logs",
+    "pages/bk/index",
+    "pages/my/index",
+    "pages/my/more/more"
   ],
-  "window":{
-    "backgroundTextStyle":"light",
-    "navigationBarBackgroundColor": "#fff",
+  "permission": {
+    "scope.userLocation": {
+      "desc": "你的位置信息将用于你所在位置的天文实时数据的获取"
+    },
+    "scope.userInfo": {
+      "desc": "你的个人信息将用于本小程序的登录"
+    }
+  },
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#3763BA",
     "navigationBarTitleText": "星云村",
-    "navigationBarTextStyle":"black"
+    "navigationBarTextStyle": "white",
+    "backgroundColor": "#515151"
+  },
+  "tabBar": {
+    "color": "#515151",
+    "selectedColor": "#3763BA",
+    "borderStyle": "white",
+    "list": [
+      {
+        "selectedIconPath": "image/11.png",
+        "iconPath": "image/10.png",
+        "pagePath": "pages/index/index",
+        "text": "实时数据"
+      },
+      {
+        "selectedIconPath": "image/21.png",
+        "iconPath": "image/20.png",
+        "pagePath": "pages/qa/index",
+        "text": "知识问答"
+      },
+      {
+        "selectedIconPath": "image/31.png",
+        "iconPath": "image/30.png",
+        "pagePath": "pages/bk/index",
+        "text": "天文宝库"
+      },
+      {
+        "selectedIconPath": "image/42.png",
+        "iconPath": "image/40.png",
+        "pagePath": "pages/my/index",
+        "text": "我的主页"
+      }
+    ]
   }
 }

@@ -4,7 +4,7 @@
 		"ignore": []
 	},
 	"setting": {
-		"urlCheck": true,
+		"urlCheck": false,
 		"es6": true,
 		"postcss": true,
 		"minified": true,
@@ -12,8 +12,8 @@
 		"autoAudits": false
 	},
 	"compileType": "miniprogram",
-	"libVersion": "2.0.4",
-	"appid": "wxc1f0c20ec9ea1b8e",
+	"libVersion": "2.5.2",
+	"appid": "wxe57f6e85d8263355",
 	"projectname": "Jupyter",
 	"debugOptions": {
 		"hidedInDevtools": []

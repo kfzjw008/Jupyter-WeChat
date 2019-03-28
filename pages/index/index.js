@@ -8,7 +8,9 @@ Page({
     time: (new Date()).toString(),
     userInfo: {},
     hasUserInfo: false,
-    canIUse: wx.canIUse('button.open-type.getUserInfo')
+    canIUse: wx.canIUse('button.open-type.getUserInfo'),
+    wd: '',
+    jd: ''
   },
   //事件处理函数
   bindViewTap: function() {
@@ -16,7 +18,24 @@ Page({
       url: '../logs/logs'
     })
   },
+  onReady: function () {
+     var that = this   
+   wx.getLocation({ 
+     type: 'wgs84',
+      success: function (res) { 
+     console.log(res)       
+    var latitude = res.latitude     
+       var longitude = res.longitude       
+   that.setData({ 
+     wd: latitude, 
+     jd: longitude
+      })
+       } 
+       })
+        }
+,
   onLoad: function () {
+ 
     if (app.globalData.userInfo) {
       this.setData({
         userInfo: app.globalData.userInfo,
