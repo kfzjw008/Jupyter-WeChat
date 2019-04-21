@@ -20,7 +20,8 @@
     "navigationBarBackgroundColor": "#3763BA",
     "navigationBarTitleText": "星云村",
     "navigationBarTextStyle": "white",
-    "backgroundColor": "#515151"
+    "backgroundColor": "#515151",
+    "enablePullDownRefresh":true
   },
   "tabBar": {
     "color": "#515151",
