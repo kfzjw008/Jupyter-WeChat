@@ -23,6 +23,11 @@
     "backgroundColor": "#515151",
     "enablePullDownRefresh":true
   },
+  "networkTimeout":{
+    "request":10000,
+    "downloadFile":10000
+
+  },
   "tabBar": {
     "color": "#515151",
     "selectedColor": "#3763BA",

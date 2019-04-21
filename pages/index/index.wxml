@@ -2,27 +2,19 @@
 
 
     <text >观测适宜度</text>
-   <text style='font-size:80px'>78</text>
+   <text style='font-size:80px'>{{P0}}</text>
    <view >
-    <text>经度：{{jd}}</text>
-  </view>
-   <view >
-    <text>纬度：{{wd}}</text>
-  </view>
-     <view >
-    <text>经度：{{jd}}</text>
-  </view>
-   <view >
-    <text>纬度：{{wd}}</text>
-  </view>
-     <view >
-    <text>经度：{{jd}}</text>
-  </view>
-   <view >
-    <text>纬度：{{wd}}</text>
-  </view>
-     <view >
-    <text>观测建议</text>
+    <text style='font-size:15px'>经度：{{jd}}\n</text>
+      <text style='font-size:15px'>纬度：{{wd}}\n</text>
+      <text style='font-size:15px'>城市：{{locat}}\n</text>
+      <text style='font-size:15px'>云量：{{cloudcover}}\n</text>
+     <text style='font-size:15px'>大气视宁度：{{seeing}}\n</text>
+      <text style='font-size:15px'>大气透明度：{{transparency}}\n</text>
+     <text style='font-size:15px'>大气不稳定度：{{lifted_index}}\n</text>
+      <text style='font-size:15px'>温度：{{temp2m}}°C\n</text>
+     <text style='font-size:15px'>湿度：{{rh2m}}%\n</text>
+     <text style='font-size:15px'>体感温度：{{temp}}°C\n</text>
+      <text style='font-size:15px'>观测建议:\n</text>
   </view>
 
 

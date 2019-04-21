@@ -10,7 +10,10 @@ Page({
     hasUserInfo: false,
     canIUse: wx.canIUse('button.open-type.getUserInfo'),
     wd: '',
-    jd: ''
+    jd: '',
+    locat:'',
+   
+    P0:0
   },
   //事件处理函数
   bindViewTap: function() {
@@ -19,7 +22,8 @@ Page({
     })
   },
   onReady: function () {
-     var that = this   
+     var that = this
+ 
    wx.getLocation({ 
      type: 'wgs84',
       success: function (res) { 
@@ -28,10 +32,41 @@ Page({
        var longitude = res.longitude       
    that.setData({ 
      wd: latitude, 
-     jd: longitude
+     jd: longitude,
       })
+        wx.request({
+          url: 'http://api.majorbillliu.com:8000/v1/getIndex',
+          data: {
+            lon: longitude,
+            lat: latitude
+          },
+          success(res) {
+            var location = res.data.location
+            var cloudcover = res.data.astronomy[0].cloudcover
+            var seeing = res.data.astronomy[0].seeing
+            var transparency = res.data.astronomy[0].transparency
+            var lifted_index = res.data.astronomy[0].lifted_index
+            var P0 = res.data.astronomy[0].P
+            var rh2m = res.data.astronomy[0].rh2m
+            var temp2m = res.data.astronomy[0].temp2m
+            var temp = res.data.astronomy[0].temp
+            that.setData({
+              locat: location,
+              cloudcover: cloudcover,
+              seeing: seeing,
+              rh2m: rh2m,
+              temp:temp,
+              temp2m: temp2m,
+              transparency:transparency,
+              lifted_index:lifted_index,
+              P0: P0,
+            })
+            console.log(res.data)
+          }
+        }) 
        } 
        })
+
         }
 ,
   onLoad: function () {
