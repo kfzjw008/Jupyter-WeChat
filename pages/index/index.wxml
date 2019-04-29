@@ -1,20 +1,59 @@
 <!--index.wxml-->
+ <view class="weui-flex">
+            <view class="weui-flex__item">
+                <button class="weui-btn mini-btn" type="default" size="mini" bindtap="gotoPage1">{{locat}}</button>
+            </view>
+            <view class="weui-flex__item" style="text-align:center" ><text style="font-size:20px">观测适宜度</text></view>
+             <view class="weui-flex__item"  style="text-align:right">
+              <button class="weui-btn mini-btn" type="default" size="mini" bindtap="fresh" >实时数据刷新</button>
+             </view>
+        </view>
 
-
-    <text >观测适宜度</text>
-   <text style='font-size:80px'>{{P0}}</text>
+ <view class="weui-flex">
+            <view class="weui-flex__item" style="text-align:center">
+                  <text style='font-size:110px ;color:#19801F'>{{P0}}</text>
+            </view>
+     
+        </view>
+ <view class="weui-flex">
+            <view class="weui-flex__item" style="margin-left:50px;" >
+                   <text style='font-size:15px;color:#000000 '>经度 \n</text>
+      <text style='font-size:15px;color:#000000'>纬度 \n</text>
+      <text style='font-size:15px;color:#000000'>城市 \n</text>
+      <text style='font-size:15px;color:#000000'>云量 \n</text>
+     <text style='font-size:15px;color:#000000'>大气视宁度 \n</text>
+      <text style='font-size:15px;color:#000000'>大气透明度 \n</text>
+     <text style='font-size:15px;color:#000000'>大气不稳定度 \n</text>
+      <text style='font-size:15px;color:#000000'>温度 \n</text>
+     <text style='font-size:15px;color:#000000'>体感温度 \n</text>
+      <text style='font-size:15px;color:#000000'>观测建议\n</text>
+            </view>
+           
+             <view class="weui-flex__item"  style="text-align:right;margin-right:50px;">
+                <text style='font-size:15px;text-align:right'>{{jd}}\n</text>
+      <text style='font-size:15px;text-align:right'>{{wd}}\n</text>
+      <text style='font-size:15px;text-align:right'>{{locat}}\n</text>
+      <text style='font-size:15px;text-align:right'>{{cloudcover}}\n</text>
+     <text style='font-size:15px;text-align:right'>{{seeing}}\n</text>
+      <text style='font-size:15px;text-align:right'>{{transparency}}\n</text>
+     <text style='font-size:15px;text-align:right'>{{lifted_index}}\n</text>
+      <text style='font-size:15px;text-align:right'>{{temp2m}}°C\n</text>
+     <text style='font-size:15px;text-align:right'>{{temp}}°C\n</text>
+      <text style='font-size:15px;text-align:right'>功能待开发\n</text>
+             </view>
+        </view> 
+ 
    <view >
-    <text style='font-size:15px'>经度：{{jd}}\n</text>
-      <text style='font-size:15px'>纬度：{{wd}}\n</text>
-      <text style='font-size:15px'>城市：{{locat}}\n</text>
-      <text style='font-size:15px'>云量：{{cloudcover}}\n</text>
-     <text style='font-size:15px'>大气视宁度：{{seeing}}\n</text>
-      <text style='font-size:15px'>大气透明度：{{transparency}}\n</text>
-     <text style='font-size:15px'>大气不稳定度：{{lifted_index}}\n</text>
-      <text style='font-size:15px'>温度：{{temp2m}}°C\n</text>
-     <text style='font-size:15px'>湿度：{{rh2m}}%\n</text>
-     <text style='font-size:15px'>体感温度：{{temp}}°C\n</text>
-      <text style='font-size:15px'>观测建议:\n</text>
+   <view class="weui-flex">
+            <view class="weui-flex__item" style="text-align:center">
+                  <button class="weui-btn" type="primary" plain="true" >变化趋势</button>
+            </view>
+     <view class="weui-flex__item" style="text-align:center">
+                  <button class="weui-btn" type="default" plain="true" >数据预测</button>
+            </view>
+        </view>
   </view>
+
+
 
 

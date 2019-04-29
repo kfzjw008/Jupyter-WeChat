@@ -1,9 +1,6 @@
 /**index.wxss**/
 
-page{
-background-color: #000000;
 
-}
 
 .userinfo {
   display: flex;
@@ -11,7 +8,7 @@ background-color: #000000;
   align-items: center;
 }
 text{
-  color: #FFFFFF;
+  color: #888888;
 }
 .userinfo-avatar {
   width: 128rpx;

@@ -1,5 +1,7 @@
 /**app.wxss**/
-@import 'dist/style/weui.wxss'
+@import 'dist/style/weui.wxss';
+@import "colorui/main.wxss";
+@import "colorui/icon.wxss";
 
 .container {
   height: 100%;
@@ -9,4 +11,5 @@
   justify-content: space-between;
   padding: 200rpx 0;
   box-sizing: border-box;
-} 
+
+}

@@ -1,2 +1,37 @@
-<!--pages/my/index.wxml-->
-<text>pages/qa/index.wxml</text>
+<view class="page">
+    <view class="page__hd">
+        <view class="page__title">天文知识题库</view>
+        <view class="page__desc">这里有目前较全的天文知识练习题，可以用作天文知识学习及知识竞赛备战。高校天文协会认证用户可以使用独家专属题库。</view>
+    </view>
+    <view class="page__bd">
+        <view class="weui-grids">
+            <block >
+
+                <navigator url="" class="weui-grid" hover-class="weui-grid_active">
+                    <image class="weui-grid__icon" src="../../dist/example/images/icon_nav_z-index.png" />
+                    <view class="weui-grid__label">模块练习</view>
+                </navigator>
+                <navigator url="" class="weui-grid" hover-class="weui-grid_active">
+                    <image class="weui-grid__icon" src="../../dist/example/images/icon_nav_widget.png" />
+                    <view class="weui-grid__label">在线测试</view>
+                </navigator>
+                <navigator url="" class="weui-grid" hover-class="weui-grid_active">
+                    <image class="weui-grid__icon" src="../../dist/example/images/icon_nav_search.png" />
+                    <view class="weui-grid__label">查找试题</view>
+                </navigator>
+                <navigator url="" class="weui-grid" hover-class="weui-grid_active">
+                    <image class="weui-grid__icon" src="../../dist/example/images/icon_nav_feedback.png" />
+                    <view class="weui-grid__label">练习记录</view>
+                </navigator>
+                <navigator url="" class="weui-grid" hover-class="weui-grid_active">
+                    <image class="weui-grid__icon" src="../../dist/example/images/icon_nav_form.png" />
+                    <view class="weui-grid__label">随机练习</view>
+                </navigator>
+                <navigator url="" class="weui-grid" hover-class="weui-grid_active">
+                    <image class="weui-grid__icon" src="../../dist/example/images/icon_nav_nav.png" />
+                    <view class="weui-grid__label">更多选项</view>
+                </navigator>
+            </block>
+        </view>
+    </view>
+</view>

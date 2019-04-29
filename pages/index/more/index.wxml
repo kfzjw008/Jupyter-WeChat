@@ -1,0 +1,28 @@
+<!--pages/index/more/index.wxml-->
+    <view class="page__hd">
+        <view class="page__title">输入经纬度</view>
+        <view class="page__desc">输入经纬度可以查看输入位置的观测适宜度，仅限中华人民共和国大陆境内。仅保留数字，不包括单位。</view>
+    </view>
+   <view class="weui-cells__title">表单</view>
+        <view class="weui-cells weui-cells_after-title">
+            <view class="weui-cell weui-cell_input">
+                <view class="weui-cell__hd">
+                    <view class="weui-label">经度</view>
+                </view>
+                <view class="weui-cell__bd">
+                    <input class="weui-input" bindinput="jd" placeholder="请输入经度"/>
+                </view>
+            </view>
+            <view class="weui-cell weui-cell_input">
+                <view class="weui-cell__hd">
+                    <view class="weui-label">纬度</view>
+                </view>
+                <view class="weui-cell__bd">
+                    <input class="weui-input" bindinput="wd" placeholder="请输入纬度"/>
+                </view>
+            </view>
+      
+
+        
+        </view>
+                <button class="weui-btn" type="default" bindtap="gotoPage2" >确定</button>

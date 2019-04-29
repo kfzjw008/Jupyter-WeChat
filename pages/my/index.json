@@ -1,6 +1,0 @@
-{
-  "usingComponents": {
-"l-avatar": "../../distlin/avatar/index",
-    "l-list": "../../distlin/list/index"
-  }
-}

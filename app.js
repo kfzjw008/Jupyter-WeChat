@@ -20,8 +20,8 @@ App({
           wx.getLocation({
             type: 'wgs84',
             success(res) {
-              jd = res.latitude
-             wd = res.longitude
+             var jd = res.latitude
+             var wd = res.longitude
               const speed = res.speed
               const accuracy = res.accuracy
             }

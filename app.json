@@ -5,7 +5,10 @@
     "pages/logs/logs",
     "pages/bk/index",
     "pages/my/index",
-    "pages/my/more/more"
+    "pages/my/more/more",
+    "pages/index/more/index",
+    "pages/bk/result",
+    "pages/bk/detail/index"
   ],
   "permission": {
     "scope.userLocation": {
@@ -21,12 +24,11 @@
     "navigationBarTitleText": "星云村",
     "navigationBarTextStyle": "white",
     "backgroundColor": "#515151",
-    "enablePullDownRefresh":true
+    "enablePullDownRefresh": true
   },
-  "networkTimeout":{
-    "request":10000,
-    "downloadFile":10000
-
+  "networkTimeout": {
+    "request": 10000,
+    "downloadFile": 10000
   },
   "tabBar": {
     "color": "#515151",
@@ -49,7 +51,7 @@
         "selectedIconPath": "image/31.png",
         "iconPath": "image/30.png",
         "pagePath": "pages/bk/index",
-        "text": "天文宝库"
+        "text": "恒星查询"
       },
       {
         "selectedIconPath": "image/42.png",
