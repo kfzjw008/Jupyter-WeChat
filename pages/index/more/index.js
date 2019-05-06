@@ -31,7 +31,7 @@ wdg:''
         app.globalData.wd = that.data.wdg;
         console.log(app.globalData.jd)
         wx.request({
-          url: 'http://api.majorbillliu.com/getIndex',
+          url: 'https://api.majorbillliu.com/getIndex',
           data: {
             lon: this.data.wdg,
             lat: this.data.jdg

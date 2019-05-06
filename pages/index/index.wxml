@@ -45,12 +45,10 @@
  
    <view >
    <view class="weui-flex">
-            <view class="weui-flex__item" style="text-align:center">
+            <view class="weui-flex__item" style="text-align:center;margin-right:50px;margin-left:50px;">
                   <button class="weui-btn" type="primary" plain="true"  bindtap="gotoPage3">变化趋势</button>
             </view>
-     <view class="weui-flex__item" style="text-align:center">
-                  <button class="weui-btn" type="default" plain="true" >数据预测</button>
-            </view>
+ 
         </view>
   </view>
 

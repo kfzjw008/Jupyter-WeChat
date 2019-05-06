@@ -38,7 +38,7 @@ Page({
           jd: app.globalData.jd,
         })
         wx.request({
-          url: 'http://api.majorbillliu.com/getIndex',
+          url: 'https://api.majorbillliu.com/getIndex',
           data: {
             lon: app.globalData.wd,
             lat: app.globalData.jd
@@ -109,7 +109,7 @@ Page({
           jd: app.globalData.jd,
         })
         wx.request({
-          url: 'http://api.majorbillliu.com/getIndex',
+          url: 'https://api.majorbillliu.com/getIndex',
           data: {
             lon: app.globalData.jd,
             lat: app.globalData.wd
@@ -186,7 +186,7 @@ Page({
           jd: longitude,
         })
         wx.request({
-          url: 'http://api.majorbillliu.com/getIndex',
+          url: 'https://api.majorbillliu.com/getIndex',
           data: {
             lon: longitude,
             lat: latitude
@@ -269,7 +269,7 @@ Page({
           jd: app.globalData.jd,
       })
         wx.request({
-          url: 'http://api.majorbillliu.com:80/getIndex',
+          url: 'https://api.majorbillliu.com/getIndex',
           data: {
             lon: app.globalData.jd,
             lat: app.globalData.wd
