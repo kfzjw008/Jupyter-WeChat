@@ -8,7 +8,8 @@
     "pages/my/more/more",
     "pages/index/more/index",
     "pages/bk/result",
-    "pages/bk/detail/index"
+    "pages/bk/detail/index",
+    "pages/index/qs/index"
   ],
   "permission": {
     "scope.userLocation": {

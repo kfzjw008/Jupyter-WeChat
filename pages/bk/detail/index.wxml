@@ -8,21 +8,41 @@
             <view class="weui-form-preview__hd">
                 <view class="weui-form-preview__item">
                     <view class="weui-form-preview__label">名称</view>
-                    <view class="weui-form-preview__value_in-hd">猎户座α</view>
+                    <view class="weui-form-preview__value_in-hd">猎户座β</view>
                 </view>
             </view>
             <view class="weui-form-preview__bd">
                 <view class="weui-form-preview__item">
-                    <view class="weui-form-preview__label">绝对星等</view>
-                    <view class="weui-form-preview__value">-1.6</view>
+                    <view class="weui-form-preview__label">中国传统名称</view>
+                    <view class="weui-form-preview__value">参宿七</view>
                 </view>
                 <view class="weui-form-preview__item">
-                    <view class="weui-form-preview__label">实际星等</view>
-                    <view class="weui-form-preview__value">0.1</view>
+                    <view class="weui-form-preview__label">视星等</view>
+                    <view class="weui-form-preview__value">0.3</view>
                 </view>
                 <view class="weui-form-preview__item">
-                    <view class="weui-form-preview__label">简介</view>
-                    <view class="weui-form-preview__value">很长很长的名字很长很长的名字很长很长的名字很长很长的名字很长很长的名字</view>
+                    <view class="weui-form-preview__label">拜耳命名</view>
+                    <view class="weui-form-preview__value">φ2</view>
+                </view>
+                  <view class="weui-form-preview__item">
+                    <view class="weui-form-preview__label">Fransted</view>
+                    <view class="weui-form-preview__value">40</view>
+                </view>
+                 <view class="weui-form-preview__item">
+                    <view class="weui-form-preview__label">Right_ascension</view>
+                    <view class="weui-form-preview__value">05h 36m 54.33s</view>
+                </view>
+                 <view class="weui-form-preview__item">
+                    <view class="weui-form-preview__label">Declination</view>
+                    <view class="weui-form-preview__value">+09° 17′ 29.1″</view>
+                </view>
+                   <view class="weui-form-preview__item">
+                    <view class="weui-form-preview__label">距离</view>
+                    <view class="weui-form-preview__value">116光年</view>
+                </view>
+                 <view class="weui-form-preview__item">
+                    <view class="weui-form-preview__label">所属星座</view>
+                    <view class="weui-form-preview__value">猎户座</view>
                 </view>
             </view>
             <view class="weui-form-preview__ft">

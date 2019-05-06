@@ -1,4 +1,4 @@
-// pages/bk/detail/index.js
+// pages/index/qs/index.js
 Page({
 
   /**
@@ -7,7 +7,14 @@ Page({
   data: {
 
   },
+  gotoPage2: function (e) {
+    var that = this
+    wx.navigateBack({
+      delta: 1,
 
+    })
+  },
+ 
   /**
    * 生命周期函数--监听页面加载
    */
@@ -63,14 +70,4 @@ Page({
   onShareAppMessage: function () {
 
   }
-  ,sc: function () {
-    wx.showToast({
-      title: '收藏成功！',
-      icon: 'none',
-      duration: 3000
-    })
-    
-    
-
-  },
 })

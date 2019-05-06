@@ -15,31 +15,40 @@
 
                       <navigator class="weui-media-box weui-media-box_text">
                     <view class="weui-media-box__title weui-media-box__title_in-text">猎户座γ</view>
-                    <view class="weui-media-box__desc">由各种物质组成的巨型球状天体，叫做星球。星球有一定的形状，有自己的运行轨道。</view>
+                    <view class="weui-media-box__desc">  "Right_ascension": "05h 38m 44.77s",
+            "Declination": "-02° 36′ 00.2″",
+            "Apparent_magnitude": "3.77",
+            "Absolute_magnitude": "-3.960",</view>
                     <view class="weui-media-box__info">
                         <view class="weui-media-box__info__meta">视星等</view>
-                        <view class="weui-media-box__info__meta">-0.3</view>
-                        <view class="weui-media-box__info__meta weui-media-box__info__meta_extra">中国传统名称</view>
+                        <view class="weui-media-box__info__meta">-3.96</view>
+                        <view class="weui-media-box__info__meta weui-media-box__info__meta_extra">中国传统名称-参宿四</view>
                     </view>
                 </navigator>
 
                           <navigator class="weui-media-box weui-media-box_text">
                     <view class="weui-media-box__title weui-media-box__title_in-text">猎户座α</view>
-                    <view class="weui-media-box__desc">由各种物质组成的巨型球状天体，叫做星球。星球有一定的形状，有自己的运行轨道。</view>
+                    <view class="weui-media-box__desc">  "Right_ascension": "04h 56m 22.32s",
+            "Declination": "+13° 30′ 52.5″",
+            "Apparent_magnitude": "4.06",
+            "Absolute_magnitude": "0.480",</view>
                     <view class="weui-media-box__info">
                         <view class="weui-media-box__info__meta">视星等</view>
                         <view class="weui-media-box__info__meta">-0.3</view>
-                        <view class="weui-media-box__info__meta weui-media-box__info__meta_extra">中国传统名称</view>
+                        <view class="weui-media-box__info__meta weui-media-box__info__meta_extra">中国传统名称-参宿三</view>
                     </view>
                 </navigator>
 
                      <navigator class="weui-media-box weui-media-box_text" url="detail/index">
                     <view class="weui-media-box__title weui-media-box__title_in-text">猎户座β</view>
-                    <view class="weui-media-box__desc">由各种物质组成的巨型球状天体，叫做星球。星球有一定的形状，有自己的运行轨道。</view>
+                    <view class="weui-media-box__desc">   "Right_ascension": "05h 36m 54.33s",
+            "Declination": "+09° 17′ 29.1″",
+            "Apparent_magnitude": "4.09",
+            "Absolute_magnitude": "1.330",</view>
                     <view class="weui-media-box__info">
                         <view class="weui-media-box__info__meta">视星等</view>
-                        <view class="weui-media-box__info__meta">-0.3</view>
-                        <view class="weui-media-box__info__meta weui-media-box__info__meta_extra">中国传统名称</view>
+                        <view class="weui-media-box__info__meta">0.3</view>
+                        <view class="weui-media-box__info__meta weui-media-box__info__meta_extra">中国传统名称-参宿七</view>
                     </view>
                 </navigator>
 

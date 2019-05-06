@@ -1,0 +1,56 @@
+<!--pages/index/qs/index.wxml-->
+    <view class="page__hd">
+        <view class="page__title">变化趋势</view>
+        <view class="page__desc">查看60小时(H)观测适宜度变化趋势。</view>
+    </view>
+  <view class="weui-flex">
+            <view class="weui-flex__item" style="margin-left:40px;" >
+      <text style='font-size:15px;color:#000000'>3H \n</text>
+      <text style='font-size:15px;color:#000000'>6H \n</text>
+      <text style='font-size:15px;color:#000000'>9H \n</text>
+      <text style='font-size:15px;color:#000000'>12H \n</text>
+      <text style='font-size:15px;color:#000000'>15H \n</text>
+      <text style='font-size:15px;color:#000000'>18H \n</text>
+      <text style='font-size:15px;color:#000000'>21H \n</text>
+      <text style='font-size:15px;color:#000000'>24H \n</text>
+      <text style='font-size:15px;color:#000000'>27H \n</text>
+      <text style='font-size:15px;color:#000000'>30H\n</text>
+            </view>
+                               <view class="weui-flex__item"  >
+      <text style='font-size:15px;color:#000000'>3H \n</text>
+      <text style='font-size:15px;color:#000000'>6H \n</text>
+      <text style='font-size:15px;color:#000000'>9H \n</text>
+      <text style='font-size:15px;color:#000000'>12H \n</text>
+      <text style='font-size:15px;color:#000000'>15H \n</text>
+      <text style='font-size:15px;color:#000000'>18H \n</text>
+      <text style='font-size:15px;color:#000000'>21H \n</text>
+      <text style='font-size:15px;color:#000000'>24H \n</text>
+      <text style='font-size:15px;color:#000000'>27H \n</text>
+      <text style='font-size:15px;color:#000000'>30H\n</text>
+            </view>                  <view class="weui-flex__item"   >
+      <text style='font-size:15px;color:#000000'>33H \n</text>
+      <text style='font-size:15px;color:#000000'>36H \n</text>
+      <text style='font-size:15px;color:#000000'>39H \n</text>
+      <text style='font-size:15px;color:#000000'>42H \n</text>
+      <text style='font-size:15px;color:#000000'>45H \n</text>
+      <text style='font-size:15px;color:#000000'>48H \n</text>
+      <text style='font-size:15px;color:#000000'>51H \n</text>
+      <text style='font-size:15px;color:#000000'>54H \n</text>
+      <text style='font-size:15px;color:#000000'>57H \n</text>
+      <text style='font-size:15px;color:#000000'>60H\n</text>
+            </view>
+                     <view class="weui-flex__item" style="margin-right:20px;" >
+      <text style='font-size:15px;color:#000000'>3H \n</text>
+      <text style='font-size:15px;color:#000000'>6H \n</text>
+      <text style='font-size:15px;color:#000000'>9H \n</text>
+      <text style='font-size:15px;color:#000000'>12H \n</text>
+      <text style='font-size:15px;color:#000000'>15H \n</text>
+      <text style='font-size:15px;color:#000000'>18H \n</text>
+      <text style='font-size:15px;color:#000000'>21H \n</text>
+      <text style='font-size:15px;color:#000000'>24H \n</text>
+      <text style='font-size:15px;color:#000000'>27H \n</text>
+      <text style='font-size:15px;color:#000000'>30H\n</text>
+            </view>
+        </view> 
+       
+                <button class="weui-btn" type="default" bindtap="gotoPage2" >返回</button>

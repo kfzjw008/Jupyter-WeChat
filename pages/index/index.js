@@ -355,7 +355,9 @@ Page({
   gotoPage1: function () { 
     wx.navigateTo({ url: 'more/index', }) }
 
-,
+  , gotoPage3: function () {
+    wx.navigateTo({ url: 'qs/index', })
+  },
   getUserInfo: function(e) {
     console.log(e)
     app.globalData.userInfo = e.detail.userInfo
