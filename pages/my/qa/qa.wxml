@@ -1,0 +1,34 @@
+<view class="page">
+
+    <view class="page__bd">
+   
+        <view class="weui-panel weui-panel_access">
+            <view class="weui-panel__hd">常见问题</view>
+            <view class="weui-panel__bd">
+                <view class="weui-media-box weui-media-box_text">
+                    <view class="weui-media-box__title weui-media-box__title_in-text">Q：无法获取数据？</view>
+                    <view class="weui-media-box__desc">A：1、检查网络连接是否存在问题。2、是否在境外？本系统只提供中华人民共和国境内服务。3、服务器内部错误，请向我们反馈问题。4、检查GPS权限。</view>
+                </view>
+                <view class="weui-media-box weui-media-box_text">
+                    <view class="weui-media-box__title weui-media-box__title_in-text">Q：观测适宜度如何判断？</view>
+                    <view class="weui-media-box__desc">观测适宜度取值为0-100,55以上具备基础观测价值（可以看到星星），80以上具备较好的观测价值（野外大型观测）。数字越大，越适宜观测。</view>
+                </view>
+                          <view class="weui-media-box weui-media-box_text">
+                    <view class="weui-media-box__title weui-media-box__title_in-text">Q：哪些因素会影响观测适宜度呢？</view>
+                    <view class="weui-media-box__desc">A:大气因素诸如云量，视宁度，其他因素包括空气质量，风速，温度，湿度都会对观测的适宜度评价产生影响。</view>
+                </view>
+                          <view class="weui-media-box weui-media-box_text">
+                    <view class="weui-media-box__title weui-media-box__title_in-text">Q:观测适宜度的计算真的科学吗？</view>
+                    <view class="weui-media-box__desc">A:该项计算基于AHP层次分析法，目前研究成果已经发表在中文科技核心期刊上，具有一定的参考价值。</view>
+                </view>
+                          <view class="weui-media-box weui-media-box_text">
+                    <view class="weui-media-box__title weui-media-box__title_in-text">Q:观测适宜度的数据更新时间？</view>
+                    <view class="weui-media-box__desc">A:每半小时会更新一次。目前支持 查看60小时以内的数据。</view>
+                </view>
+            </view>
+ 
+        </view>
+
+    
+    </view>
+</view>

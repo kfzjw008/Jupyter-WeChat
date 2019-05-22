@@ -23,7 +23,7 @@
                     <image class="weui-grid__icon" src="../../dist/example/images/icon_nav_feedback.png" />
                     <view class="weui-grid__label">练习记录</view>
                 </navigator>
-                <navigator url="" class="weui-grid" hover-class="weui-grid_active">
+                <navigator url="testsj/index" class="weui-grid" hover-class="weui-grid_active">
                     <image class="weui-grid__icon" src="../../dist/example/images/icon_nav_form.png" />
                     <view class="weui-grid__label">随机练习</view>
                 </navigator>

@@ -9,7 +9,11 @@
     "pages/index/more/index",
     "pages/bk/result",
     "pages/bk/detail/index",
-    "pages/index/qs/index"
+    "pages/index/qs/index",
+    "pages/qa/testsj/index",
+    "pages/my/about/about",
+    "pages/my/qa/qa",
+    "pages/my/sz/sz"
   ],
   "permission": {
     "scope.userLocation": {
@@ -24,7 +28,7 @@
     "navigationBarBackgroundColor": "#3763BA",
     "navigationBarTitleText": "星云村",
     "navigationBarTextStyle": "white",
-    "backgroundColor": "#515151",
+    "backgroundColor": "#FFFFFF",
     "enablePullDownRefresh": true
   },
   "networkTimeout": {

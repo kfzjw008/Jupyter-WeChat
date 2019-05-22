@@ -1,0 +1,25 @@
+<view class="page">
+    <view class="weui-msg">
+        <view class="weui-msg__icon-area">
+            <icon type="info" size="93"></icon>
+        </view>
+        <view class="weui-msg__text-area">
+            <view class="weui-msg__title">关于我们</view>
+            <view class="weui-msg__desc">星云村集天文实时数据查询，资料查询，知识学习等模块于一体，方便广大天文爱好者学习知识开展观测活动。</view>
+             <view class="weui-msg__desc">星云村由以下人员开发： </view>
+             <view class="weui-msg__desc"> 张峻巍 刘霖 王浩杰 张瑜</view>
+               <view class="weui-msg__desc">目前版本V1.0  </view>
+              
+        </view>
+
+
+        <view class="weui-msg__extra-area">
+            <view class="weui-footer">
+                <view class="weui-footer__links">
+                    <navigator url="" class="weui-footer__link">星云村</navigator>
+                </view>
+                <view class="weui-footer__text">V1.0 测试版</view>
+            </view>
+        </view>
+    </view>
+</view>

@@ -49,6 +49,8 @@ App({
   globalData: {
     userInfo: null,
     jd:"",
-    wd:""
+    wd:"",
+    id:1,
+    Correct_Answer:""
   }
 })

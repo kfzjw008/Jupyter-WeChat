@@ -998,7 +998,7 @@ page{
   text-overflow: ellipsis;
   display: -webkit-box;
   -webkit-box-orient: vertical;
-  -webkit-line-clamp: 2;
+  -webkit-line-clamp: 100;
 }
 
 .weui-media-box__info {

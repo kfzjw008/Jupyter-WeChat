@@ -1,0 +1,20 @@
+
+<view class="page">
+
+ <view class="page__bd">
+
+        <view class="weui-cells weui-cells_after-title">
+                     <navigator url="" class="weui-cell weui-cell_access" hover-class="weui-cell_active">
+                <view class="weui-cell__bd">清空答题数据</view>
+            </navigator>
+            <navigator url="" class="weui-cell weui-cell_access" hover-class="weui-cell_active">
+                <view class="weui-cell__bd">清空收藏数据</view>
+   
+            </navigator>
+        </view>
+
+      
+    </view>
+</view>
+
+ 
