@@ -1,58 +1,39 @@
 <view class="page">
     <view class="page__hd">
-        <view class="page__title">猎户座</view>
-        <view class="page__desc">搜索结果</view>
+        <view class="page__title">{{search}}</view>
+        <view wx:if="{{count==0}}" class="page__title">搜索结果</view>
+        <view   wx:if="{{count>0}}" class="page__desc">共搜索到相关结果{{count}}个,第{{page}}页</view>
+        
     </view>
 
     <view class="page__bd">
         <view class="weui-panel">
-            <view class="weui-panel__hd">搜索结果按照视星等由亮到暗排序</view>
+            <view wx:if="{{count>0}}" class="weui-panel__hd">将搜索结果按照视星等由亮到暗排序</view>
+<view wx:if="{{count==0}}" class="weui-panel__hd">没有查询到相关结果！</view>
 
 
 
+           
 
-            <view class="weui-panel__bd">
-
-                      <navigator class="weui-media-box weui-media-box_text">
-                    <view class="weui-media-box__title weui-media-box__title_in-text">猎户座γ</view>
-                    <view class="weui-media-box__desc">  "Right_ascension": "05h 38m 44.77s",
-            "Declination": "-02° 36′ 00.2″",
-            "Apparent_magnitude": "3.77",
-            "Absolute_magnitude": "-3.960",</view>
+                      <navigator wx:if="{{count>0}}" bindtap='det' class="weui-media-box weui-media-box_text" wx:for="{{list}}" id="{{item.id}}" wx:key="list">
+                    <view class="weui-media-box__title weui-media-box__title_in-text">{{item.Name}}</view>
+                    <view class="weui-media-box__desc">  "Right_ascension": {{item.Right_ascension}},
+            "Declination": {{item.Declination}},
+               "Classification": {{item.Classification}},
+            "Notes": {{item.Notes}},
+            "Constellation": {{item.Constellation}},</view>
                     <view class="weui-media-box__info">
                         <view class="weui-media-box__info__meta">视星等</view>
-                        <view class="weui-media-box__info__meta">-3.96</view>
-                        <view class="weui-media-box__info__meta weui-media-box__info__meta_extra">中国传统名称-参宿四</view>
+                        <view class="weui-media-box__info__meta">{{item.Apparent_magnitude}}</view>
+                        <view class="weui-media-box__info__meta weui-media-box__info__meta_extra">绝对星等   {{item.Absolute_magnitude}}</view>
                     </view>
                 </navigator>
+                 <navigator wx:if="{{count>15&&page>1}}"  bindtap='nextpage2' class="weui-media-box weui-media-box_text" >
+                 上一页</navigator>
+                 <navigator wx:if="{{count>15&&page<pgc}}"  bindtap='nextpage' class="weui-media-box weui-media-box_text" >
+                 下一页</navigator>
 
-                          <navigator class="weui-media-box weui-media-box_text">
-                    <view class="weui-media-box__title weui-media-box__title_in-text">猎户座α</view>
-                    <view class="weui-media-box__desc">  "Right_ascension": "04h 56m 22.32s",
-            "Declination": "+13° 30′ 52.5″",
-            "Apparent_magnitude": "4.06",
-            "Absolute_magnitude": "0.480",</view>
-                    <view class="weui-media-box__info">
-                        <view class="weui-media-box__info__meta">视星等</view>
-                        <view class="weui-media-box__info__meta">-0.3</view>
-                        <view class="weui-media-box__info__meta weui-media-box__info__meta_extra">中国传统名称-参宿三</view>
-                    </view>
-                </navigator>
-
-                     <navigator class="weui-media-box weui-media-box_text" url="detail/index">
-                    <view class="weui-media-box__title weui-media-box__title_in-text">猎户座β</view>
-                    <view class="weui-media-box__desc">   "Right_ascension": "05h 36m 54.33s",
-            "Declination": "+09° 17′ 29.1″",
-            "Apparent_magnitude": "4.09",
-            "Absolute_magnitude": "1.330",</view>
-                    <view class="weui-media-box__info">
-                        <view class="weui-media-box__info__meta">视星等</view>
-                        <view class="weui-media-box__info__meta">0.3</view>
-                        <view class="weui-media-box__info__meta weui-media-box__info__meta_extra">中国传统名称-参宿七</view>
-                    </view>
-                </navigator>
-
-            </view>
+           
 
 
 

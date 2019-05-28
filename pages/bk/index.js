@@ -1,31 +1,40 @@
+var app = getApp();  
 
   Page({
     data: {
       inputShowed: false,
-      inputVal: ""
+      inpu: ''
     },
     showInput: function () {
     this.setData({
       inputShowed: true
     });
   },
-  hideInput: function () {
-    this.setData({
-      inputVal: "",
-      inputShowed: false
+  hideInput: function (e) {
+    var that = this
+    that.setData({
+      
+     
+
     });
+   // app.globalData.search = e.detail.value,
+      console.log(e.detail.value,app.globalData.search)
+      wx.navigateTo({ url: 'result', })
+      //inputVal: "",
+      //inputShowed: false
+   
   },
   clearInput: function () {
     this.setData({
-      inputVal: ""
+    
     });
   },
   inputTyping: function (e) {
-    this.setData({
-      inputVal: e.detail.value
-       
-    });
-    console.log(1);
+    var that = this
+
+    app.globalData.search = e.detail.value,
+    console.log(this.inpu);
+    console.log(e.detail.value);
   }
 
 });

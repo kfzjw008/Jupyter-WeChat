@@ -7,43 +7,79 @@
         <view class="weui-form-preview">
             <view class="weui-form-preview__hd">
                 <view class="weui-form-preview__item">
+                 
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
                     <view class="weui-form-preview__label">名称</view>
-                    <view class="weui-form-preview__value_in-hd">猎户座β</view>
+                    <view class="weui-form-preview__value_in-hd">{{Name111}}</view>
                 </view>
             </view>
             <view class="weui-form-preview__bd">
-                <view class="weui-form-preview__item">
-                    <view class="weui-form-preview__label">中国传统名称</view>
-                    <view class="weui-form-preview__value">参宿七</view>
-                </view>
-                <view class="weui-form-preview__item">
-                    <view class="weui-form-preview__label">视星等</view>
-                    <view class="weui-form-preview__value">0.3</view>
+                    <view class="weui-form-preview__item">
+                    <view class="weui-form-preview__label">所属星座</view>
+                    <view class="weui-form-preview__value">{{Constellation111}}</view>
                 </view>
                 <view class="weui-form-preview__item">
                     <view class="weui-form-preview__label">拜耳命名</view>
-                    <view class="weui-form-preview__value">φ2</view>
+                    <view class="weui-form-preview__value">{{Bayer111}}</view>
+                </view>
+                <view class="weui-form-preview__item">
+                    <view class="weui-form-preview__label">佛兰斯蒂德命名</view>
+                    <view class="weui-form-preview__value">{{Fransted111}}</view>
+                </view>
+                <view class="weui-form-preview__item">
+                    <view class="weui-form-preview__label">变星命名</view>
+                    <view class="weui-form-preview__value">{{Variable_star111}}</view>
                 </view>
                   <view class="weui-form-preview__item">
-                    <view class="weui-form-preview__label">Fransted</view>
-                    <view class="weui-form-preview__value">40</view>
+                    <view class="weui-form-preview__label">亨利·德雷伯星表</view>
+                    <view class="weui-form-preview__value">{{HD111}}</view>
                 </view>
                  <view class="weui-form-preview__item">
-                    <view class="weui-form-preview__label">Right_ascension</view>
-                    <view class="weui-form-preview__value">05h 36m 54.33s</view>
+                    <view class="weui-form-preview__label">依巴谷星表</view>
+                    <view class="weui-form-preview__value">{{HIP111}}</view>
                 </view>
                  <view class="weui-form-preview__item">
-                    <view class="weui-form-preview__label">Declination</view>
-                    <view class="weui-form-preview__value">+09° 17′ 29.1″</view>
+                    <view class="weui-form-preview__label">赤经</view>
+                    <view class="weui-form-preview__value">{{Right_ascension111}}</view>
                 </view>
                    <view class="weui-form-preview__item">
-                    <view class="weui-form-preview__label">距离</view>
-                    <view class="weui-form-preview__value">116光年</view>
+                    <view class="weui-form-preview__label">赤纬</view>
+                    <view class="weui-form-preview__value">{{Declination111}}</view>
                 </view>
                  <view class="weui-form-preview__item">
-                    <view class="weui-form-preview__label">所属星座</view>
-                    <view class="weui-form-preview__value">猎户座</view>
+                    <view class="weui-form-preview__label">视星等</view>
+                    <view class="weui-form-preview__value">{{Apparent_magnitude111}}</view>
                 </view>
+                    <view class="weui-form-preview__item">
+                    <view class="weui-form-preview__label">绝对星等</view>
+                    <view class="weui-form-preview__value">{{Absolute_magnitude111}}</view>
+                </view>
+                    <view class="weui-form-preview__item">
+                    <view class="weui-form-preview__label">距离</view>
+                    <view class="weui-form-preview__value">{{Distance111}}光年</view>
+                </view>
+                    <view class="weui-form-preview__item">
+                    <view class="weui-form-preview__label">恒星分类</view>
+                    <view class="weui-form-preview__value">{{Classification111}}</view>
+                </view>
+                    <view class="weui-form-preview__item">
+                    <view class="weui-form-preview__label">注释</view>
+                    <view class="weui-form-preview__value">{{Notes111}}</view>
+                </view>
+            
+      
             </view>
             <view class="weui-form-preview__ft">
                 <navigator bindtap="sc" class="weui-form-preview__btn weui-form-preview__btn_primary" hover-class="weui-form-preview__btn_active">收藏该星</navigator>

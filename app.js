@@ -51,6 +51,9 @@ App({
     jd:"",
     wd:"",
     id:1,
-    Correct_Answer:""
+    Correct_Answer:"",
+    search:"",
+    page1:0,
+    idp:0
   }
 })
