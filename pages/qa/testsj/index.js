@@ -10,14 +10,46 @@ Page({
   AA:false,
   BB:false,
   CC:false,
-  DD:false
+  DD:false,
+    Correct_Answer:'',
+    inputShoweda1:true,
+    inputShoweda2:false,
+    inputShoweda3:false,
+    inputShoweda4:false,
+    inputShowedb1:true,
+    inputShowedb2:false,
+    inputShowedb3:false,
+    inputShowedb4:false,
+    inputShowedc1:true,
+    inputShowedc2:false,
+    inputShowedc3:false,
+    inputShowedc4:false,
+    inputShowedd1:true,
+    inputShowedd2:false,
+    inputShowedd3:false,
+    inputShowedd4:false
   },
 
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-
+    inputShoweda1=true,
+      inputShoweda2 = false,
+      inputShoweda3 = false,
+      inputShoweda4 = false,
+      inputShowedb1 = true,
+      inputShowedb2 = false,
+      inputShowedb3 = false,
+      inputShowedb4 = false,
+      inputShowedc1 = true,
+      inputShowedc2 =false,
+      inputShowedc3 = false,
+      inputShowedc4 = false,
+      inputShowedd1 = true,
+      inputShowedd2 = false,
+      inputShowedd3 = false,
+      inputShowedd4 = false
   },
 
   /**
@@ -108,7 +140,252 @@ Page({
 
   },
   gotoPage3: function () {
-    var cr = "正确答案：" + app.globalData.Correct_Answer;
+    var that = this
+    if (app.globalData.Correct_Answer=='A'){
+      console.log(app.globalData.Correct_Answer)
+      that.setData({
+        inputShoweda1: false,
+        inputShoweda3: true,
+        inputShowedb1: false,
+        inputShowedb2: true,
+        inputShowedc1: false,
+        inputShowedc2: true,
+        inputShowedd1: false,
+        inputShowedd2: true
+
+      })
+
+    }
+    else if (app.globalData.Correct_Answer == 'B'){
+     that.setData({
+       inputShoweda1: false,
+       inputShoweda4:  true,
+       inputShowedb1:  false,
+       inputShowedb3:   true,
+     inputShowedc1 :  false,
+       inputShowedc2:  true,
+       inputShowedd1: false,
+       inputShowedd2: true
+
+     })
+    
+      
+    }
+    else if (app.globalData.Correct_Answer == 'C') {
+      console.log(3)
+      that.setData({
+        inputShoweda1: false,
+        inputShoweda4: true,
+        inputShowedb1: false,
+        inputShowedb2: true,
+        inputShowedc1: false,
+        inputShowedc3: true,
+        inputShowedd1: false,
+        inputShowedd2: true
+
+      })
+    }
+    else if (app.globalData.Correct_Answer == 'D') {
+      console.log(4)
+      that.setData({
+        inputShoweda1: false,
+        inputShoweda4: true,
+        inputShowedb1: false,
+        inputShowedb2: true,
+        inputShowedc1: false,
+        inputShowedc2: true,
+        inputShowedd1: false,
+        inputShowedd3: true
+
+      })
+    }
+   // this.onLoad()
+  },
+  gotoPage4: function () {
+    var that = this
+    if (app.globalData.Correct_Answer == 'A') {
+      console.log(app.globalData.Correct_Answer)
+      that.setData({
+        inputShoweda1: false,
+        inputShoweda3: true,
+        inputShowedb1: false,
+        inputShowedb4: true,
+        inputShowedc1: false,
+        inputShowedc2: true,
+        inputShowedd1: false,
+        inputShowedd2: true
+
+      })
+
+    }
+    else if (app.globalData.Correct_Answer == 'B') {
+      that.setData({
+        inputShoweda1: false,
+        inputShoweda2: true,
+        inputShowedb1: false,
+        inputShowedb3: true,
+        inputShowedc1: false,
+        inputShowedc2: true,
+        inputShowedd1: false,
+        inputShowedd2: true
+
+      })
+
+
+    }
+    else if (app.globalData.Correct_Answer == 'C') {
+      console.log(3)
+      that.setData({
+        inputShoweda1: false,
+        inputShoweda2: true,
+        inputShowedb1: false,
+        inputShowedb4: true,
+        inputShowedc1: false,
+        inputShowedc3: true,
+        inputShowedd1: false,
+        inputShowedd2: true
+
+      })
+    }
+    else if (app.globalData.Correct_Answer == 'D') {
+      console.log(4)
+      that.setData({
+        inputShoweda1: false,
+        inputShoweda2: true,
+        inputShowedb1: false,
+        inputShowedb4: true,
+        inputShowedc1: false,
+        inputShowedc2: true,
+        inputShowedd1: false,
+        inputShowedd3: true
+
+      })
+    }
+   // this.onLoad()
+  },
+  gotoPage5: function () {
+    var that = this
+    if (app.globalData.Correct_Answer == 'A') {
+      console.log(app.globalData.Correct_Answer)
+      that.setData({
+        inputShoweda1: false,
+        inputShoweda3: true,
+        inputShowedb1: false,
+        inputShowedb2: true,
+        inputShowedc1: false,
+        inputShowedc4: true,
+        inputShowedd1: false,
+        inputShowedd2: true
+
+      })
+
+    }
+    else if (app.globalData.Correct_Answer == 'B') {
+      that.setData({
+        inputShoweda1: false,
+        inputShoweda2: true,
+        inputShowedb1: false,
+        inputShowedb3: true,
+        inputShowedc1: false,
+        inputShowedc4: true,
+        inputShowedd1: false,
+        inputShowedd2: true
+
+      })
+
+
+    }
+    else if (app.globalData.Correct_Answer == 'C') {
+      console.log(3)
+      that.setData({
+        inputShoweda1: false,
+        inputShoweda2: true,
+        inputShowedb1: false,
+        inputShowedb2: true,
+        inputShowedc1: false,
+        inputShowedc3: true,
+        inputShowedd1: false,
+        inputShowedd2: true
+
+      })
+    }
+    else if (app.globalData.Correct_Answer == 'D') {
+      console.log(4)
+      that.setData({
+        inputShoweda1: false,
+        inputShoweda2: true,
+        inputShowedb1: false,
+        inputShowedb2: true,
+        inputShowedc1: false,
+        inputShowedc4: true,
+        inputShowedd1: false,
+        inputShowedd3: true
+
+      })
+    }
+   // this.onLoad()
+  },
+  gotoPage6: function () {
+    var that = this
+    if (app.globalData.Correct_Answer == 'A') {
+      console.log(app.globalData.Correct_Answer)
+      that.setData({
+        inputShoweda1: false,
+        inputShoweda3: true,
+        inputShowedb1: false,
+        inputShowedb2: true,
+        inputShowedc1: false,
+        inputShowedc2: true,
+        inputShowedd1: false,
+        inputShowedd4: true
+
+      })
+
+    }
+    else if (app.globalData.Correct_Answer == 'B') {
+      that.setData({
+        inputShoweda1: false,
+        inputShoweda2: true,
+        inputShowedb1: false,
+        inputShowedb3: true,
+        inputShowedc1: false,
+        inputShowedc2: true,
+        inputShowedd1: false,
+        inputShowedd4: true
+
+      })
+
+
+    }
+    else if (app.globalData.Correct_Answer == 'C') {
+      console.log(3)
+      that.setData({
+        inputShoweda1: false,
+        inputShoweda2: true,
+        inputShowedb1: false,
+        inputShowedb2: true,
+        inputShowedc1: false,
+        inputShowedc3: true,
+        inputShowedd1: false,
+        inputShowedd4: true
+
+      })
+    }
+    else if (app.globalData.Correct_Answer == 'D') {
+      console.log(4)
+      that.setData({
+        inputShoweda1: false,
+        inputShoweda2: true,
+        inputShowedb1: false,
+        inputShowedb2: true,
+        inputShowedc1: false,
+        inputShowedc2: true,
+        inputShowedd1: false,
+        inputShowedd3: true
+
+      })
+    }
+   // this.onLoad()
   },
   gotoPage1: function () {
     app.globalData.id = app.globalData.id - 1
@@ -152,6 +429,24 @@ Page({
     })
   },
   gotoPage2: function () {
+    this.setData({
+      inputShoweda1: true,
+      inputShoweda2: false,
+      inputShoweda3: false,
+      inputShoweda4: false,
+      inputShowedb1: true,
+      inputShowedb2: false,
+      inputShowedb3: false,
+      inputShowedb4: false,
+      inputShowedc1: true,
+      inputShowedc2: false,
+      inputShowedc3: false,
+      inputShowedc4: false,
+      inputShowedd1: true,
+      inputShowedd2: false,
+      inputShowedd3: false,
+      inputShowedd4: false
+    })
     app.globalData.id =parseInt(Math.random()*230);
     //app.globalData.id = app.globalData.id+1
     console.log(app.globalData.id)

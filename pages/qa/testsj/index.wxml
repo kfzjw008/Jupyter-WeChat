@@ -2,28 +2,35 @@
   <view class="page">
   <view class="page__hd">
         <view class="page__title">随机练习-学习模式</view>
-        <view class="page__desc">     <button class="weui-btn mini-btn" type="default" size="mini" bindtap="gotoPage2" >下一题</button></view>
+        <view class="page__desc">    </view>
         <view class="page__desc">{{Question_body}}</view>
-<view class="page__desc">正确答案：{{Correct_Answer}}</view>
+
 
     </view>
-  <button class="weui-btn" class="weui-btn" type="default"  bindtap="gotoPage3">A:{{A}}</button>
-        <button class="weui-btn" type="default" bindtap="gotoPage3">B:{{B}}</button>
-            <button class="weui-btn" type="default"  bindtap="gotoPage3">C:{{C}}</button>
-                <button class="weui-btn" type="default" bindtap="gotoPage3">D:{{D}}</button>
+  <button class="weui-btn" class="weui-btn" type="default"  bindtap="gotoPage3"wx:if="{{inputShoweda1==true}}">A:{{A}}</button>
+   <button class="weui-btn" class="weui-btn" type="default" wx:if="{{inputShoweda2==true}}">A:{{A}}</button>
+    <button class="weui-btn" class="weui-btn" type="primary" wx:if="{{inputShoweda3==true}}">A:{{A}}</button>
+      <button class="weui-btn" class="weui-btn" type="warn"  wx:if="{{inputShoweda4==true}}">A:{{A}}</button>
 
- <view class="weui-flex">
-            <view class="weui-flex__item">
-                
-            </view>
-             <view class="weui-flex__item" style="text-align:center" ><text style="font-size:20px">{{cr}}</text></view>
-             <view class="weui-flex__item"  style="text-align:right">
-              <button class="weui-btn mini-btn" type="default" size="mini" bindtap="gotoPage2" >下一题</button>
-             </view>
-        </view>
+        <button class="weui-btn" type="default" bindtap="gotoPage4" wx:if="{{inputShowedb1}}">B:{{B}}</button>
+         <button class="weui-btn" type="default"wx:if="{{inputShowedb2}}" >B:{{B}}</button>
+        <button class="weui-btn" type="primary" wx:if="{{inputShowedb3}}">B:{{B}}</button>
+        <button class="weui-btn" type="warn" wx:if="{{inputShowedb4}}">B:{{B}}</button>
 
-    </view>
+            <button class="weui-btn" type="default"  bindtap="gotoPage5" wx:if="{{inputShowedc1}}">C:{{C}}</button>
+                  <button class="weui-btn" type="default" wx:if="{{inputShowedc2}}" >C:{{C}}</button>
+                <button class="weui-btn" type="primary" wx:if="{{inputShowedc3}}">C:{{C}}</button>
+                <button class="weui-btn" type="warn" wx:if="{{inputShowedc4}}">C:{{C}}</button>
 
+                <button class="weui-btn" type="default" bindtap="gotoPage6" wx:if="{{inputShowedd1}}">D:{{D}}</button>
+                <button class="weui-btn" type="default" wx:if="{{inputShowedd2}}" >D:{{D}}</button>
+                <button class="weui-btn" type="primary" wx:if="{{inputShowedd3}}">D:{{D}}</button>
+                <button class="weui-btn" type="warn" wx:if="{{inputShowedd4}}">D:{{D}}</button>
+<view class="page__desc" wx:if="{{inputShoweda1==false}}">正确答案：{{Correct_Answer}}</view>
+<view class="page__desc" wx:if="{{inputShoweda1==false}}">解析：{{Question_Analysis}}</view>
+ <button class="weui-btn mini-btn" type="default"  wx:if="{{inputShoweda1==false}}"  size="mini" bindtap="gotoPage2" >下一题</button>
+
+</view>
 
 
   
