@@ -72,6 +72,39 @@ Page({
             var rh2m = res.data.astronomy[0].rh2m
             var temp2m = res.data.astronomy[0].temp2m
             var temp = res.data.astronomy[0].temp
+            if (cloudcover == 1) { cloudcover = '3%'}
+            if (cloudcover == 2) { cloudcover = '13%' }
+            if (cloudcover == 3) { cloudcover = '25%' }
+            if (cloudcover == 4) { cloudcover = '37%' }
+            if (cloudcover == 5) { cloudcover = '50%' }
+            if (cloudcover == 6) { cloudcover = '62%' }
+            if (cloudcover == 7) { cloudcover = '75%' }
+            if (cloudcover == 8) { cloudcover = '87%' }
+            if (cloudcover == 9) { cloudcover = '97%' }
+            if (seeing == 1) { seeing = '<0.5"' }
+            if (seeing == 2) { seeing = '0.75"' }
+            if (seeing == 3) { seeing = '1"' }
+            if (seeing == 4) { seeing = '1.25"' }
+            if (seeing == 5) { seeing = '1.5"' }
+            if (seeing == 6) { seeing = '2"' }
+            if (seeing == 7) { seeing = '2.5"' }
+            if (seeing == 8) { seeing = '>2.5"' }
+            if (transparency == 1) { transparency = '0.3' }
+            if (transparency == 2) { transparency = '0.4' }
+            if (transparency == 3) { transparency = '0.5' }
+            if (transparency == 4) { transparency = '0.6' }
+            if (transparency == 5) { transparency = '0.7' }
+            if (transparency == 6) { transparency = '0.85' }
+            if (transparency == 7) { transparency = '1' }
+            if (transparency == 8) { transparency = '>1' }
+            if (lifted_index == -10) { lifted_index = '<-7' }
+            if (lifted_index == -6) { lifted_index = '-6' }
+            if (lifted_index == -4) { lifted_index = '-4' }
+            if (lifted_index == -1) { lifted_index = '-1.5' }
+            if (lifted_index == 2) { lifted_index = '2' }
+            if (lifted_index == 6) { lifted_index = '6' }
+            if (lifted_index == 10) { lifted_index= '9' }
+            if (lifted_index == 15) { lifted_index = '>11' }
             that.setData({
               locat: location,
               cloudcover: cloudcover,
@@ -148,6 +181,47 @@ Page({
             var rh2m = res.data.astronomy[0].rh2m
             var temp2m = res.data.astronomy[0].temp2m
             var temp = res.data.astronomy[0].temp
+            if (cloudcover == 1) { cloudcover = '3%' }
+            if (cloudcover == 2) { cloudcover = '13%' }
+            if (cloudcover == 3) { cloudcover = '25%' }
+            if (cloudcover == 4) { cloudcover = '37%' }
+            if (cloudcover == 5) { cloudcover = '50%' }
+            if (cloudcover == 6) { cloudcover = '62%' }
+            if (cloudcover == 7) { cloudcover = '75%' }
+            if (cloudcover == 8) { cloudcover = '87%' }
+            if (cloudcover == 9) { cloudcover = '97%' }
+            if (seeing == 1) { seeing = '<0.5"' }
+            if (seeing == 2) { seeing = '0.75"' }
+            if (seeing == 3) { seeing = '1"' }
+            if (seeing == 4) { seeing = '1.25"' }
+            if (seeing == 5) { seeing = '1.5"' }
+            if (seeing == 6) { seeing = '2"' }
+            if (seeing == 7) { seeing = '2.5"' }
+            if (seeing == 8) { seeing = '>2.5"' }
+            if (transparency == 1) { transparency = '0.3' }
+            if (transparency == 2) { transparency = '0.4' }
+            if (transparency == 3) { transparency = '0.5' }
+            if (transparency == 4) { transparency = '0.6' }
+            if (transparency == 5) { transparency = '0.7' }
+            if (transparency == 6) { transparency = '0.85' }
+            if (transparency == 7) { transparency = '1' }
+            if (transparency == 8) { transparency = '>1' }
+            if (transparency == 1) { transparency = '0.3' }
+            if (transparency == 2) { transparency = '0.4' }
+            if (transparency == 3) { transparency = '0.5' }
+            if (transparency == 4) { transparency = '0.6' }
+            if (transparency == 5) { transparency = '0.7' }
+            if (transparency == 6) { transparency = '0.85' }
+            if (transparency == 7) { transparency = '1' }
+            if (transparency == 8) { transparency = '>1' }
+            if (lifted_index == -10) { lifted_index = '<-7' }
+            if (lifted_index == -6) { lifted_index = '-6' }
+            if (lifted_index == -4) { lifted_index = '-4' }
+            if (lifted_index == -1) { lifted_index = '-1.5' }
+            if (lifted_index == 2) { lifted_index = '2' }
+            if (lifted_index == 6) { lifted_index = '6' }
+            if (lifted_index == 10) { lifted_index = '9' }
+            if (lifted_index == 15) { lifted_index = '>11' }
             that.setData({
               locat: location,
               cloudcover: cloudcover,
@@ -225,6 +299,47 @@ Page({
             var rh2m = res.data.astronomy[0].rh2m
             var temp2m = res.data.astronomy[0].temp2m
             var temp = res.data.astronomy[0].temp
+            if (cloudcover == 1) { cloudcover = '3%' }
+            if (cloudcover == 2) { cloudcover = '13%' }
+            if (cloudcover == 3) { cloudcover = '25%' }
+            if (cloudcover == 4) { cloudcover = '37%' }
+            if (cloudcover == 5) { cloudcover = '50%' }
+            if (cloudcover == 6) { cloudcover = '62%' }
+            if (cloudcover == 7) { cloudcover = '75%' }
+            if (cloudcover == 8) { cloudcover = '87%' }
+            if (cloudcover == 9) { cloudcover = '97%' }
+            if (seeing == 1) { seeing = '<0.5"' }
+            if (seeing == 2) { seeing = '0.75"' }
+            if (seeing == 3) { seeing = '1"' }
+            if (seeing == 4) { seeing = '1.25"' }
+            if (seeing == 5) { seeing = '1.5"' }
+            if (seeing == 6) { seeing = '2"' }
+            if (seeing == 7) { seeing = '2.5"' }
+            if (seeing == 8) { seeing = '>2.5"' }
+            if (transparency == 1) { transparency = '0.3' }
+            if (transparency == 2) { transparency = '0.4' }
+            if (transparency == 3) { transparency = '0.5' }
+            if (transparency == 4) { transparency = '0.6' }
+            if (transparency == 5) { transparency = '0.7' }
+            if (transparency == 6) { transparency = '0.85' }
+            if (transparency == 7) { transparency = '1' }
+            if (transparency == 8) { transparency = '>1' }
+            if (transparency == 1) { transparency = '0.3' }
+            if (transparency == 2) { transparency = '0.4' }
+            if (transparency == 3) { transparency = '0.5' }
+            if (transparency == 4) { transparency = '0.6' }
+            if (transparency == 5) { transparency = '0.7' }
+            if (transparency == 6) { transparency = '0.85' }
+            if (transparency == 7) { transparency = '1' }
+            if (transparency == 8) { transparency = '>1' }
+            if (lifted_index == -10) { lifted_index = '<-7' }
+            if (lifted_index == -6) { lifted_index = '-6' }
+            if (lifted_index == -4) { lifted_index = '-4' }
+            if (lifted_index == -1) { lifted_index = '-1.5' }
+            if (lifted_index == 2) { lifted_index = '2' }
+            if (lifted_index == 6) { lifted_index = '6' }
+            if (lifted_index == 10) { lifted_index = '9' }
+            if (lifted_index == 15) { lifted_index = '>11' }
             that.setData({
               locat: location,
               cloudcover: cloudcover,
@@ -303,6 +418,47 @@ Page({
             var rh2m = res.data.astronomy[0].rh2m
             var temp2m = res.data.astronomy[0].temp2m
             var temp = res.data.astronomy[0].temp
+            if (cloudcover == 1) { cloudcover = '3%' }
+            if (cloudcover == 2) { cloudcover = '13%' }
+            if (cloudcover == 3) { cloudcover = '25%' }
+            if (cloudcover == 4) { cloudcover = '37%' }
+            if (cloudcover == 5) { cloudcover = '50%' }
+            if (cloudcover == 6) { cloudcover = '62%' }
+            if (cloudcover == 7) { cloudcover = '75%' }
+            if (cloudcover == 8) { cloudcover = '87%' }
+            if (cloudcover == 9) { cloudcover = '97%' }
+            if (seeing == 1) { seeing = '<0.5"' }
+            if (seeing == 2) { seeing = '0.75"' }
+            if (seeing == 3) { seeing = '1"' }
+            if (seeing == 4) { seeing = '1.25"' }
+            if (seeing == 5) { seeing = '1.5"' }
+            if (seeing == 6) { seeing = '2"' }
+            if (seeing == 7) { seeing = '2.5"' }
+            if (seeing == 8) { seeing = '>2.5"' }
+            if (transparency == 1) { transparency = '0.3' }
+            if (transparency == 2) { transparency = '0.4' }
+            if (transparency == 3) { transparency = '0.5' }
+            if (transparency == 4) { transparency = '0.6' }
+            if (transparency == 5) { transparency = '0.7' }
+            if (transparency == 6) { transparency = '0.85' }
+            if (transparency == 7) { transparency = '1' }
+            if (transparency == 8) { transparency = '>1' }
+            if (transparency == 1) { transparency = '0.3' }
+            if (transparency == 2) { transparency = '0.4' }
+            if (transparency == 3) { transparency = '0.5' }
+            if (transparency == 4) { transparency = '0.6' }
+            if (transparency == 5) { transparency = '0.7' }
+            if (transparency == 6) { transparency = '0.85' }
+            if (transparency == 7) { transparency = '1' }
+            if (transparency == 8) { transparency = '>1' }
+            if (lifted_index == -10) { lifted_index = '<-7' }
+            if (lifted_index == -6) { lifted_index = '-6' }
+            if (lifted_index == -4) { lifted_index = '-4' }
+            if (lifted_index == -1) { lifted_index = '-1.5' }
+            if (lifted_index == 2) { lifted_index = '2' }
+            if (lifted_index == 6) { lifted_index = '6' }
+            if (lifted_index == 10) { lifted_index = '9' }
+            if (lifted_index == 15) { lifted_index = '>11' }
             that.setData({
               locat: location,
               cloudcover: cloudcover,

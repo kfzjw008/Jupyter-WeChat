@@ -1,0 +1,67 @@
+<view class="page">
+    <view class="page__hd">
+        <view class="page__title">试题详细信息</view>
+        <view class="page__desc">题目来源：原创和网络</view>
+    </view>
+    <view class="page__bd">
+        <view class="weui-form-preview">
+            <view class="weui-form-preview__hd">
+                <view class="weui-form-preview__item">
+                 
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+                    <view class="weui-form-preview__label">试题分类</view>
+                    <view class="weui-form-preview__value_in-hd">{{Bayer111}}</view>
+                </view>
+            </view>
+            <view class="weui-form-preview__bd">
+             
+                <view class="weui-form-preview__item">
+                    <view class="weui-form-preview__label">题目</view>
+                    <view class="weui-form-preview__value">{{Name111}}</view>
+                </view>
+                <view class="weui-form-preview__item">
+                    <view class="weui-form-preview__label">选项A</view>
+                    <view class="weui-form-preview__value">{{Fransted111}}</view>
+                </view>
+                <view class="weui-form-preview__item">
+                    <view class="weui-form-preview__label">选项B</view>
+                    <view class="weui-form-preview__value">{{Variable_star111}}</view>
+                </view>
+                  <view class="weui-form-preview__item">
+                    <view class="weui-form-preview__label">选项C</view>
+                    <view class="weui-form-preview__value">{{HD111}}</view>
+                </view>
+                 <view class="weui-form-preview__item">
+                    <view class="weui-form-preview__label">选项D</view>
+                    <view class="weui-form-preview__value">{{HIP111}}</view>
+                </view>
+                 <view class="weui-form-preview__item">
+                    <view class="weui-form-preview__label">正确答案</view>
+                    <view class="weui-form-preview__value">{{Right_ascension111}}</view>
+                </view>
+                   <view class="weui-form-preview__item">
+                    <view class="weui-form-preview__label">解析</view>
+                    <view class="weui-form-preview__value">{{Declination111}}</view>
+                </view>
+                
+      
+            </view>
+            <view class="weui-form-preview__ft">
+                <navigator bindtap="sc" class="weui-form-preview__btn weui-form-preview__btn_primary" hover-class="weui-form-preview__btn_active">收藏试题</navigator>
+            </view>
+        </view>
+      
+    </view>
+</view>

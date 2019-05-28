@@ -15,7 +15,7 @@
                     <image class="weui-grid__icon" src="../../dist/example/images/icon_nav_widget.png" />
                     <view class="weui-grid__label">在线测试</view>
                 </navigator>
-                <navigator url="" class="weui-grid" hover-class="weui-grid_active">
+                <navigator url="se/index" class="weui-grid" hover-class="weui-grid_active">
                     <image class="weui-grid__icon" src="../../dist/example/images/icon_nav_search.png" />
                     <view class="weui-grid__label">查找试题</view>
                 </navigator>

@@ -13,7 +13,10 @@
     "pages/qa/testsj/index",
     "pages/my/about/about",
     "pages/my/qa/qa",
-    "pages/my/sz/sz"
+    "pages/my/sz/sz",
+    "pages/qa/se/index",
+    "pages/qa/se/result",
+    "pages/qa/se/detail/inidex"
   ],
   "permission": {
     "scope.userLocation": {

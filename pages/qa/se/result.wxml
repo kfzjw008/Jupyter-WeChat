@@ -1,0 +1,43 @@
+<view class="page">
+    <view class="page__hd">
+        <view class="page__title">{{search}}</view>
+        <view wx:if="{{count==0}}" class="page__title">搜索结果</view>
+        <view   wx:if="{{count>0}}" class="page__desc">共搜索到相关试题{{count}}题,第{{page}}页</view>
+        
+    </view>
+
+    <view class="page__bd">
+        <view class="weui-panel">
+            <view wx:if="{{count>0}}" class="weui-panel__hd">将搜索结果按照题库顺序排序</view>
+<view wx:if="{{count==0}}" class="weui-panel__hd">没有查询到相关结果！</view>
+
+
+
+           
+
+                      <navigator wx:if="{{count>0}}" bindtap='det' class="weui-media-box weui-media-box_text" wx:for="{{list}}" id="{{item.id}}" wx:key="list">
+                    <view class="weui-media-box__title weui-media-box__title_in-text">{{item.Question_body}}</view>
+                    <view class="weui-media-box__desc">  A: {{item.A}}\n
+            B: {{item.B}}\n
+            C: {{item.C}}\n
+            D: {{item.D}}
+            </view>
+                    <view class="weui-media-box__info">
+                        <view class="weui-media-box__info__meta">试题分类：</view>
+                        <view class="weui-media-box__info__meta">{{item.Examination_Place}}</view>
+                        <view class="weui-media-box__info__meta weui-media-box__info__meta_extra">正确答案：  {{item.Correct_Answer}}</view>
+                    </view>
+                </navigator>
+                 <navigator wx:if="{{count>15&&page>1}}"  bindtap='nextpage2' class="weui-media-box weui-media-box_text" >
+                 上一页</navigator>
+                 <navigator wx:if="{{count>15&&page<pgc}}"  bindtap='nextpage' class="weui-media-box weui-media-box_text" >
+                 下一页</navigator>
+
+           
+
+
+
+
+        </view>
+    </view>
+</view>

@@ -429,24 +429,7 @@ Page({
     })
   },
   gotoPage2: function () {
-    this.setData({
-      inputShoweda1: true,
-      inputShoweda2: false,
-      inputShoweda3: false,
-      inputShoweda4: false,
-      inputShowedb1: true,
-      inputShowedb2: false,
-      inputShowedb3: false,
-      inputShowedb4: false,
-      inputShowedc1: true,
-      inputShowedc2: false,
-      inputShowedc3: false,
-      inputShowedc4: false,
-      inputShowedd1: true,
-      inputShowedd2: false,
-      inputShowedd3: false,
-      inputShowedd4: false
-    })
+    
     app.globalData.id =parseInt(Math.random()*230);
     //app.globalData.id = app.globalData.id+1
     console.log(app.globalData.id)
@@ -480,7 +463,22 @@ Page({
             C: res.data.C,
             D: res.data.D,
             Correct_Answer: Correct_Answer,
-
+          inputShoweda1: true,
+          inputShoweda2: false,
+          inputShoweda3: false,
+          inputShoweda4: false,
+          inputShowedb1: true,
+          inputShowedb2: false,
+          inputShowedb3: false,
+          inputShowedb4: false,
+          inputShowedc1: true,
+          inputShowedc2: false,
+          inputShowedc3: false,
+          inputShowedc4: false,
+          inputShowedd1: true,
+          inputShowedd2: false,
+          inputShowedd3: false,
+          inputShowedd4: false,
             Examination_Place: Examination_Place,
             Question_Analysis: Question_Analysis,
           })
