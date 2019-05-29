@@ -10,13 +10,13 @@ Page({
 jdg:'',
 wdg:''
   }, jd: function (e) {
-    console.log(e)
+    //console.log(e)
     this.setData({
       
       jdg: e.detail.value
     })
   }, wd: function (e) {
-    console.log(e)
+    //console.log(e)
     this.setData({
       wdg: e.detail.value
     })
@@ -29,7 +29,7 @@ wdg:''
         var jdg=
           app.globalData.jd = that.data.jdg;
         app.globalData.wd = that.data.wdg;
-        console.log(app.globalData.jd)
+        //console.log(app.globalData.jd)
         wx.request({
           url: 'https://api.majorbillliu.com/getIndex',
           data: {

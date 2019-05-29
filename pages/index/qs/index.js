@@ -39,7 +39,7 @@ Page({
     wx.getLocation({
       type: 'wgs84',
       success: function (res) {
-        console.log(res)
+        //console.log(res)
 
         that.setData({
           wd: app.globalData.wd,
@@ -116,7 +116,7 @@ Page({
               P19: P19,
              
             })
-            console.log(res.data)
+            //console.log(res.data)
             new Charts({
               canvasId: 'lineCanvas',
               type: 'line',

@@ -21,7 +21,7 @@ var loadMore = function (that) {
 
     },
     fail(res) {
-      console.log(res)
+      //console.log(res)
       wx.navigateBack({
         delta: 1,
 
@@ -34,7 +34,7 @@ var loadMore = function (that) {
     },
     success(res) {
 
-      console.log(res)
+      //console.log(res)
       wx.showToast({
         title: '加载成功',
         icon: 'success',
@@ -44,18 +44,18 @@ var loadMore = function (that) {
    
       var list = that.data.list;
     
-      console.log('插入？？？？？')
-      console.log(that.data.list)
+      //console.log('插入？？？？？')
+      //console.log(that.data.list)
       for (var i = 0; i < res.data.results.length; i++) {
         list.push(res.data.results[i]);
-        console.log('插入！！！！！！！！')
+        //console.log('插入！！！！！！！！')
        
-        console.log(list)
-        console.log(res.data.results[i])
+        //console.log(list)
+        //console.log(res.data.results[i])
       }
-      console.log(list)
+      //console.log(list)
       app.globalData.page1 = app.globalData.page1 + 1;
-      console.log(app.globalData.page1)
+      //console.log(app.globalData.page1)
 
       that.setData({
         list: list,
@@ -63,12 +63,12 @@ var loadMore = function (that) {
         //list: res.data.results,
         search: app.globalData.search,
         page: app.globalData.page1,
-        pgc: count / 15,
+      
         hidden: true
       })
       var count = res.data.count
-      var pgc = count / 15
-      console.log(pgc)
+    
+      //console.log(pgc)
     }
   })
 }
@@ -79,7 +79,7 @@ Page({
    */
   data: {
     count: '',
-    pgc: '',
+ 
     search: '',
     page: "",
     list :[]
@@ -103,7 +103,7 @@ Page({
   }, bindDownLoad: function () {
     var that = this;
     loadMore(that);
-    console.log("lower");
+    //console.log("lower");
   },
   scroll: function (event) {
     //该方法绑定了页面滚动时的事件，我这里记录了当前的position.y的值,为了请求数据之后把页面定位到这里来。
@@ -115,7 +115,7 @@ Page({
     //   该方法绑定了页面滑动到顶部的事件，然后做上拉刷新
   
     loadMore(this);
-    console.log("lower");
+    //console.log("lower");
   },
   /**
    * 生命周期函数--监听页面初次渲染完成

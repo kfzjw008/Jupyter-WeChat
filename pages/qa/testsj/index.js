@@ -34,22 +34,7 @@ Page({
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-    inputShoweda1=true,
-      inputShoweda2 = false,
-      inputShoweda3 = false,
-      inputShoweda4 = false,
-      inputShowedb1 = true,
-      inputShowedb2 = false,
-      inputShowedb3 = false,
-      inputShowedb4 = false,
-      inputShowedc1 = true,
-      inputShowedc2 =false,
-      inputShowedc3 = false,
-      inputShowedc4 = false,
-      inputShowedd1 = true,
-      inputShowedd2 = false,
-      inputShowedd3 = false,
-      inputShowedd4 = false
+   
   },
 
   /**

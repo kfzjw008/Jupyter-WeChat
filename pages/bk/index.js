@@ -18,7 +18,7 @@ var app = getApp();
 
     });
    // app.globalData.search = e.detail.value,
-      console.log(e.detail.value,app.globalData.search)
+      //console.log(e.detail.value,app.globalData.search)
       wx.navigateTo({ url: 'result', })
       //inputVal: "",
       //inputShowed: false
@@ -28,7 +28,7 @@ var app = getApp();
     app.globalData.search = e.currentTarget.id
     
       // app.globalData.search = e.detail.value,
-      console.log(e.detail.value, app.globalData.search)
+      //console.log(e.detail.value, app.globalData.search)
       wx.navigateTo({ url: 'result', })
       //inputVal: "",
       //inputShowed: false
@@ -42,9 +42,9 @@ var app = getApp();
   inputTyping: function (e) {
     var that = this
 
-    app.globalData.search = e.detail.value,
-    console.log(this.inpu);
-    console.log(e.detail.value);
+    app.globalData.search = e.detail.value
+    //console.log(this.inpu);
+    //console.log(e.detail.value);
   }
 
 });

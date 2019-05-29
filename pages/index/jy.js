@@ -55,7 +55,7 @@ Page({
 
       type: 'wgs84',
       success: function (res) {
-        console.log(res)
+        //console.log(res)
         wx.showToast({
           title: '数据加载中',
           icon: 'loading',
@@ -72,7 +72,7 @@ Page({
             lat: app.globalData.wd
           },
           fail(res) {
-            console.log(res)
+            //console.log(res)
             wx.showToast({
               title: '加载失败',
               icon: "none",
@@ -158,7 +158,7 @@ Page({
               P0: P0,
               all:all
             })
-            console.log(all)
+            //console.log(all)
           }
         })
       }

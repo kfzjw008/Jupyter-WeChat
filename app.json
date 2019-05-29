@@ -28,9 +28,6 @@
   "permission": {
     "scope.userLocation": {
       "desc": "你的位置信息将用于你所在位置的天文实时数据的获取"
-    },
-    "scope.userInfo": {
-      "desc": "你的个人信息将用于本小程序的登录"
     }
   },
   "window": {

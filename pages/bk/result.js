@@ -30,7 +30,7 @@ page:"",
   onReady: function () {
 
   },nextpage:function(){
-    console.log(pgc)
+    //console.log(pgc)
     this.onLoad()
 var that=this
     app.globalData.page1 = app.globalData.page1+1
@@ -43,7 +43,7 @@ var that=this
       }, success(res) {
           var count = res.data.count
           var pgc = count / 15
-          console.log(pgc)
+          //console.log(pgc)
       that.setData({
         count: res.data.count,
         list: res.data.results,
@@ -56,7 +56,7 @@ var that=this
   })
   
   }, nextpage2: function () {
-    console.log(pgc)
+    //console.log(pgc)
     this.onLoad()
     var that = this
     app.globalData.page1 = app.globalData.page1 - 1
@@ -69,7 +69,7 @@ var that=this
       }, success(res) {
         var count = res.data.count
         var pgc = count / 15
-        console.log(pgc)
+        //console.log(pgc)
         that.setData({
           count: res.data.count,
           list: res.data.results,
@@ -97,7 +97,7 @@ var that=this
   onShow: function (res) {
 
     var that = this
-        console.log(res)
+        //console.log(res)
         wx.showToast({
           title: '搜索中',
           icon: 'loading',
@@ -111,7 +111,7 @@ var that=this
             page: app.globalData.page1
           },
           fail(res) {
-            console.log(res)
+            //console.log(res)
             wx.showToast({
               title: '加载失败',
               icon: "none",
@@ -121,7 +121,7 @@ var that=this
           },
           success(res) {
 
-            console.log(res)
+            //console.log(res)
             wx.showToast({
               title: '加载成功',
               icon: 'success',
@@ -385,7 +385,7 @@ var that=this
             var Constellation151515 = res.data.results[14].Constellation
 
 
-            console.log(app.globalData.page1)
+            //console.log(app.globalData.page1)
 
             that.setData({
              count:count,
@@ -396,7 +396,7 @@ var that=this
             })
             var count = res.data.count
             var pgc = count / 15
-            console.log(pgc)
+            //console.log(pgc)
           }
         })
       

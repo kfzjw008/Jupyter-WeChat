@@ -46,7 +46,7 @@ Page({
       url: 'https://api.majorbillliu.com/knowledge/' + app.globalData.idp,
 
       fail(res) {
-        console.log(res)
+        //console.log(res)
         wx.showToast({
           title: '加载失败',
           icon: "none",
@@ -55,7 +55,7 @@ Page({
 
       },
       success(res) {
-        console.log(res)
+        //console.log(res)
         var id111 = res.data.id
         var Name111 = res.data.Name
         var Bayer111 = res.data.Bayer
@@ -88,7 +88,7 @@ Page({
             Notes111: Notes111,
             Constellation111: Constellation111,
           })
-        console.log(res.data)
+        //console.log(res.data)
       }
     })
   

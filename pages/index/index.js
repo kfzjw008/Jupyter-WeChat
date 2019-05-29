@@ -30,95 +30,14 @@ Page({
    
       type: 'wgs84',
       success: function (res) {
-        console.log(res)
+        //console.log(res)
         app.globalData.wd = res.latitude
         app.globalData.jd = res.longitude
         that.setData({
           wd: app.globalData.wd,
           jd: app.globalData.jd,
         })
-        wx.request({
-          url: 'https://api.majorbillliu.com/getIndex',
-          data: {
-            lon: app.globalData.wd,
-            lat: app.globalData.jd
-          }, 
-          fail(res) {
-            console.log(res)
-            wx.showToast({
-              title: '加载失败',
-              icon: "none",
-              duration: 2000
-            })
-            that.setData({
-              locat: '加载失败',
-              cloudcover: '加载失败',
-              seeing: '加载失败',
-              rh2m: '加载失败',
-              temp: '加载失败',
-              temp2m: '加载失败',
-              transparency: '加载失败',
-              lifted_index: '加载失败',
-              P0: "--",
-            })
-          },
-          success(res) {
-            var location = res.data.location
-            var cloudcover = res.data.astronomy[0].cloudcover
-            var seeing = res.data.astronomy[0].seeing
-            var transparency = res.data.astronomy[0].transparency
-            var lifted_index = res.data.astronomy[0].lifted_index
-            var P0 = res.data.astronomy[0].P
-            var rh2m = res.data.astronomy[0].rh2m
-            var temp2m = res.data.astronomy[0].temp2m
-            var temp = res.data.astronomy[0].temp
-            if (cloudcover == 1) { cloudcover = '3%'}
-            if (cloudcover == 2) { cloudcover = '13%' }
-            if (cloudcover == 3) { cloudcover = '25%' }
-            if (cloudcover == 4) { cloudcover = '37%' }
-            if (cloudcover == 5) { cloudcover = '50%' }
-            if (cloudcover == 6) { cloudcover = '62%' }
-            if (cloudcover == 7) { cloudcover = '75%' }
-            if (cloudcover == 8) { cloudcover = '87%' }
-            if (cloudcover == 9) { cloudcover = '97%' }
-            if (seeing == 1) { seeing = '<0.5"' }
-            if (seeing == 2) { seeing = '0.75"' }
-            if (seeing == 3) { seeing = '1"' }
-            if (seeing == 4) { seeing = '1.25"' }
-            if (seeing == 5) { seeing = '1.5"' }
-            if (seeing == 6) { seeing = '2"' }
-            if (seeing == 7) { seeing = '2.5"' }
-            if (seeing == 8) { seeing = '>2.5"' }
-            if (transparency == 1) { transparency = '0.3' }
-            if (transparency == 2) { transparency = '0.4' }
-            if (transparency == 3) { transparency = '0.5' }
-            if (transparency == 4) { transparency = '0.6' }
-            if (transparency == 5) { transparency = '0.7' }
-            if (transparency == 6) { transparency = '0.85' }
-            if (transparency == 7) { transparency = '1' }
-            if (transparency == 8) { transparency = '>1' }
-            if (lifted_index == -10) { lifted_index = '<-7' }
-            if (lifted_index == -6) { lifted_index = '-6' }
-            if (lifted_index == -4) { lifted_index = '-4' }
-            if (lifted_index == -1) { lifted_index = '-1.5' }
-            if (lifted_index == 2) { lifted_index = '2' }
-            if (lifted_index == 6) { lifted_index = '6' }
-            if (lifted_index == 10) { lifted_index= '9' }
-            if (lifted_index == 15) { lifted_index = '>11' }
-            that.setData({
-              locat: location,
-              cloudcover: cloudcover,
-              seeing: seeing,
-              rh2m: rh2m,
-              temp: temp,
-              temp2m: temp2m,
-              transparency: transparency,
-              lifted_index: lifted_index,
-              P0: P0,
-            })
-            console.log(res.data)
-          }
-        })
+     
       }
     })
 
@@ -131,7 +50,7 @@ Page({
 
       type: 'wgs84',
       success: function (res) {
-        console.log(res)
+        ////console.log(res)
         wx.showToast({
           title: '数据加载中',
           icon: 'loading',
@@ -141,107 +60,13 @@ Page({
           wd: app.globalData.wd,
           jd: app.globalData.jd,
         })
-        wx.request({
-          url: 'https://api.majorbillliu.com/getIndex',
-          data: {
-            lon: app.globalData.jd,
-            lat: app.globalData.wd
-          },
-          fail(res) {
-            console.log(res)
-            wx.showToast({
-              title: '加载失败',
-              icon: "none",
-              duration: 2000
-            })
-            that.setData({
-              locat: '加载失败',
-              cloudcover: '加载失败',
-              seeing: '加载失败',
-              rh2m: '加载失败',
-              temp: '加载失败',
-              temp2m: '加载失败',
-              transparency: '加载失败',
-              lifted_index: '加载失败',
-              P0: "--",
-            })
-          },
-          success(res) {
-            wx.showToast({
-              title: '加载成功',
-              icon: 'success',
-              duration: 2000
-            })
-            var location = res.data.location
-            var cloudcover = res.data.astronomy[0].cloudcover
-            var seeing = res.data.astronomy[0].seeing
-            var transparency = res.data.astronomy[0].transparency
-            var lifted_index = res.data.astronomy[0].lifted_index
-            var P0 = res.data.astronomy[0].P
-            var rh2m = res.data.astronomy[0].rh2m
-            var temp2m = res.data.astronomy[0].temp2m
-            var temp = res.data.astronomy[0].temp
-            if (cloudcover == 1) { cloudcover = '3%' }
-            if (cloudcover == 2) { cloudcover = '13%' }
-            if (cloudcover == 3) { cloudcover = '25%' }
-            if (cloudcover == 4) { cloudcover = '37%' }
-            if (cloudcover == 5) { cloudcover = '50%' }
-            if (cloudcover == 6) { cloudcover = '62%' }
-            if (cloudcover == 7) { cloudcover = '75%' }
-            if (cloudcover == 8) { cloudcover = '87%' }
-            if (cloudcover == 9) { cloudcover = '97%' }
-            if (seeing == 1) { seeing = '<0.5"' }
-            if (seeing == 2) { seeing = '0.75"' }
-            if (seeing == 3) { seeing = '1"' }
-            if (seeing == 4) { seeing = '1.25"' }
-            if (seeing == 5) { seeing = '1.5"' }
-            if (seeing == 6) { seeing = '2"' }
-            if (seeing == 7) { seeing = '2.5"' }
-            if (seeing == 8) { seeing = '>2.5"' }
-            if (transparency == 1) { transparency = '0.3' }
-            if (transparency == 2) { transparency = '0.4' }
-            if (transparency == 3) { transparency = '0.5' }
-            if (transparency == 4) { transparency = '0.6' }
-            if (transparency == 5) { transparency = '0.7' }
-            if (transparency == 6) { transparency = '0.85' }
-            if (transparency == 7) { transparency = '1' }
-            if (transparency == 8) { transparency = '>1' }
-            if (transparency == 1) { transparency = '0.3' }
-            if (transparency == 2) { transparency = '0.4' }
-            if (transparency == 3) { transparency = '0.5' }
-            if (transparency == 4) { transparency = '0.6' }
-            if (transparency == 5) { transparency = '0.7' }
-            if (transparency == 6) { transparency = '0.85' }
-            if (transparency == 7) { transparency = '1' }
-            if (transparency == 8) { transparency = '>1' }
-            if (lifted_index == -10) { lifted_index = '<-7' }
-            if (lifted_index == -6) { lifted_index = '-6' }
-            if (lifted_index == -4) { lifted_index = '-4' }
-            if (lifted_index == -1) { lifted_index = '-1.5' }
-            if (lifted_index == 2) { lifted_index = '2' }
-            if (lifted_index == 6) { lifted_index = '6' }
-            if (lifted_index == 10) { lifted_index = '9' }
-            if (lifted_index == 15) { lifted_index = '>11' }
-            that.setData({
-              locat: location,
-              cloudcover: cloudcover,
-              seeing: seeing,
-              rh2m: rh2m,
-              temp: temp,
-              temp2m: temp2m,
-              transparency: transparency,
-              lifted_index: lifted_index,
-              P0: P0,
-            })
-            console.log(res.data)
-          }
-        })
+ 
       }
     })
 
   },
    fresh: function (a) {
-    console.log(a)
+  //  //console.log(a)
     wx.showToast({
       title: '数据加载中',
       icon: 'loading',
@@ -252,7 +77,7 @@ Page({
 
       type: 'wgs84',
       success: function (res) {
-        console.log(res)
+        //console.log(res)
         var latitude = res.latitude
         var longitude = res.longitude
         that.setData({
@@ -275,7 +100,7 @@ Page({
               locat: '加载失败',
               cloudcover: '加载失败',
               seeing: '加载失败',
-              rh2m: '加载失败',
+             // rh2m: '加载失败',
               temp: '加载失败',
               temp2m: '加载失败',
               transparency: '加载失败',
@@ -344,14 +169,14 @@ Page({
               locat: location,
               cloudcover: cloudcover,
               seeing: seeing,
-              rh2m: rh2m,
+             // rh2m: rh2m,
               temp: temp,
               temp2m: temp2m,
               transparency: transparency,
               lifted_index: lifted_index,
               P0: P0,
             })
-            console.log(res.data)
+            //console.log(res.data)
           }
         })
       }
@@ -376,7 +201,7 @@ Page({
    wx.getLocation({ 
      type: 'wgs84',
       success: function (res) { 
-     console.log(res)       
+     //console.log(res)       
         app.globalData.wd = res.latitude
         app.globalData.jd = res.longitude
         that.setData({
@@ -399,7 +224,7 @@ Page({
               locat: '加载失败',
               cloudcover: '加载失败',
               seeing: '加载失败',
-              rh2m: '加载失败',
+             // rh2m: '加载失败',
               temp: '加载失败',
               temp2m: '加载失败',
               transparency: '加载失败',
@@ -463,14 +288,14 @@ Page({
               locat: location,
               cloudcover: cloudcover,
               seeing: seeing,
-              rh2m: rh2m,
+             // rh2m: rh2m,
               temp:temp,
               temp2m: temp2m,
               transparency:transparency,
               lifted_index:lifted_index,
               P0: P0,
             })
-            console.log(res.data)
+            //console.log(res.data)
           }
         }) 
        } 
@@ -517,7 +342,7 @@ Page({
     wx.navigateTo({ url: 'jy', })
   },
   getUserInfo: function(e) {
-    console.log(e)
+    //console.log(e)
     app.globalData.userInfo = e.detail.userInfo
     this.setData({
       userInfo: e.detail.userInfo,
