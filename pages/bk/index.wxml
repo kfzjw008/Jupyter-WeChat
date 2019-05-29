@@ -20,6 +20,44 @@
         </view>
      
     </view>
+
+  <view class="weui-flex">
+            <view class="weui-flex__item">
+            <button class="weui-btn mini-btn" type="default" size="mini" id="英仙座"  bindtap="hideInput2">英仙座</button>
+            </view>
+            <view class="weui-flex__item">
+            <button class="weui-btn mini-btn" type="default" size="mini" id="猎户座"  bindtap="hideInput2" >猎户座</button>
+            </view>
+            <view class="weui-flex__item">
+            <button class="weui-btn mini-btn" type="default" size="mini" id="武仙座" bindtap="hideInput2">武仙座</button>
+            </view>
+        </view>
+          <view class="weui-flex">
+            <view class="weui-flex__item">
+            <button class="weui-btn mini-btn" type="default" size="mini" id="金牛座"  bindtap="hideInput2">金牛座</button>
+            </view>
+            <view class="weui-flex__item">
+            <button class="weui-btn mini-btn" type="default" size="mini" id="仙女座"  bindtap="hideInput2" >仙女座</button>
+            </view>
+            <view class="weui-flex__item">
+            <button class="weui-btn mini-btn" type="default" size="mini" id="人马座" bindtap="hideInput2">人马座</button>
+            </view>
+        </view>
+        <view class="weui-flex">
+            <view class="weui-flex__item">
+            <button class="weui-btn mini-btn" type="default" size="mini" id="御夫座"  bindtap="hideInput2">御夫座</button>
+            </view>
+            <view class="weui-flex__item">
+            <button class="weui-btn mini-btn" type="default" size="mini" id="牧夫座"  bindtap="hideInput2" >牧夫座</button>
+            </view>
+            <view class="weui-flex__item">
+            <button class="weui-btn mini-btn" type="default" size="mini" id="狮子座" bindtap="hideInput2">狮子座</button>
+            </view>
+        </view>
+
+
+
+
         <view class="page__hd">
         <view class="page__title">恒星数据查询</view>
         <view class="page__desc">本次统计共88个星座，11000+颗恒星。统计信息包括恒星的巴耶恒星命名、赤经、赤纬、视星等、绝对星等和及一些注释信息等。\n
