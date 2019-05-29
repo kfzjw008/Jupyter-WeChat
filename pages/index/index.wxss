@@ -5,11 +5,17 @@
   margin-top: 20rpx;
   background-color: #3763ba;
   color: #effef4;
-   border-radius: 98rpx;
+  border-radius: 98rpx;
 }
 .btn1::after {
   border-radius: 98rpx;
   border:0;
+}
+
+.btn-hover{
+position: relative;
+ top: 3rpx;
+ box-shadow:0px 0px 8px #999 inset; 
 }
 
 .userinfo {
@@ -35,40 +41,45 @@ text{
   margin-top: 200px;
 }
 
-.fx-zx{
-width: 90rpx;
-height: 90rpx;
-background-size: 100%;
-}
-.fx-zx button {
-width: 90rpx;
-height: 90rpx;
-}
-.fx-zx image{
-width: 90rpx;
-height: 90rpx;
-}
-
 .btn2{
-  width: 90rpx;
-  height: 90rpx;
-  margin-top: 0rpx;
-  margin-left: 0rpx;
+  width: 60rpx;
+  height: 60rpx;
+  margin-top: 5rpx;
+  margin-left: 8rpx;
+  padding: 5rpx;
   background-color:#effef4;
   color: #effef4;
   display:flex;
-  border-radius: 0rpx;
+  border-radius: 15rpx;
   flex-direction: column;
   align-items:center;
   justify-content: center;
-
 }
 
 .btnImg {
-  width: 90rpx;
-  height: 90rpx;
+  width: 45rpx;
+  height: 45rpx;
 }
 
 .btn2::after {
-  border: 0; 
+  border-radius: 15rpx;
+}
+
+.btn3{
+  width: 60rpx;
+  height: 60rpx;
+  margin-top: 5rpx;
+  margin-right: 8rpx;
+  padding: 5rpx;
+  background-color:#effef4;
+  color: #effef4;
+  display:flex;
+  border-radius: 15rpx;
+  flex-direction: column;
+  align-items:center;
+  justify-content: center;
+}
+
+.btn3::after {
+  border-radius: 15rpx;
 }

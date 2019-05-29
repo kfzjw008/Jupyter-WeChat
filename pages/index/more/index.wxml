@@ -25,4 +25,4 @@
 
         
         </view>
-                <button class="weui-btn" type="default" bindtap="gotoPage2" >确定</button>
+                <button class="btn1" hover-class='btn-hover' bindtap="gotoPage2" >确定</button>

@@ -6,4 +6,4 @@
   
 
     
-                <button class="btn1" bindtap="gotoPage2" >返回</button>
+                <button class="btn1" hover-class='btn-hover' bindtap="gotoPage2" >返回</button>

@@ -16,7 +16,7 @@
                 </label>
             </view>
 
-            <view class="weui-search-bar__cancel-btn" hidden="{{!inputShowed}}" bindtap="hideInput">确定</view>
+            <view class="weui-search-bar__cancel-btn" style='color:#3763ba' hidden="{{!inputShowed}}" bindtap="hideInput">确定</view>
         </view>
      
     </view>

@@ -28,7 +28,7 @@
                 <button class="weui-btn" type="warn" wx:if="{{inputShowedd4}}">D:{{D}}</button>
 <view class="page__desc" wx:if="{{inputShoweda1==false}}">正确答案：{{Correct_Answer}}</view>
 <view class="page__desc" wx:if="{{inputShoweda1==false}}">解析：{{Question_Analysis}}</view>
- <button class="weui-btn mini-btn" type="default"  wx:if="{{inputShoweda1==false}}"  size="mini" bindtap="gotoPage2" >下一题</button>
+ <button class="btn2" wx:if="{{inputShoweda1==false}}" bindtap="gotoPage2" hover-class='btn-hover'>下一题</button>
 
 </view>
 

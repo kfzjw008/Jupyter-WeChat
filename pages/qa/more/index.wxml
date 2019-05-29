@@ -3,5 +3,5 @@
         <view class="page__title">更多选项</view>
         <view class="page__desc">该系统更多功能目前仍在开发中，敬请期待！</view>
     </view>
-    <button class="btn1" bindtap="gotoPage2" >返回</button>
+    <button class="btn1" hover-class='btn-hover' bindtap="gotoPage2" >返回</button>
 </view>

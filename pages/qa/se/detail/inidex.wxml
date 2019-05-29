@@ -59,7 +59,7 @@
       
             </view>
             <view class="weui-form-preview__ft">
-                <navigator bindtap="sc" class="weui-form-preview__btn weui-form-preview__btn_primary" hover-class="weui-form-preview__btn_active">收藏试题</navigator>
+                <navigator bindtap="sc" style='color:#3763ba' class="weui-form-preview__btn weui-form-preview__btn_primary" hover-class="weui-form-preview__btn_active">收藏试题</navigator>
             </view>
         </view>
       

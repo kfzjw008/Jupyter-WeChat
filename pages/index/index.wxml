@@ -1,11 +1,15 @@
 <!--index.wxml-->
  <view class="weui-flex">
             <view class="weui-flex__item">
-                <button class="weui-btn mini-btn" type="default" size="mini" bindtap="gotoPage1">{{locat}}</button>
+                <button class="btn2" hover-class='btn-hover' bindtap="gotoPage1">
+                <image class='btnImg' src="/image/01.png"></image>
+                </button>
             </view>
             <view class="weui-flex__item" style="text-align:center" ><text style="color: #3763ba;font-size:20px ">观测适宜度</text></view>
              <view class="weui-flex__item"  style="text-align:right">
-              <button class="weui-btn mini-btn" type="default" size="mini" bindtap="fresh" style=" margin-top: 10rpx;background-color: #3763ba; color: #effef4; border-radius: 98rpx;">刷新</button>
+              <button class="btn3" hover-class='btn-hover' bindtap="fresh">
+                <image class='btnImg' src="/image/02.png"></image>
+                </button>
              </view>
         </view>
 
@@ -39,14 +43,14 @@
      <text style='font-size:15px;text-align:right'>{{lifted_index}}\n</text>
       <text style='font-size:15px;text-align:right'>{{temp2m}}°C\n</text>
      <text style='font-size:15px;text-align:right'>{{temp}}°C\n</text>
-      <view style='font-size:15px;text-align:right'><button class="weui-btn mini-btn" type="default" size="mini" bindtap="gotoPage6">详情</button></view>
+      <view style='font-size:15px;text-align:right'><button class="weui-btn mini-btn" type="default" size="mini"  style='color:#3763ba' bindtap="gotoPage6">详情</button></view>
              </view>
         </view> 
  
    <view >
    <view class="weui-flex">
            <view class="weui-flex__item" style="text-align:center;margin-right:50px;margin-left:50px">
-                  <button class="btn1" bindtap="gotoPage3">变化趋势</button>
+                   <button class="btn1" hover-class='btn-hover' bindtap="gotoPage3">变化趋势</button>
             </view>
         </view>
   </view>

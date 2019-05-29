@@ -75,5 +75,6 @@
         "text": "我的主页"
       }
     ]
-  }
+  },
+  "sitemapLocation": "sitemap.json"
 }
