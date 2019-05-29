@@ -112,15 +112,18 @@ Page({
           search: app.globalData.search,
           page: app.globalData.page1
         },
-        fail(res) {
-          console.log(res)
-          wx.showToast({
-            title: '加载失败',
-            icon: "none",
-            duration: 2000
-          })
+      fail(res) {
+        console.log(res)
+        wx.navigateBack({
+          delta: 1,
 
-        },
+        }), wx.showToast({
+          title: '加载失败,请稍后重试',
+          icon: "none",
+          duration: 2000
+        })
+
+      },
         success(res) {
 
           console.log(res)

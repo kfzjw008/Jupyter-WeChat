@@ -16,7 +16,11 @@
     "pages/my/sz/sz",
     "pages/qa/se/index",
     "pages/qa/se/result",
-    "pages/qa/se/detail/inidex"
+    "pages/qa/se/detail/inidex",
+    "pages/index/jy",
+    "pages/qa/mokuai/index",
+    "pages/qa/jl/index",
+    "pages/qa/cs/index"
   ],
   "permission": {
     "scope.userLocation": {

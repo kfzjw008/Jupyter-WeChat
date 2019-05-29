@@ -1,0 +1,9 @@
+<!--pages/index/qs/index.wxml-->
+    <view class="page__hd">
+        <view class="page__title">观测建议</view>
+        <view class="page__desc">{{all}}</view>
+    </view>
+  
+
+    
+                <button class="btn1" bindtap="gotoPage2" >返回</button>

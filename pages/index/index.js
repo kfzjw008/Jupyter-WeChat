@@ -513,6 +513,8 @@ Page({
 
   , gotoPage3: function () {
     wx.navigateTo({ url: 'qs/index', })
+  }, gotoPage6: function () {
+    wx.navigateTo({ url: 'jy', })
   },
   getUserInfo: function(e) {
     console.log(e)

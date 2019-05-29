@@ -7,11 +7,11 @@
         <view class="weui-grids">
             <block >
 
-                <navigator url="" class="weui-grid" hover-class="weui-grid_active">
+                <navigator url="mokuai/index" class="weui-grid" hover-class="weui-grid_active">
                     <image class="weui-grid__icon" src="../../dist/example/images/icon_nav_z-index.png" />
                     <view class="weui-grid__label">模块练习</view>
                 </navigator>
-                <navigator url="" class="weui-grid" hover-class="weui-grid_active">
+                <navigator url="cs/index" class="weui-grid" hover-class="weui-grid_active">
                     <image class="weui-grid__icon" src="../../dist/example/images/icon_nav_widget.png" />
                     <view class="weui-grid__label">在线测试</view>
                 </navigator>
@@ -19,7 +19,7 @@
                     <image class="weui-grid__icon" src="../../dist/example/images/icon_nav_search.png" />
                     <view class="weui-grid__label">查找试题</view>
                 </navigator>
-                <navigator url="" class="weui-grid" hover-class="weui-grid_active">
+                <navigator url="jl/index" class="weui-grid" hover-class="weui-grid_active">
                     <image class="weui-grid__icon" src="../../dist/example/images/icon_nav_feedback.png" />
                     <view class="weui-grid__label">练习记录</view>
                 </navigator>

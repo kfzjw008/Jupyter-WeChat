@@ -54,6 +54,9 @@ App({
     Correct_Answer:"",
     search:"",
     page1:0,
-    idp:0
+    idp:0,
+    allquestion:30,
+    allquestionright:20,
+    allquestionwrong:10
   }
 })

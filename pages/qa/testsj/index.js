@@ -71,8 +71,11 @@ Page({
 
       fail(res) {
         console.log(res)
-        wx.showToast({
-          title: '加载失败',
+          wx.navigateBack({
+          delta: 1,
+
+        }), wx.showToast({
+          title: '加载失败,请稍后重试',
           icon: "none",
           duration: 2000
         })
@@ -143,6 +146,8 @@ Page({
     var that = this
     if (app.globalData.Correct_Answer=='A'){
       console.log(app.globalData.Correct_Answer)
+      app.globalData.allquestion = app.globalData.allquestion+1;
+      app.globalData.allquestionright = app.globalData.allquestionright+1;
       that.setData({
         inputShoweda1: false,
         inputShoweda3: true,
@@ -157,6 +162,8 @@ Page({
 
     }
     else if (app.globalData.Correct_Answer == 'B'){
+      app.globalData.allquestion = app.globalData.allquestion + 1;
+      app.globalData.allquestionwrong = app.globalData.allquestionwrong + 1;
      that.setData({
        inputShoweda1: false,
        inputShoweda4:  true,
@@ -172,6 +179,8 @@ Page({
       
     }
     else if (app.globalData.Correct_Answer == 'C') {
+      app.globalData.allquestion = app.globalData.allquestion + 1;
+      app.globalData.allquestionwrong = app.globalData.allquestionwrong + 1;
       console.log(3)
       that.setData({
         inputShoweda1: false,
@@ -186,6 +195,8 @@ Page({
       })
     }
     else if (app.globalData.Correct_Answer == 'D') {
+      app.globalData.allquestion = app.globalData.allquestion + 1;
+      app.globalData.allquestionwrong = app.globalData.allquestionwrong + 1;
       console.log(4)
       that.setData({
         inputShoweda1: false,
@@ -204,6 +215,8 @@ Page({
   gotoPage4: function () {
     var that = this
     if (app.globalData.Correct_Answer == 'A') {
+      app.globalData.allquestion = app.globalData.allquestion + 1;
+      app.globalData.allquestionwrong = app.globalData.allquestionwrong + 1;
       console.log(app.globalData.Correct_Answer)
       that.setData({
         inputShoweda1: false,
@@ -219,6 +232,8 @@ Page({
 
     }
     else if (app.globalData.Correct_Answer == 'B') {
+      app.globalData.allquestion = app.globalData.allquestion + 1;
+      app.globalData.allquestionright = app.globalData.allquestionright + 1;
       that.setData({
         inputShoweda1: false,
         inputShoweda2: true,
@@ -234,6 +249,8 @@ Page({
 
     }
     else if (app.globalData.Correct_Answer == 'C') {
+      app.globalData.allquestion = app.globalData.allquestion + 1;
+      app.globalData.allquestionwrong = app.globalData.allquestionwrong + 1;
       console.log(3)
       that.setData({
         inputShoweda1: false,
@@ -248,6 +265,8 @@ Page({
       })
     }
     else if (app.globalData.Correct_Answer == 'D') {
+      app.globalData.allquestion = app.globalData.allquestion + 1;
+      app.globalData.allquestionwrong = app.globalData.allquestionwrong + 1;
       console.log(4)
       that.setData({
         inputShoweda1: false,
@@ -266,6 +285,8 @@ Page({
   gotoPage5: function () {
     var that = this
     if (app.globalData.Correct_Answer == 'A') {
+      app.globalData.allquestion = app.globalData.allquestion + 1;
+      app.globalData.allquestionwrong = app.globalData.allquestionwrong + 1;
       console.log(app.globalData.Correct_Answer)
       that.setData({
         inputShoweda1: false,
@@ -281,6 +302,8 @@ Page({
 
     }
     else if (app.globalData.Correct_Answer == 'B') {
+      app.globalData.allquestion = app.globalData.allquestion + 1;
+      app.globalData.allquestionwrong = app.globalData.allquestionwrong + 1;
       that.setData({
         inputShoweda1: false,
         inputShoweda2: true,
@@ -296,6 +319,8 @@ Page({
 
     }
     else if (app.globalData.Correct_Answer == 'C') {
+      app.globalData.allquestion = app.globalData.allquestion + 1;
+      app.globalData.allquestionright = app.globalData.allquestionright + 1;
       console.log(3)
       that.setData({
         inputShoweda1: false,
@@ -310,6 +335,8 @@ Page({
       })
     }
     else if (app.globalData.Correct_Answer == 'D') {
+      app.globalData.allquestion = app.globalData.allquestion + 1;
+      app.globalData.allquestionwrong = app.globalData.allquestionwrong + 1;
       console.log(4)
       that.setData({
         inputShoweda1: false,
@@ -328,6 +355,8 @@ Page({
   gotoPage6: function () {
     var that = this
     if (app.globalData.Correct_Answer == 'A') {
+      app.globalData.allquestion = app.globalData.allquestion + 1;
+      app.globalData.allquestionwrong = app.globalData.allquestionwrong + 1;
       console.log(app.globalData.Correct_Answer)
       that.setData({
         inputShoweda1: false,
@@ -343,6 +372,8 @@ Page({
 
     }
     else if (app.globalData.Correct_Answer == 'B') {
+      app.globalData.allquestion = app.globalData.allquestion + 1;
+      app.globalData.allquestionwrong = app.globalData.allquestionwrong + 1;
       that.setData({
         inputShoweda1: false,
         inputShoweda2: true,
@@ -358,6 +389,8 @@ Page({
 
     }
     else if (app.globalData.Correct_Answer == 'C') {
+      app.globalData.allquestion = app.globalData.allquestion + 1;
+      app.globalData.allquestionwrong = app.globalData.allquestionwrong + 1;
       console.log(3)
       that.setData({
         inputShoweda1: false,
@@ -372,6 +405,8 @@ Page({
       })
     }
     else if (app.globalData.Correct_Answer == 'D') {
+      app.globalData.allquestion = app.globalData.allquestion + 1;
+      app.globalData.allquestionright = app.globalData.allquestionright + 1;
       console.log(4)
       that.setData({
         inputShoweda1: false,

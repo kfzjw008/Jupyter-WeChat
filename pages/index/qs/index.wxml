@@ -3,54 +3,55 @@
         <view class="page__title">变化趋势</view>
         <view class="page__desc">查看60小时(H)观测适宜度变化趋势。</view>
     </view>
+       <canvas  canvas-id="lineCanvas"></canvas>
   <view class="weui-flex">
-            <view class="weui-flex__item" style="margin-left:40px;" >
-      <text style='font-size:15px;color:#000000'>3H \n</text>
-      <text style='font-size:15px;color:#000000'>6H \n</text>
-      <text style='font-size:15px;color:#000000'>9H \n</text>
-      <text style='font-size:15px;color:#000000'>12H \n</text>
-      <text style='font-size:15px;color:#000000'>15H \n</text>
-      <text style='font-size:15px;color:#000000'>18H \n</text>
-      <text style='font-size:15px;color:#000000'>21H \n</text>
-      <text style='font-size:15px;color:#000000'>24H \n</text>
-      <text style='font-size:15px;color:#000000'>27H \n</text>
-      <text style='font-size:15px;color:#000000'>30H\n</text>
+            <view class="weui-flex__item" style="margin-left:50px;" >
+      <text style='font-size:14px;color:#000000'>3H \n</text>
+      <text style='font-size:14px;color:#000000'>6H \n</text>
+      <text style='font-size:14px;color:#000000'>9H \n</text>
+      <text style='font-size:14px;color:#000000'>12H \n</text>
+      <text style='font-size:14px;color:#000000'>15H \n</text>
+      <text style='font-size:14px;color:#000000'>18H \n</text>
+      <text style='font-size:14px;color:#000000'>21H \n</text>
+      <text style='font-size:14px;color:#000000'>24H \n</text>
+      <text style='font-size:14px;color:#000000'>27H \n</text>
+      <text style='font-size:14px;color:#000000'>30H\n</text>
             </view>
                                <view class="weui-flex__item"  >
-      <text style='font-size:15px; '>{{P0}} \n</text>
-      <text style='font-size:15px; '>{{P1}} \n</text>
-      <text style='font-size:15px; '>{{P2}} \n</text>
-      <text style='font-size:15px; '>{{P3}} \n</text>
-      <text style='font-size:15px; '>{{P4}} \n</text>
-      <text style='font-size:15px; '>{{P5}} \n</text>
-      <text style='font-size:15px; '>{{P6}} \n</text>
-      <text style='font-size:15px; '>{{P7}} \n</text>
-      <text style='font-size:15px; '>{{P8}}\n</text>
-      <text style='font-size:15px; '>{{P9}}\n</text>
+      <text style='font-size:14px; '>{{P0}} \n</text>
+      <text style='font-size:14px; '>{{P1}} \n</text>
+      <text style='font-size:14px; '>{{P2}} \n</text>
+      <text style='font-size:14px; '>{{P3}} \n</text>
+      <text style='font-size:14px; '>{{P4}} \n</text>
+      <text style='font-size:14px; '>{{P5}} \n</text>
+      <text style='font-size:14px; '>{{P6}} \n</text>
+      <text style='font-size:14px; '>{{P7}} \n</text>
+      <text style='font-size:14px; '>{{P8}}\n</text>
+      <text style='font-size:14px; '>{{P9}}\n</text>
             </view>                  <view class="weui-flex__item"   >
-      <text style='font-size:15px;color:#000000'>33H \n</text>
-      <text style='font-size:15px;color:#000000'>36H \n</text>
-      <text style='font-size:15px;color:#000000'>39H \n</text>
-      <text style='font-size:15px;color:#000000'>42H \n</text>
-      <text style='font-size:15px;color:#000000'>45H \n</text>
-      <text style='font-size:15px;color:#000000'>48H \n</text>
-      <text style='font-size:15px;color:#000000'>51H \n</text>
-      <text style='font-size:15px;color:#000000'>54H \n</text>
-      <text style='font-size:15px;color:#000000'>57H \n</text>
-      <text style='font-size:15px;color:#000000'>60H\n</text>
+      <text style='font-size:14px;color:#000000'>33H \n</text>
+      <text style='font-size:14px;color:#000000'>36H \n</text>
+      <text style='font-size:14px;color:#000000'>39H \n</text>
+      <text style='font-size:14px;color:#000000'>42H \n</text>
+      <text style='font-size:14px;color:#000000'>45H \n</text>
+      <text style='font-size:14px;color:#000000'>48H \n</text>
+      <text style='font-size:14px;color:#000000'>51H \n</text>
+      <text style='font-size:14px;color:#000000'>54H \n</text>
+      <text style='font-size:14px;color:#000000'>57H \n</text>
+      <text style='font-size:14px;color:#000000'>60H\n</text>
             </view>
                      <view class="weui-flex__item" style="margin-right:20px;" >
-      <text style='font-size:15px; '>{{P10}} \n</text>
-      <text style='font-size:15px; '>{{P11}}\n</text>
-      <text style='font-size:15px; '>{{P12}} \n</text>
-      <text style='font-size:15px; '>{{P13}}\n</text>
-      <text style='font-size:15px; '>{{P14}} \n</text>
-      <text style='font-size:15px; '>{{P15}} \n</text>
-      <text style='font-size:15px; '>{{P16}} \n</text>
-      <text style='font-size:15px; '>{{P17}} \n</text>
-      <text style='font-size:15px; '>{{P18}} \n</text>
-      <text style='font-size:15px; '>{{P19}}\n</text>
+      <text style='font-size:14px; '>{{P10}} \n</text>
+      <text style='font-size:14px; '>{{P11}}\n</text>
+      <text style='font-size:14px; '>{{P12}} \n</text>
+      <text style='font-size:14px; '>{{P13}}\n</text>
+      <text style='font-size:14px; '>{{P14}} \n</text>
+      <text style='font-size:14px; '>{{P15}} \n</text>
+      <text style='font-size:14px; '>{{P16}} \n</text>
+      <text style='font-size:14px; '>{{P17}} \n</text>
+      <text style='font-size:14px; '>{{P18}} \n</text>
+      <text style='font-size:14px; '>{{P19}}\n</text>
             </view>
         </view> 
-       
-                <button class="weui-btn" type="default" bindtap="gotoPage2" >返回</button>
+    
+                <button class="btn1" bindtap="gotoPage2" >返回</button>

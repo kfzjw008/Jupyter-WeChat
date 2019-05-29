@@ -1,6 +1,16 @@
 /**index.wxss**/
 
-
+.btn1 {
+  width: 75%;
+  margin-top: 20rpx;
+  background-color: #3763ba;
+  color: #effef4;
+   border-radius: 98rpx;
+}
+.btn1::after {
+  border-radius: 98rpx;
+  border:0;
+}
 
 .userinfo {
   display: flex;
@@ -23,4 +33,42 @@ text{
 
 .usermotto {
   margin-top: 200px;
+}
+
+.fx-zx{
+width: 90rpx;
+height: 90rpx;
+background-size: 100%;
+}
+.fx-zx button {
+width: 90rpx;
+height: 90rpx;
+}
+.fx-zx image{
+width: 90rpx;
+height: 90rpx;
+}
+
+.btn2{
+  width: 90rpx;
+  height: 90rpx;
+  margin-top: 0rpx;
+  margin-left: 0rpx;
+  background-color:#effef4;
+  color: #effef4;
+  display:flex;
+  border-radius: 0rpx;
+  flex-direction: column;
+  align-items:center;
+  justify-content: center;
+
+}
+
+.btnImg {
+  width: 90rpx;
+  height: 90rpx;
+}
+
+.btn2::after {
+  border: 0; 
 }

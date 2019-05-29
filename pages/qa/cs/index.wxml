@@ -1,0 +1,7 @@
+<view class="page">
+    <view class="page__hd">
+        <view class="page__title">在线测试</view>
+        <view class="page__desc">使用在线测试系统可以进行及时的测试并得到及时反馈。该系统目前仍在开发中，敬请期待！</view>
+    </view>
+    <button class="btn1" bindtap="gotoPage2" >返回</button>
+</view>

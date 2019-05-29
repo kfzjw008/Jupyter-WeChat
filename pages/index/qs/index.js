@@ -1,5 +1,6 @@
 // pages/index/qs/index.js
-var app = getApp();   
+var app = getApp();  
+var Charts = require('../../../dist/charts.js'); 
 Page({
 
   /**
@@ -116,6 +117,28 @@ Page({
              
             })
             console.log(res.data)
+            new Charts({
+              canvasId: 'lineCanvas',
+              type: 'line',
+              categories: ['3H', '9H', '15H', '21H', '27H', '33H', '39H', '45H', '51H', '57H'],
+              series: [{
+                name: res.data.location+'的观测适宜度',
+                data: [res.data.astronomy[0].P, res.data.astronomy[2].P, res.data.astronomy[4].P, res.data.astronomy[6].P, res.data.astronomy[8].P, res.data.astronomy[10].P, res.data.astronomy[12].P, res.data.astronomy[14].P, res.data.astronomy[16].P, res.data.astronomy[18].P],
+                format: function (val) {
+                  return val.toFixed(0);
+                }
+              }],
+              yAxis: {
+                title: '观测适宜度',
+                format: function (val) {
+                  return val.toFixed(0);
+                },
+                min: 0,
+                max: 100
+              },
+              width: 320,
+              height: 150
+            });
           }
         })
       }
