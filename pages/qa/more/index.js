@@ -1,6 +1,4 @@
-// pages/qa/mokuai/index.js
-var app = getApp();
-var base64 = require("../../../dist/example/images/base64.js");
+// pages/qa/cs/index.js
 Page({
 
   /**
@@ -8,28 +6,19 @@ Page({
    */
   data: {
 
+  }, gotoPage2: function (e) {
+    var that = this
+    wx.navigateBack({
+      delta: 1,
+
+    })
   },
 
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-    this.setData({
-      pic1: base64.pic1,
-      pic2: base64.pic2,
-      pic3: base64.pic3,
-      pic4: base64.pic4,
-      pic5: base64.pic5,
-      pic6: base64.pic6,
-      pic7: base64.pic7,
-      pic8: base64.pic8,
-      pic9: base64.pic9,
-      pic10: base64.pic10,
-      pic11: base64.pic11,
-      pic12: base64.pic12,
-      pic13: base64.pic13,
-      icon60: base64.icon60,
-    });
+
   },
 
   /**
@@ -37,9 +26,6 @@ Page({
    */
   onReady: function () {
 
-  }, resul: function (e) {
-    app.globalData.search = e.currentTarget.id;
-    wx.navigateTo({ url: 'result', })
   },
 
   /**

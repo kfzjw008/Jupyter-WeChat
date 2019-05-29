@@ -44,8 +44,9 @@ Page({
         }],
       yAxis: {
         format: function (val) {
-          return val ;
-        }
+          return val.toFixed(0) ;
+        },
+        min: 0
       },
       width: 320,
       height: 200

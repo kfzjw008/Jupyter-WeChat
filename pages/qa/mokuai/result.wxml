@@ -1,0 +1,46 @@
+<view class="page">
+ <scroll-view scroll-top="{{scrollTop}}" scroll-y="true" style="height:{{scrollHeight}}px;" 
+          class="list" bindscrolltolower="bindDownLoad" bindscrolltoupper="topLoad"  bindscroll="scroll">
+    <view class="page__hd">
+        <view class="page__title">{{search}}</view>
+        <view class="page__title">分类试题</view>
+
+        
+    </view>
+
+    <view class="page__bd">
+        <view class="weui-panel">
+            <view  class="weui-panel__hd">将搜索结果按照题库顺序排序</view>
+
+
+
+
+           
+
+    <navigator bindtap='det' class="weui-media-box weui-media-box_text" wx:for="{{list}}" id="{{item.id}}" wx:key="list">
+                    <view class="weui-media-box__title weui-media-box__title_in-text">{{item.Question_body}}</view>
+                
+
+                </navigator>
+        
+               
+
+           
+
+
+   
+
+        </view>
+   <view  wx:if="{{count==0}}" class="weui-loadmore weui-loadmore_line">
+            <view class="weui-loadmore__tips weui-loadmore__tips_in-line">暂无数据</view>
+        </view>
+
+    </view>
+
+            </scroll-view>
+      
+    <view class="weui-loadmore" hidden="{{hidden}}" bindchange="loadingChange">
+            <view class="weui-loading"></view>
+            <view class="weui-loadmore__tips">正在加载</view>
+        </view>
+</view>

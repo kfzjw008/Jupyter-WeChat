@@ -27,7 +27,7 @@
                     <image class="weui-grid__icon" src="../../dist/example/images/icon_nav_form.png" />
                     <view class="weui-grid__label">随机练习</view>
                 </navigator>
-                <navigator url="" class="weui-grid" hover-class="weui-grid_active">
+                <navigator url="more/index" class="weui-grid" hover-class="weui-grid_active">
                     <image class="weui-grid__icon" src="../../dist/example/images/icon_nav_nav.png" />
                     <view class="weui-grid__label">更多选项</view>
                 </navigator>

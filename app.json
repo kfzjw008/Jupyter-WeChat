@@ -20,7 +20,10 @@
     "pages/index/jy",
     "pages/qa/mokuai/index",
     "pages/qa/jl/index",
-    "pages/qa/cs/index"
+    "pages/qa/cs/index",
+    "pages/qa/more/index",
+    "pages/qa/mokuai/test",
+    "pages/qa/mokuai/result"
   ],
   "permission": {
     "scope.userLocation": {
