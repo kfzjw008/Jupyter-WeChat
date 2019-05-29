@@ -1,1 +1,4 @@
 /* pages/bk/index.wxss */
+page{
+    background-color: #FFFFFF;
+}

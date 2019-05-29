@@ -7,9 +7,9 @@ var is_easy = 0;
 var lange_id = 0;
 var pos_id = 0;
 var unlearn = 0;
-var list = [];
+
 var loadMore = function (that) {
- 
+
   that.setData({
     hidden: false
   });
@@ -42,7 +42,7 @@ var loadMore = function (that) {
       })
       var count = res.data.count
    
-
+      var list = that.data.list;
     
       console.log('插入？？？？？')
       console.log(that.data.list)
@@ -82,10 +82,7 @@ Page({
     pgc: '',
     search: '',
     page: "",
-    list: [{
-    }, {
-
-    }]
+    list :[]
   },
 
   /**
