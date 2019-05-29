@@ -31,12 +31,12 @@ Page({
    
   }, nextpage: function () {
     console.log(pgc)
-    this.onLoad()
+   // this.onLoad()
     var that = this
     app.globalData.page1 = app.globalData.page1 + 1
     var pgc = app.globalData.page1
     wx.request({
-      url: 'https://api.majorbillliu.com/questions',
+      url: 'https://api.majorbillliu.com/questions/',
       data: {
         page: app.globalData.page1,
         search: app.globalData.search
@@ -58,12 +58,12 @@ Page({
 
   }, nextpage2: function () {
     console.log(pgc)
-    this.onLoad()
+    //this.onLoad()
     var that = this
     app.globalData.page1 = app.globalData.page1 - 1
     var pgc = app.globalData.page1
     wx.request({
-      url: 'https://api.majorbillliu.com/questions',
+      url: 'https://api.majorbillliu.com/questions/',
       data: {
         page: app.globalData.page1,
         search: app.globalData.search

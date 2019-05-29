@@ -21,7 +21,7 @@ page:"",
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-
+    app.globalData.page1=1;
   },
 
   /**
@@ -31,7 +31,7 @@ page:"",
 
   },nextpage:function(){
     //console.log(pgc)
-    this.onLoad()
+   // this.onLoad()
 var that=this
     app.globalData.page1 = app.globalData.page1+1
      var pgc=app.globalData.page1
@@ -57,7 +57,7 @@ var that=this
   
   }, nextpage2: function () {
     //console.log(pgc)
-    this.onLoad()
+   // this.onLoad()
     var that = this
     app.globalData.page1 = app.globalData.page1 - 1
     var pgc = app.globalData.page1
@@ -103,7 +103,7 @@ var that=this
           icon: 'loading',
           duration: 6000
         }), 
-          app.globalData.page1=1,
+         // app.globalData.page1=1,
         wx.request({
           url: 'https://api.majorbillliu.com/knowledge',
           data: {

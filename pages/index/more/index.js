@@ -26,20 +26,20 @@ wdg:''
     wx.navigateBack({
       delta: 1,
       success(res) {
-        var jdg=
+      //  var jdg=
           app.globalData.jd = that.data.jdg;
         app.globalData.wd = that.data.wdg;
-        //console.log(app.globalData.jd)
+       
         wx.request({
           url: 'https://api.majorbillliu.com/getIndex',
           data: {
-            lon: this.data.wdg,
-            lat: this.data.jdg
+            lon: that.data.jdg,
+            lat: that.data.wdg
           }
         
       
         })
-        
+        console.log(app.globalData.jd)
       }
     })
   },
