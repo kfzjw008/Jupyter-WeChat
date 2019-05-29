@@ -16,6 +16,18 @@ Page({
   onLoad: function (options) {
     this.setData({
       pic1: base64.pic1,
+      pic2: base64.pic2,
+      pic3: base64.pic3,
+      pic4: base64.pic4,
+      pic5: base64.pic5,
+      pic6: base64.pic6,
+      pic7: base64.pic7,
+      pic8: base64.pic8,
+      pic9: base64.pic9,
+      pic10: base64.pic10,
+      pic11: base64.pic11,
+      pic12: base64.pic12,
+      pic13: base64.pic13,
       icon60: base64.icon60,
     });
   },

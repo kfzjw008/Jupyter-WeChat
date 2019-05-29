@@ -3,7 +3,7 @@
         <view class="page__title">变化趋势</view>
         <view class="page__desc">查看60小时(H)观测适宜度变化趋势。</view>
     </view>
-       <canvas  canvas-id="lineCanvas"></canvas>
+       <canvas  canvas-id="lineCanvas"   style="margin-left:px;width: 300px; height: 150px;"></canvas>
   <view class="weui-flex">
             <view class="weui-flex__item" style="margin-left:50px;" >
       <text style='font-size:14px;color:#000000'>3H \n</text>

@@ -10,7 +10,7 @@
             
                 <navigator url="" class="weui-media-box weui-media-box_appmsg" hover-class="weui-cell_active">
                     <view class="weui-media-box__hd weui-media-box__hd_in-appmsg">
-                        <image class="weui-media-box__thumb" src="{{icon60}}" />
+                        <image class="weui-media-box__thumb" src="{{pic2}}" />
                         
                     </view>
                     <view class="weui-media-box__bd weui-media-box__bd_in-appmsg">
@@ -23,7 +23,7 @@
 
                 <navigator url="" class="weui-media-box weui-media-box_appmsg" hover-class="weui-cell_active">
                     <view class="weui-media-box__hd weui-media-box__hd_in-appmsg">
-                        <image class="weui-media-box__thumb" src="{{icon60}}" />
+                        <image class="weui-media-box__thumb" src="{{pic3}}" />
                     </view>
                     <view class="weui-media-box__bd weui-media-box__bd_in-appmsg">
                         <view class="weui-media-box__title">航空航天  <view class="weui-badge" style="margin-left: 5px;">HOT</view></view>
@@ -36,7 +36,7 @@
 
    <navigator url="" class="weui-media-box weui-media-box_appmsg" hover-class="weui-cell_active">
                     <view class="weui-media-box__hd weui-media-box__hd_in-appmsg">
-                        <image class="weui-media-box__thumb" src="{{icon60}}" />
+                        <image class="weui-media-box__thumb" src="{{pic4}}" />
                     </view>
                     <view class="weui-media-box__bd weui-media-box__bd_in-appmsg">
                         <view class="weui-media-box__title">恒星和其他天体</view>
@@ -49,7 +49,7 @@
 
                    <navigator url="" class="weui-media-box weui-media-box_appmsg" hover-class="weui-cell_active">
                     <view class="weui-media-box__hd weui-media-box__hd_in-appmsg">
-                        <image class="weui-media-box__thumb" src="{{icon60}}" />
+                        <image class="weui-media-box__thumb" src="{{pic5}}" />
                     </view>
                     <view class="weui-media-box__bd weui-media-box__bd_in-appmsg">
                         <view class="weui-media-box__title">太阳系与八大行星</view>
@@ -62,7 +62,7 @@
 
                    <navigator url="" class="weui-media-box weui-media-box_appmsg" hover-class="weui-cell_active">
                     <view class="weui-media-box__hd weui-media-box__hd_in-appmsg">
-                        <image class="weui-media-box__thumb" src="{{icon60}}" />
+                        <image class="weui-media-box__thumb" src="{{pic6}}" />
                     </view>
                     <view class="weui-media-box__bd weui-media-box__bd_in-appmsg">
                         <view class="weui-media-box__title">天文观测</view>
@@ -74,7 +74,7 @@
 
                    <navigator url="" class="weui-media-box weui-media-box_appmsg" hover-class="weui-cell_active">
                     <view class="weui-media-box__hd weui-media-box__hd_in-appmsg">
-                        <image class="weui-media-box__thumb" src="{{icon60}}" />
+                        <image class="weui-media-box__thumb" src="{{pic7}}" />
                     </view>
                     <view class="weui-media-box__bd weui-media-box__bd_in-appmsg">
                         <view class="weui-media-box__title">天文现象</view>
@@ -86,7 +86,7 @@
 
                    <navigator url="" class="weui-media-box weui-media-box_appmsg" hover-class="weui-cell_active">
                     <view class="weui-media-box__hd weui-media-box__hd_in-appmsg">
-                        <image class="weui-media-box__thumb" src="{{icon60}}" />
+                        <image class="weui-media-box__thumb" src="{{pic8}}" />
                     </view>
                     <view class="weui-media-box__bd weui-media-box__bd_in-appmsg">
                         <view class="weui-media-box__title">天文小知识</view>
@@ -99,7 +99,7 @@
 
                    <navigator url="" class="weui-media-box weui-media-box_appmsg" hover-class="weui-cell_active">
                     <view class="weui-media-box__hd weui-media-box__hd_in-appmsg">
-                        <image class="weui-media-box__thumb" src="{{icon60}}" />
+                        <image class="weui-media-box__thumb" src="{{pic9}}" />
                     </view>
                     <view class="weui-media-box__bd weui-media-box__bd_in-appmsg">
                         <view class="weui-media-box__title">天文学发展史</view>
@@ -111,7 +111,7 @@
 
                    <navigator url="" class="weui-media-box weui-media-box_appmsg" hover-class="weui-cell_active">
                     <view class="weui-media-box__hd weui-media-box__hd_in-appmsg">
-                        <image class="weui-media-box__thumb" src="{{icon60}}" />
+                        <image class="weui-media-box__thumb" src="{{pic10}}" />
                     </view>
                     <view class="weui-media-box__bd weui-media-box__bd_in-appmsg">
                         <view class="weui-media-box__title">天文学基础知识</view>
@@ -123,7 +123,7 @@
 
                    <navigator url="" class="weui-media-box weui-media-box_appmsg" hover-class="weui-cell_active">
                     <view class="weui-media-box__hd weui-media-box__hd_in-appmsg">
-                        <image class="weui-media-box__thumb" src="{{icon60}}" />
+                        <image class="weui-media-box__thumb" src="{{pic11}}" />
                     </view>
                     <view class="weui-media-box__bd weui-media-box__bd_in-appmsg">
                         <view class="weui-media-box__title">星座，星图</view>
@@ -135,7 +135,7 @@
 
                    <navigator url="" class="weui-media-box weui-media-box_appmsg" hover-class="weui-cell_active">
                     <view class="weui-media-box__hd weui-media-box__hd_in-appmsg">
-                        <image class="weui-media-box__thumb" src="{{icon60}}" />
+                        <image class="weui-media-box__thumb" src="{{pic12}}" />
                     </view>
                     <view class="weui-media-box__bd weui-media-box__bd_in-appmsg">
                         <view class="weui-media-box__title">银河系与宇宙</view>
@@ -147,7 +147,7 @@
 
                    <navigator url="" class="weui-media-box weui-media-box_appmsg" hover-class="weui-cell_active">
                     <view class="weui-media-box__hd weui-media-box__hd_in-appmsg">
-                        <image class="weui-media-box__thumb" src="{{icon60}}" />
+                        <image class="weui-media-box__thumb" src="{{pic13}}" />
                     </view>
                     <view class="weui-media-box__bd weui-media-box__bd_in-appmsg">
                         <view class="weui-media-box__title">中西方古代天文</view>
@@ -163,7 +163,7 @@
                     <view class="weui-media-box__bd weui-media-box__bd_in-appmsg">
                         <view class="weui-media-box__title">第九届东北大天赛专题<view class="weui-badge" style="margin-left: 5px;">NEW</view></view>
                       
-                        <view class="weui-media-box__desc">第九届东北大天赛备战试题集</view>
+                        <view class="weui-media-box__desc">第九届东北地区大学生天文知识竞赛备战题库。</view>
                     </view>
                 </navigator>
             </view>

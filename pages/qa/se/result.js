@@ -107,10 +107,11 @@ Page({
     }),
       
       wx.request({
-        url: 'https://api.majorbillliu.com/questions',
+        url: 'https://api.majorbillliu.com/questions/',
         data: {
-          search: app.globalData.search,
-          page: app.globalData.page1
+      
+          page: app.globalData.page1,
+          search: app.globalData.search
         },
       fail(res) {
         console.log(res)
