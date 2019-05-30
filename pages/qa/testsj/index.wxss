@@ -1,6 +1,6 @@
 /* pages/qa/testsj/index.wxss */
 .btn2 {
-  width: 130rpx;
+  width: 180rpx;
   height: 60rpx;
   margin-top: 20rpx;
   margin-right: 15rpx;
