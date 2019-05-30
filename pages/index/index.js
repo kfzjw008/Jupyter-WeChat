@@ -254,6 +254,8 @@ Page({
             if (lifted_index == 6) { lifted_index = '6' }
             if (lifted_index == 10) { lifted_index = '9' }
             if (lifted_index == 15) { lifted_index = '>11' }
+            app.globalData.jd = longitude,
+              app.globalData.wd = latitude
             that.setData({
               locat: location,
               cloudcover: cloudcover,
@@ -264,6 +266,7 @@ Page({
               transparency: transparency,
               lifted_index: lifted_index,
               P0: P0,
+            
             })
             //console.log(res.data)
           }
