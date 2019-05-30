@@ -58,8 +58,12 @@ Page({
   /**
    * 页面相关事件处理函数--监听用户下拉动作
    */
-  onPullDownRefresh: function () {
-
+  kt: function () {
+    wx.showToast({
+      title: '此功能后续开通',
+      icon: 'success',
+      duration: 3000
+    })
   },
 
   /**

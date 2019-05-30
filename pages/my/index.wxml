@@ -13,11 +13,11 @@
                     <view style="font-size: 13px;color: #888888;"><open-data type="userCity" lang="zh_CN"></open-data></view>
                 </view>
             </view>
-                     <navigator url="" class="weui-cell weui-cell_access" hover-class="weui-cell_active">
+                     <navigator bindtap='kt' class="weui-cell weui-cell_access" hover-class="weui-cell_active">
                 <view class="weui-cell__bd">修改资料</view>
                 <view class="weui-cell__ft weui-cell__ft_in-access">点击此处完善资料</view>
             </navigator>
-            <navigator url="" class="weui-cell weui-cell_access" hover-class="weui-cell_active">
+            <navigator bindtap='kt' class="weui-cell weui-cell_access" hover-class="weui-cell_active">
                 <view class="weui-cell__bd">身份认证</view>
                 <view class="weui-cell__ft weui-cell__ft_in-access">高校天协会员认证</view>
             </navigator>
@@ -26,11 +26,11 @@
 
         <view class="weui-cells__title">知识问答</view>
         <view class="weui-cells weui-cells_after-title">
-            <navigator url="" class="weui-cell weui-cell_access" hover-class="weui-cell_active">
+            <navigator url="" hidden='true' class="weui-cell weui-cell_access" hover-class="weui-cell_active">
                 <view class="weui-cell__bd">我的收藏</view>
                 <view class="weui-cell__ft weui-cell__ft_in-access"></view>
             </navigator>
-                        <navigator url="" class="weui-cell weui-cell_access" hover-class="weui-cell_active">
+                        <navigator url="../qa/jl/index" class="weui-cell weui-cell_access" hover-class="weui-cell_active">
                 <view class="weui-cell__bd">数据统计</view>
                 <view class="weui-cell__ft weui-cell__ft_in-access"></view>
             </navigator>
@@ -47,7 +47,7 @@
       
                <navigator url="more/more" class="weui-cell weui-cell_access" hover-class="weui-cell_active">
                 <view class="weui-cell__bd">更多设置</view>
-                <view class="weui-cell__ft weui-cell__ft_in-access"></view>
+                <view class="weui-cell__ft weui-cell__ft_in-access">意见反馈</view>
             </navigator>
 
          

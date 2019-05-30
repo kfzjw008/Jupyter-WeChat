@@ -1,8 +1,8 @@
 
 <view class="page">
     <view class="page__hd">
-        <view class="page__title">Button</view>
-        <view class="page__desc">按钮，WeUI采用小程序原生的按钮为主体，加入一些间距的样式。</view>
+        <view class="page__title">更多设置</view>
+        <view class="page__desc">与客服对话，设置权限以及反馈等。</view>
     </view>
 <view class="page__bd page__bd_spacing">
   <button class="weui-btn" open-type="contact">客服会话</button>

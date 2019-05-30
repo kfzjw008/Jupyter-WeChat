@@ -1,4 +1,5 @@
 // pages/my/sz/sz.js
+var app = getApp();   
 Page({
 
   /**
@@ -13,6 +14,15 @@ Page({
    */
   onLoad: function (options) {
 
+  }, qk: function (e) {
+    app.globalData.allquestion= 0,
+      app.globalData.allquestionright= 0,
+      app.globalData.allquestionwrong= 0,
+      wx.showToast({
+        title: '清空成功',
+        icon: 'success',
+        duration: 2000
+      })
   },
 
   /**
