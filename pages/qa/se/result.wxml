@@ -28,11 +28,12 @@
                         <view class="weui-media-box__info__meta weui-media-box__info__meta_extra">正确答案：  {{item.Correct_Answer}}</view>
                     </view>
                 </navigator>
-                 <navigator wx:if="{{count>15&&page>1}}"  bindtap='nextpage2' class="weui-media-box weui-media-box_text" >
-                 上一页</navigator>
-                 <navigator wx:if="{{count>15&&page<pgc}}"  bindtap='nextpage' class="weui-media-box weui-media-box_text" >
-                 下一页</navigator>
-
+<view class="weui-flex">
+            <view class="weui-flex__item"><navigator wx:if="{{count>15&&page>1}}"  bindtap='nextpage2' style="text-align:center" class="weui-media-box weui-media-box_text" >
+                 上一页</navigator></view>
+            <view class="weui-flex__item"><navigator wx:if="{{count>15&&page<pgc}}"  bindtap='nextpage' style="text-align:center" class="weui-media-box weui-media-box_text" >
+                 下一页</navigator></view>
+                 </view>
            
 
 
