@@ -121,7 +121,7 @@
 
 
 
-                   <navigator url="" class="weui-media-box weui-media-box_appmsg" hover-class="weui-cell_active" id="星座，星图" bindtap="resul">
+                   <navigator url="" class="weui-media-box weui-media-box_appmsg" hover-class="weui-cell_active" id="星座、星图" bindtap="resul">
                     <view class="weui-media-box__hd weui-media-box__hd_in-appmsg">
                         <image class="weui-media-box__thumb" src="{{pic11}}" />
                     </view>
