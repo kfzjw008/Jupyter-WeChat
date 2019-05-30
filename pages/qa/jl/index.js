@@ -16,16 +16,20 @@ Page({
    */
   onLoad: function (options) {
     if(app.globalData.allquestion==0){
-
+      wx.showModal({
+        content: '您还没有试题练习记录！',
+        showCancel: false,
+        success: function (res) {
+          if (res.confirm) {
+            console.log('用户点击确定')
+          }
+        }
+      }),
       wx.navigateBack({
         delta: 1,
 
-      }),
-        wx.showToast({
-          title: '您还没有试题练习记录！',
-          icon: "none",
-          duration: 2000
-        })
+      })
+    
     }
     var time = util.formatTime(new Date());
     new Charts({

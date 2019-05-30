@@ -11,6 +11,7 @@ Page({
   BB:false,
   CC:false,
   DD:false,
+  dis:false,
     Correct_Answer:'',
     inputShoweda1:true,
     inputShoweda2:false,
@@ -49,6 +50,11 @@ Page({
    */
  
   onShow: function () {
+    wx.showToast({
+      title: '加载中',
+      icon: "none",
+      duration: 2000
+    })
     console.log(app.globalData.id)
     var that = this
     wx.request({
@@ -67,6 +73,11 @@ Page({
 
       },
       success(res) {
+        wx.showToast({
+          title: '加载成功',
+          icon: 'none',
+          duration: 2000
+        })
         var Question_body = res.data.Question_body
         var A = res.data.A
         var B = res.data.B
@@ -424,6 +435,7 @@ Page({
 
       },
       success(res) {
+      
         var Question_body = res.data.Question_body
         var A = res.data.A
         var B = res.data.B
@@ -449,6 +461,7 @@ Page({
     })
   },
   gotoPage2: function () {
+    this.setData({ dis:true})
     
     app.globalData.id =parseInt(Math.random()*230);
     //app.globalData.id = app.globalData.id+1
@@ -467,6 +480,7 @@ Page({
 
       },
       success(res) {
+      
         var Question_body = res.data.Question_body
         var A = res.data.A
         var B = res.data.B
@@ -477,6 +491,7 @@ Page({
         var Question_Analysis = res.data.Question_Analysis
         app.globalData.Correct_Answer = Correct_Answer,
           that.setData({
+          dis:false,
             Question_body: Question_body,
             A: A,
             B: res.data.B,

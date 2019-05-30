@@ -49,6 +49,11 @@ Page({
    */
 
   onShow: function () {
+    wx.showToast({
+      title: '加载中',
+      icon: "none",
+      duration: 2000
+    })
     console.log(app.globalData.id)
     var that = this
     wx.request({

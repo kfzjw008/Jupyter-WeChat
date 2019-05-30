@@ -9,16 +9,16 @@
              <view class="weui-msg__desc">星云村由以下人员开发： </view>
              <view class="weui-msg__desc"> 张峻巍 刘霖 王浩杰 张瑜</view>
                <view class="weui-msg__desc">目前版本V1.0  </view>
-              
+              <view class="weui-msg__desc">  </view>
         </view>
 
 
         <view class="weui-msg__extra-area">
             <view class="weui-footer">
                 <view class="weui-footer__links">
-                    <navigator url="" class="weui-footer__link">星云村</navigator>
+                    <navigator url="" class="weui-footer__link">星云村 V1.0 Beta</navigator>
                 </view>
-                <view class="weui-footer__text">V1.0 测试版</view>
+                <view class="weui-footer__text"> Email:zhangjunwei2018@qq.com</view>
             </view>
         </view>
     </view>

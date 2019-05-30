@@ -41,6 +41,11 @@ Page({
    * 生命周期函数--监听页面显示
    */
   onShow: function () {
+    wx.showToast({
+      title: '加载中',
+      icon: 'loading',
+      duration: 3000
+    })
     var that =this
     wx.request({
       url: 'https://api.majorbillliu.com/knowledge/' + app.globalData.idp,

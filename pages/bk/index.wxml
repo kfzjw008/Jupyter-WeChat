@@ -23,7 +23,7 @@
 
   <view class="weui-flex">
             <view class="weui-flex__item">
-            <button class="btn1"   bindtap="hideInput2">英仙座</button>
+            <button class="btn1" id="英仙座"  bindtap="hideInput2">英仙座</button>
             </view>
             <view class="weui-flex__item">
             <button class="btn1" id="猎户座"  bindtap="hideInput2" >猎户座</button>

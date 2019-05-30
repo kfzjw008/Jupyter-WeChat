@@ -35,11 +35,7 @@ var loadMore = function (that) {
     success(res) {
 
       //console.log(res)
-      wx.showToast({
-        title: '加载成功',
-        icon: 'success',
-        duration: 2000
-      })
+ 
       var count = res.data.count
    
       var list = that.data.list;
