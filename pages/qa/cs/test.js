@@ -66,8 +66,13 @@ Page({
         app.globalData.cspd1 =1;
         app.globalData.cstimu = jsq;
         console.log("cstimu:" + app.globalData.cstimu)
-        app.globalData.csrighttimu = jsqr,
+        app.globalData.csrighttimu = jsqr
+        if(jsq!=0){
           app.globalData.csscore = 100 / jsq * jsqr;
+        }else{
+          app.globalData.csscore =0;
+        }
+         
         clearInterval(that.data.intervarID);
         wx.navigateBack({
           delta: 1,
@@ -543,8 +548,12 @@ Page({
       app.globalData.cspd1=1;
       app.globalData.cstimu = jsq ;
       console.log("cstimu:"+app.globalData.cstimu)
-      app.globalData.csrighttimu = jsqr,
+      app.globalData.csrighttimu = jsqr
+            if (jsq != 0) {
         app.globalData.csscore = 100 / jsq * jsqr;
+      } else {
+        app.globalData.csscore = 0;
+      }
       wx.navigateBack({
         delta: 1,
 
