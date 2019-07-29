@@ -39,6 +39,7 @@ Page({
   onShow: function () {
     app.globalData.sj=600,//修改题数
       app.globalData.tishu=20
+   // clearInterval(that.data.intervarID);
   },
 
   /**

@@ -20,6 +20,7 @@ Page({
     DD: false,
     dis: false,
     jsq:0,
+    ts:app.globalData.tishu,
     jsq2: 0,
     jsqr:0,
     clock: '',
@@ -90,6 +91,9 @@ Page({
    */
   onLoad: function (options) {
     //countDown(this);
+    //app.globalData.sj = 600,//修改题数
+     // app.globalData.tishu = 20
+    ts = app.globalData.tishu
   },
 
   /**
@@ -166,7 +170,7 @@ Page({
    * 生命周期函数--监听页面隐藏
    */
   onHide: function () {
-
+    clearInterval(that.data.intervarID);
   },
 
   /**
