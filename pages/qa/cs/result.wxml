@@ -5,6 +5,8 @@
         </view>
         <view class="weui-msg__text-area">
             <view class="weui-msg__title">测试完成</view>
+             <view class="weui-msg__desc">用户昵称：<open-data type="userNickName" lang="zh_CN"></open-data> </view>
+              
             <view class="weui-msg__desc">题目总数：{{cstimu}}</view>
              <view class="weui-msg__desc">正确总数：{{csrighttimu}}</view>
               <view class="weui-msg__desc">最终得分：{{csscore}}</view>

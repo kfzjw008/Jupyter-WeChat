@@ -1,12 +1,19 @@
 // pages/qa/testsj/index.js
 var app = getApp();
 
+
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
+    intervarID: '',//定时器名字
+    time_diff: 600,//时间差，时间长短在此修改
+    day: 0,//天
+    hourse: 0,//小时
+    minute: 0,//分
+    second: 0,//秒
     AA: false,
     BB: false,
     CC: false,
@@ -15,6 +22,7 @@ Page({
     jsq:0,
     jsq2: 0,
     jsqr:0,
+    clock: '',
     Correct_Answer: '',
     inputShoweda1: true,
     inputShoweda2: false,
@@ -33,12 +41,49 @@ Page({
     inputShowedd3: false,
     inputShowedd4: false
   },
+  countDown: function () {
+    var that = this;
+    var now_time = that.data.time_diff;//获取时间差
+    this.data.intervarID = setInterval(function () {//设置定时器
+      //将时间差减一秒
+      now_time--;
+      //计算天时分秒
+      let d = Math.floor((now_time - (now_time % 86400)) / 86400);
+      let h = Math.floor((now_time % 86400) / 3600);
+      let m = Math.floor((now_time % 3600) / 60);
+      let s = now_time % 60;
+      //将计算结果保存至data
+      that.setData({
+        day: d,
+        hourse: h,
+        minute: m,
+        second: s,
+      });
+      var jsq = that.data.jsq2
+      var jsqr = that.data.jsqr
+      //当时间差为0时,清除定时器
+      if (d <= 0 && h <= 0 && m <= 0 && s <= 0 && app.globalData.cspd1 == 0) {
+        app.globalData.cspd1 =1;
+        app.globalData.cstimu = jsq;
+        console.log("cstimu:" + app.globalData.cstimu)
+        app.globalData.csrighttimu = jsqr,
+          app.globalData.csscore = 100 / jsq * jsqr;
+        clearInterval(that.data.intervarID);
+        wx.navigateBack({
+          delta: 1,
+
+        })
+        wx.navigateTo({ url: 'result', })
+      }
+    }, 1000
+    )
+  },
 
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-
+    //countDown(this);
   },
 
   /**
@@ -53,6 +98,8 @@ Page({
    */
 
   onShow: function () {
+  this.countDown();
+    app.globalData.cspd1 = 0;
     wx.showToast({
       title: '加载中',
       icon: "none",
@@ -82,6 +129,7 @@ Page({
           icon: 'none',
           duration: 2000
         })
+    
         var Question_body = res.data.Question_body
         var A = res.data.A
         var B = res.data.B
@@ -119,7 +167,7 @@ Page({
    * 生命周期函数--监听页面卸载
    */
   onUnload: function () {
-
+    clearInterval(this.data.intervarID);
   },
 
   /**
@@ -491,12 +539,16 @@ Page({
 
     var jsq = this.data.jsq2
     var jsqr = this.data.jsqr
-    if (jsq >= 20) {
+    if (jsq >= 20 && app.globalData.cspd1== 0) {//试题数量在此修改
+      app.globalData.cspd1=1;
       app.globalData.cstimu = jsq ;
       console.log("cstimu:"+app.globalData.cstimu)
       app.globalData.csrighttimu = jsqr,
         app.globalData.csscore = 100 / jsq * jsqr;
+      wx.navigateBack({
+        delta: 1,
 
+      })
       wx.navigateTo({ url: 'result', })
     }
     this.setData({ dis: true ,jsq:jsq})
