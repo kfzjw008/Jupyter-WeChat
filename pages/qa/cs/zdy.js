@@ -1,24 +1,33 @@
-// pages/qa/cs/start.js
+// pages/index/more/index.js
 var app = getApp();
+
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
+    jdg: '',
+    wdg: ''
+  }, jd: function (e) {
+    //console.log(e)
+    this.setData({
 
-  }, gotoPage2: function (e) {
-    var that = this
-    wx.navigateBack({
-      delta: 1,
-
+      jdg: e.detail.value
     })
-  }, gotoPage6: function () {
-    wx.navigateTo({ url: 'test', })
-  }, gotoPage7: function () {
-    wx.navigateTo({ url: 'zdy', })
+  }, wd: function (e) {
+    //console.log(e)
+    this.setData({
+      wdg: e.detail.value
+    })
   },
+  gotoPage2: function (e) {
+    var that = this
+    app.globalData.tishu = that.data.jdg;
+    app.globalData.sj = that.data.wdg;
+      wx.navigateTo({ url: 'test', })
 
+  },
   /**
    * 生命周期函数--监听页面加载
    */
@@ -37,8 +46,7 @@ Page({
    * 生命周期函数--监听页面显示
    */
   onShow: function () {
-    app.globalData.sj=600,//修改题数
-      app.globalData.tishu=20
+
   },
 
   /**

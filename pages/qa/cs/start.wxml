@@ -9,7 +9,8 @@
         </view>
         <view class="weui-msg__opr-area">
             <view class="weui-btn-area">
-                <button class="weui-btn" style='background: #3763BA;'  type="primary" bindtap="gotoPage6">开始测试</button>
+                <button class="weui-btn" style='background: #3763BA;'  type="primary" bindtap="gotoPage6">开始标准测试</button>
+                <button class="weui-btn"  bindtap="gotoPage7">自定标准测试</button>
                 <button class="weui-btn" type="default"  bindtap="gotoPage2">取消测试</button>
             </view>
         </view>

@@ -1,0 +1,28 @@
+<!--pages/index/more/index.wxml-->
+    <view class="page__hd">
+        <view class="page__title">自定义测试</view>
+        <view class="page__desc">自行设置题目数量和时间长度（单位：分钟）。</view>
+    </view>
+   <view class="weui-cells__title">设置项</view>
+        <view class="weui-cells weui-cells_after-title">
+            <view class="weui-cell weui-cell_input">
+                <view class="weui-cell__hd">
+                    <view class="weui-label">题目数量</view>
+                </view>
+                <view class="weui-cell__bd">
+                    <input class="weui-input" bindinput="jd" placeholder="请输入数字，单位：题" type="number"/>
+                </view>
+            </view>
+            <view class="weui-cell weui-cell_input">
+                <view class="weui-cell__hd">
+                    <view class="weui-label">限时时间</view>
+                </view>
+                <view class="weui-cell__bd">
+                    <input class="weui-input" bindinput="wd" placeholder="请输入数字，单位：秒" type="number"  />
+                </view>
+            </view>
+      
+
+        
+        </view>
+                <button class="btn1" hover-class='btn-hover' bindtap="gotoPage2" >确定</button>

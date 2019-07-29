@@ -9,7 +9,7 @@ Page({
    */
   data: {
     intervarID: '',//定时器名字
-    time_diff: 600,//时间差，时间长短在此修改
+    time_diff: 600,//最早的时间差
     day: 0,//天
     hourse: 0,//小时
     minute: 0,//分
@@ -43,7 +43,8 @@ Page({
   },
   countDown: function () {
     var that = this;
-    var now_time = that.data.time_diff;//获取时间差
+    var now_time =  app.globalData.sj//修改时间从这里
+    //var now_time = that.data.time_diff;//获取时间差
     this.data.intervarID = setInterval(function () {//设置定时器
       //将时间差减一秒
       now_time--;
@@ -544,7 +545,7 @@ Page({
 
     var jsq = this.data.jsq2
     var jsqr = this.data.jsqr
-    if (jsq >= 20 && app.globalData.cspd1== 0) {//试题数量在此修改
+    if (jsq >= app.globalData.tishu && app.globalData.cspd1== 0) {//试题数量在此修改
       app.globalData.cspd1=1;
       app.globalData.cstimu = jsq ;
       console.log("cstimu:"+app.globalData.cstimu)

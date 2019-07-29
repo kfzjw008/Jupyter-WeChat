@@ -64,6 +64,8 @@ App({
     cstimu:0,
     csrighttimu:0,
     csscore:0,
-    cspd1:0
+    cspd1:0,
+    sj:600,
+    tishu:20
   }
 })
