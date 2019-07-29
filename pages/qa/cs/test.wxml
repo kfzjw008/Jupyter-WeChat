@@ -2,7 +2,7 @@
   <view class="page">
   <view class="page__hd">
         <view class="page__title">在线测试</view>
-        <view class="page__desc">  第{{q}}题  </view>
+        <view class="page__desc">  第{{jsq+1}}题  </view>
         <view class="page__desc">{{Question_body}}</view>
 
 

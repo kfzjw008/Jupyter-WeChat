@@ -12,6 +12,9 @@ Page({
     CC: false,
     DD: false,
     dis: false,
+    jsq:0,
+    jsq2: 0,
+    jsqr:0,
     Correct_Answer: '',
     inputShoweda1: true,
     inputShoweda2: false,
@@ -56,6 +59,7 @@ Page({
       duration: 2000
     })
     console.log(app.globalData.id)
+    app.globalData.id = parseInt(Math.random() * app.globalData.allqs);
     var that = this
     wx.request({
       url: 'https://api.majorbillliu.com/questions/' + app.globalData.id,
@@ -138,12 +142,17 @@ Page({
   onShareAppMessage: function () {
 
   },
-  gotoPage3: function () {
+  gotoPage3: function (res) {
+   
     var that = this
+    console.log(that.data.jsq)
+    that.data.jsq++;
+   // res.data.jsq = res.data.jsq+1;
     if (app.globalData.Correct_Answer == 'A') {
       console.log(app.globalData.Correct_Answer)
       app.globalData.allquestion = app.globalData.allquestion + 1;
       app.globalData.allquestionright = app.globalData.allquestionright + 1;
+      that.data.jsqr++;
       that.setData({
         inputShoweda1: false,
         inputShoweda3: true,
@@ -152,8 +161,9 @@ Page({
         inputShowedc1: false,
         inputShowedc2: true,
         inputShowedd1: false,
-        inputShowedd2: true
-
+        inputShowedd2: true,
+        jsq2: that.data.jsq,
+        jsqr: that.data.jsqr
       })
 
     }
@@ -168,8 +178,8 @@ Page({
         inputShowedc1: false,
         inputShowedc2: true,
         inputShowedd1: false,
-        inputShowedd2: true
-
+        inputShowedd2: true,
+   jsq2: that.data.jsq
       })
 
 
@@ -186,8 +196,8 @@ Page({
         inputShowedc1: false,
         inputShowedc3: true,
         inputShowedd1: false,
-        inputShowedd2: true
-
+        inputShowedd2: true,
+   jsq2: that.data.jsq
       })
     }
     else if (app.globalData.Correct_Answer == 'D') {
@@ -202,14 +212,17 @@ Page({
         inputShowedc1: false,
         inputShowedc2: true,
         inputShowedd1: false,
-        inputShowedd3: true
-
+        inputShowedd3: true,
+   jsq2: that.data.jsq
       })
     }
     // this.onLoad()
   },
-  gotoPage4: function () {
+  gotoPage4: function (res) {
+  
     var that = this
+    console.log(that.data.jsq)
+    that.data.jsq++;
     if (app.globalData.Correct_Answer == 'A') {
       app.globalData.allquestion = app.globalData.allquestion + 1;
       app.globalData.allquestionwrong = app.globalData.allquestionwrong + 1;
@@ -222,14 +235,15 @@ Page({
         inputShowedc1: false,
         inputShowedc2: true,
         inputShowedd1: false,
-        inputShowedd2: true
-
+        inputShowedd2: true,
+   jsq2: that.data.jsq
       })
 
     }
     else if (app.globalData.Correct_Answer == 'B') {
       app.globalData.allquestion = app.globalData.allquestion + 1;
       app.globalData.allquestionright = app.globalData.allquestionright + 1;
+      that.data.jsqr++;
       that.setData({
         inputShoweda1: false,
         inputShoweda2: true,
@@ -238,8 +252,9 @@ Page({
         inputShowedc1: false,
         inputShowedc2: true,
         inputShowedd1: false,
-        inputShowedd2: true
-
+        inputShowedd2: true,
+        jsq2: that.data.jsq,
+        jsqr: that.data.jsqr
       })
 
 
@@ -256,8 +271,8 @@ Page({
         inputShowedc1: false,
         inputShowedc3: true,
         inputShowedd1: false,
-        inputShowedd2: true
-
+        inputShowedd2: true,
+   jsq2: that.data.jsq
       })
     }
     else if (app.globalData.Correct_Answer == 'D') {
@@ -272,14 +287,17 @@ Page({
         inputShowedc1: false,
         inputShowedc2: true,
         inputShowedd1: false,
-        inputShowedd3: true
-
+        inputShowedd3: true,
+   jsq2: that.data.jsq
       })
     }
     // this.onLoad()
   },
-  gotoPage5: function () {
+  gotoPage5: function (res) {
+
     var that = this
+    console.log(that.data.jsq)
+    that.data.jsq++;
     if (app.globalData.Correct_Answer == 'A') {
       app.globalData.allquestion = app.globalData.allquestion + 1;
       app.globalData.allquestionwrong = app.globalData.allquestionwrong + 1;
@@ -292,8 +310,8 @@ Page({
         inputShowedc1: false,
         inputShowedc4: true,
         inputShowedd1: false,
-        inputShowedd2: true
-
+        inputShowedd2: true,
+   jsq2: that.data.jsq
       })
 
     }
@@ -308,8 +326,8 @@ Page({
         inputShowedc1: false,
         inputShowedc4: true,
         inputShowedd1: false,
-        inputShowedd2: true
-
+        inputShowedd2: true,
+        jsq2: that.data.jsq
       })
 
 
@@ -317,6 +335,7 @@ Page({
     else if (app.globalData.Correct_Answer == 'C') {
       app.globalData.allquestion = app.globalData.allquestion + 1;
       app.globalData.allquestionright = app.globalData.allquestionright + 1;
+      that.data.jsqr++;
       console.log(3)
       that.setData({
         inputShoweda1: false,
@@ -326,8 +345,9 @@ Page({
         inputShowedc1: false,
         inputShowedc3: true,
         inputShowedd1: false,
-        inputShowedd2: true
-
+        inputShowedd2: true,
+        jsq2: that.data.jsq,
+        jsqr: that.data.jsqr
       })
     }
     else if (app.globalData.Correct_Answer == 'D') {
@@ -342,14 +362,17 @@ Page({
         inputShowedc1: false,
         inputShowedc4: true,
         inputShowedd1: false,
-        inputShowedd3: true
-
+        inputShowedd3: true,
+   jsq2: that.data.jsq
       })
     }
     // this.onLoad()
   },
-  gotoPage6: function () {
+  gotoPage6: function (res) {
+
     var that = this
+    console.log(that.data.jsq)
+    that.data.jsq++;
     if (app.globalData.Correct_Answer == 'A') {
       app.globalData.allquestion = app.globalData.allquestion + 1;
       app.globalData.allquestionwrong = app.globalData.allquestionwrong + 1;
@@ -362,8 +385,8 @@ Page({
         inputShowedc1: false,
         inputShowedc2: true,
         inputShowedd1: false,
-        inputShowedd4: true
-
+        inputShowedd4: true,
+   jsq2: that.data.jsq
       })
 
     }
@@ -378,8 +401,8 @@ Page({
         inputShowedc1: false,
         inputShowedc2: true,
         inputShowedd1: false,
-        inputShowedd4: true
-
+        inputShowedd4: true,
+        jsq2: that.data.jsq
       })
 
 
@@ -396,13 +419,15 @@ Page({
         inputShowedc1: false,
         inputShowedc3: true,
         inputShowedd1: false,
-        inputShowedd4: true
+        inputShowedd4: true,
+        jsq2: that.data.jsq
 
       })
     }
     else if (app.globalData.Correct_Answer == 'D') {
       app.globalData.allquestion = app.globalData.allquestion + 1;
       app.globalData.allquestionright = app.globalData.allquestionright + 1;
+      that.data.jsqr++;
       console.log(4)
       that.setData({
         inputShoweda1: false,
@@ -412,7 +437,9 @@ Page({
         inputShowedc1: false,
         inputShowedc2: true,
         inputShowedd1: false,
-        inputShowedd3: true
+        inputShowedd3: true,
+        jsq2: that.data.jsq,
+        jsqr: that.data.jsqr
 
       })
     }
@@ -461,9 +488,20 @@ Page({
     })
   },
   gotoPage2: function () {
-    this.setData({ dis: true })
 
-    app.globalData.id = parseInt(Math.random() * 230);
+    var jsq = this.data.jsq2
+    var jsqr = this.data.jsqr
+    if (jsq >= 20) {
+      app.globalData.cstimu = jsq ;
+      console.log("cstimu:"+app.globalData.cstimu)
+      app.globalData.csrighttimu = jsqr,
+        app.globalData.csscore = 100 / jsq * jsqr;
+
+      wx.navigateTo({ url: 'result', })
+    }
+    this.setData({ dis: true ,jsq:jsq})
+
+    app.globalData.id = parseInt(Math.random() * app.globalData.allqs);
     //app.globalData.id = app.globalData.id+1
     console.log(app.globalData.id)
     var that = this
@@ -480,16 +518,19 @@ Page({
 
       },
       success(res) {
-
+        console.log(3)
         var Question_body = res.data.Question_body
         var A = res.data.A
         var B = res.data.B
         var C = res.data.C
         var D = res.data.D
         var Correct_Answer = res.data.Correct_Answer
+      
+
         var Examination_Place = res.data.Examination_Place
         var Question_Analysis = res.data.Question_Analysis
-        app.globalData.Correct_Answer = Correct_Answer,
+        app.globalData.Correct_Answer = Correct_Answer
+        
           that.setData({
             dis: false,
             Question_body: Question_body,

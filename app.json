@@ -25,7 +25,11 @@
     "pages/qa/mokuai/test",
     "pages/qa/mokuai/result",
     "pages/qa/cs/start",
-    "pages/qa/cs/test"
+    "pages/qa/cs/test",
+    "pages/qa/cs/result",
+    "pages/qa/cs/success",
+    "pages/qa/cs/info",
+    "pages/qa/cs/fail"
   ],
   "permission": {
     "scope.userLocation": {

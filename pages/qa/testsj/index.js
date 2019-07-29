@@ -56,6 +56,7 @@ Page({
       duration: 2000
     })
     console.log(app.globalData.id)
+    app.globalData.id = parseInt(Math.random() * app.globalData.allqs);
     var that = this
     wx.request({
       url: 'https://api.majorbillliu.com/questions/'+app.globalData.id ,
@@ -463,7 +464,7 @@ Page({
   gotoPage2: function () {
     this.setData({ dis:true})
     
-    app.globalData.id =parseInt(Math.random()*230);
+    app.globalData.id = parseInt(Math.random() * app.globalData.allqs);
     //app.globalData.id = app.globalData.id+1
     console.log(app.globalData.id)
     var that = this

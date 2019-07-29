@@ -57,6 +57,10 @@ App({
     idp:0,
     allquestion:0,
     allquestionright:0,
-    allquestionwrong:0
+    allquestionwrong:0,
+    allqs:333,
+    cstimu:0,
+    csrighttimu:0,
+    csscore:0
   }
 })
