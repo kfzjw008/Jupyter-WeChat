@@ -23,7 +23,9 @@
     "pages/qa/cs/index",
     "pages/qa/more/index",
     "pages/qa/mokuai/test",
-    "pages/qa/mokuai/result"
+    "pages/qa/mokuai/result",
+    "pages/qa/cs/start",
+    "pages/qa/cs/test"
   ],
   "permission": {
     "scope.userLocation": {

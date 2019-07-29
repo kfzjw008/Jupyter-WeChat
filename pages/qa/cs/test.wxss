@@ -1,0 +1,21 @@
+/* pages/qa/testsj/index.wxss */
+.btn2 {
+  width: 180rpx;
+  height: 60rpx;
+  margin-top: 20rpx;
+  margin-right: 15rpx;
+  color: #3763ba;
+  background-color: #effef4;
+  border-radius: 98rpx;
+  font-size: 25rpx;
+  align-items: center;
+  justify-content: center;
+}
+.btn2::after {
+  border-radius: 98rpx;
+}
+.btn-hover{
+position: relative;
+ top: 3rpx;
+ box-shadow:0px 0px 8px #999 inset; 
+}

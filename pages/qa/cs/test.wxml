@@ -1,0 +1,36 @@
+<!--pages/qa/testsj/index.wxml-->
+  <view class="page">
+  <view class="page__hd">
+        <view class="page__title">在线测试</view>
+        <view class="page__desc">  第{{q}}题  </view>
+        <view class="page__desc">{{Question_body}}</view>
+
+
+    </view>
+  <button class="weui-btn" class="weui-btn" type="default"  bindtap="gotoPage3"wx:if="{{inputShoweda1==true}}">A:{{A}}</button>
+   <button class="weui-btn" class="weui-btn" type="default" wx:if="{{inputShoweda2==true}}">A:{{A}}</button>
+    <button class="weui-btn" class="weui-btn" type="primary" wx:if="{{inputShoweda3==true}}">A:{{A}}</button>
+      <button class="weui-btn" class="weui-btn" type="warn"  wx:if="{{inputShoweda4==true}}">A:{{A}}</button>
+
+        <button class="weui-btn" type="default" bindtap="gotoPage4" wx:if="{{inputShowedb1}}">B:{{B}}</button>
+         <button class="weui-btn" type="default"wx:if="{{inputShowedb2}}" >B:{{B}}</button>
+        <button class="weui-btn" type="primary" wx:if="{{inputShowedb3}}">B:{{B}}</button>
+        <button class="weui-btn" type="warn" wx:if="{{inputShowedb4}}">B:{{B}}</button>
+
+            <button class="weui-btn" type="default"  bindtap="gotoPage5" wx:if="{{inputShowedc1}}">C:{{C}}</button>
+                  <button class="weui-btn" type="default" wx:if="{{inputShowedc2}}" >C:{{C}}</button>
+                <button class="weui-btn" type="primary" wx:if="{{inputShowedc3}}">C:{{C}}</button>
+                <button class="weui-btn" type="warn" wx:if="{{inputShowedc4}}">C:{{C}}</button>
+
+                <button class="weui-btn" type="default" bindtap="gotoPage6" wx:if="{{inputShowedd1}}">D:{{D}}</button>
+                <button class="weui-btn" type="default" wx:if="{{inputShowedd2}}" >D:{{D}}</button>
+                <button class="weui-btn" type="primary" wx:if="{{inputShowedd3}}">D:{{D}}</button>
+                <button class="weui-btn" type="warn" wx:if="{{inputShowedd4}}">D:{{D}}</button>
+<view class="page__desc" wx:if="{{inputShoweda1==false}}">正确答案：{{Correct_Answer}}</view>
+<view class="page__desc" wx:if="{{inputShoweda1==false}}">解析：{{Question_Analysis}}</view>
+ <button class="btn2" wx:if="{{inputShoweda1==false}}" bindtap="gotoPage2" hover-class='btn-hover' disabled="{{dis}}">下一题</button>
+
+</view>
+
+
+  

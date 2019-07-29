@@ -394,7 +394,7 @@ page{
 }
 
 .weui-form-preview__btn_primary {
-  color: #0bb20c;
+  color: #3763BA;
 }
 
 .weui-cell_select {
@@ -1110,7 +1110,7 @@ page{
 }
 
 .weui-navbar__item.weui-bar__item_on {
-  color: #1aad19;
+  color: #3763BA;
 }
 
 .weui-navbar__slider {
@@ -1120,7 +1120,7 @@ page{
   bottom: 0;
   width: 6em;
   height: 3px;
-  background-color: #1aad19;
+  background-color: #3763BA;
   -webkit-transition: -webkit-transform 0.3s;
   transition: -webkit-transform 0.3s;
   transition: transform 0.3s;
