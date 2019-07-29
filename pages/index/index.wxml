@@ -15,7 +15,7 @@
 
  <view class="weui-flex">
          <view class="weui-flex__item" style="text-align:center">
-                  <text style='font-size:110px ;color:#333366'>{{P0}}</text>
+                  <text style='font-size:100px ;color:#333366'>{{P0}}</text>
             </view>
      
         </view>
@@ -30,7 +30,9 @@
      <text style='font-size:15px;color:#000000'>大气不稳定度 \n</text>
       <text style='font-size:15px;color:#000000'>温度 \n</text>
      <text style='font-size:15px;color:#000000'>体感温度 \n</text>
+         <text style='font-size:15px;color:#000000'>数据来源\n</text>
       <text style='font-size:15px;color:#000000'>观测建议\n</text>
+   
             </view>
            
              <view class="weui-flex__item"  style="text-align:right;margin-right:50px;">
@@ -43,6 +45,7 @@
      <text style='font-size:15px;text-align:right'>{{lifted_index}}\n</text>
       <text style='font-size:15px;text-align:right'>{{temp2m}}°C\n</text>
      <text style='font-size:15px;text-align:right'>{{temp}}°C\n</text>
+        <text style='font-size:15px;text-align:right'>7timer晴天钟\n</text>
       <view style='font-size:15px;text-align:right'><button class="weui-btn mini-btn" type="default" size="mini"  style='color:#3763ba' bindtap="gotoPage6">详情</button></view>
              </view>
         </view> 
