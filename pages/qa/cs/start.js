@@ -30,7 +30,8 @@ Page({
    * 生命周期函数--监听页面初次渲染完成
    */
   onReady: function () {
-
+    app.globalData.sj = 600,//修改题数
+      app.globalData.tishu = 20
   },
 
   /**

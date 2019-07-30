@@ -76,11 +76,11 @@ Page({
         }
          
         clearInterval(that.data.intervarID);
-        wx.navigateBack({
-          delta: 1,
+      //  wx.navigateBack({
+      //    delta: 1,
 
-        })
-        wx.navigateTo({ url: 'result', })
+      //  })
+        wx.redirectTo({ url: 'result', })
       }
     }, 1000
     )
@@ -93,14 +93,19 @@ Page({
     //countDown(this);
     //app.globalData.sj = 600,//修改题数
      // app.globalData.tishu = 20
-    ts = app.globalData.tishu
+
+    this.ts = app.globalData.tishu
+    this.setData({
+      ts : app.globalData.tishu
+    })
+    app.globalData.cspd1 == 0
   },
 
   /**
    * 生命周期函数--监听页面初次渲染完成
    */
   onReady: function () {
-
+    app.globalData.cspd1 == 0;
   },
 
   /**
@@ -559,11 +564,11 @@ Page({
       } else {
         app.globalData.csscore = 0;
       }
-      wx.navigateBack({
-        delta: 1,
+    //  wx.navigateBack({
+      //  delta: 1,
 
-      })
-      wx.navigateTo({ url: 'result', })
+      //})
+      wx.redirectTo({ url: 'result', })
     }
     this.setData({ dis: true ,jsq:jsq})
 

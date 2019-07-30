@@ -10,7 +10,7 @@
                     <view class="weui-label">经度</view>
                 </view>
                 <view class="weui-cell__bd">
-                    <input class="weui-input" bindinput="jd" placeholder="请输入经度"/>
+                    <input class="weui-input" bindinput="jd" placeholder="请输入经度" type='digit'/>
                 </view>
             </view>
             <view class="weui-cell weui-cell_input">
@@ -18,7 +18,7 @@
                     <view class="weui-label">纬度</view>
                 </view>
                 <view class="weui-cell__bd">
-                    <input class="weui-input" bindinput="wd" placeholder="请输入纬度"/>
+                    <input class="weui-input" bindinput="wd" placeholder="请输入纬度" type='digit'/>
                 </view>
             </view>
       
