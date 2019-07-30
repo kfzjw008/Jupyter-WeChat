@@ -60,7 +60,7 @@ App({
     allquestion:0,
     allquestionright:0,
     allquestionwrong:0,
-    allqs:333,
+    allqs:331,
     cstimu:0,
     csrighttimu:0,
     csscore:0,
