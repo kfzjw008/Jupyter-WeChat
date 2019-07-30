@@ -4,12 +4,29 @@
             <icon type="success" size="93"></icon>
         </view>
         <view class="weui-msg__text-area">
+
             <view class="weui-msg__title">测试完成</view>
-             <view class="weui-msg__desc">用户昵称：<open-data type="userNickName" lang="zh_CN"></open-data> </view>
-              
-            <view class="weui-msg__desc">题目总数：{{cstimu}}</view>
-             <view class="weui-msg__desc">正确总数：{{csrighttimu}}</view>
-              <view class="weui-msg__desc">最终得分：{{csscore}}</view>
+ <view class="weui-flex">
+            <view class="weui-flex__item" style="" >
+                   <view class="weui-msg__desc">用户昵称 </view>
+               <view class="weui-msg__desc">限定时间</view>
+            <view class="weui-msg__desc">题目总数</view>
+             <view class="weui-msg__desc">正确总数</view>
+              <view class="weui-msg__desc">最终得分</view>
+
+   
+            </view>
+           
+             <view class="weui-flex__item"  style="">
+               <view class="weui-msg__desc"><open-data type="userNickName" lang="zh_CN"></open-data> </view>
+               <view class="weui-msg__desc">{{sj}}秒</view>
+            <view class="weui-msg__desc">{{cstimu}}题</view>
+             <view class="weui-msg__desc">{{csrighttimu}}题</view>
+              <view class="weui-msg__desc">{{csscore}}分</view>
+
+             </view>
+        </view> 
+           
                 <view class="weui-msg__desc">是否确定上传测试记录？</view>
         </view>
         <view class="weui-msg__opr-area">

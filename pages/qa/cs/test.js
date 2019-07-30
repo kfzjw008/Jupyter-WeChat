@@ -570,38 +570,40 @@ Page({
       //})
       wx.redirectTo({ url: 'result', })
     }
-    this.setData({ dis: true ,jsq:jsq})
 
-    app.globalData.id = parseInt(Math.random() * app.globalData.allqs);
-    //app.globalData.id = app.globalData.id+1
-    console.log(app.globalData.id)
-    var that = this
-    wx.request({
-      url: 'https://api.majorbillliu.com/questions/' + app.globalData.id,
+    else{
+      this.setData({ dis: true, jsq: jsq })
 
-      fail(res) {
-        console.log(res)
-        wx.showToast({
-          title: '加载失败',
-          icon: "none",
-          duration: 2000
-        })
+      app.globalData.id = parseInt(Math.random() * app.globalData.allqs);
+      //app.globalData.id = app.globalData.id+1
+      console.log(app.globalData.id)
+      var that = this
+      wx.request({
+        url: 'https://api.majorbillliu.com/questions/' + app.globalData.id,
 
-      },
-      success(res) {
-        console.log(3)
-        var Question_body = res.data.Question_body
-        var A = res.data.A
-        var B = res.data.B
-        var C = res.data.C
-        var D = res.data.D
-        var Correct_Answer = res.data.Correct_Answer
-      
+        fail(res) {
+          console.log(res)
+          wx.showToast({
+            title: '加载失败',
+            icon: "none",
+            duration: 2000
+          })
 
-        var Examination_Place = res.data.Examination_Place
-        var Question_Analysis = res.data.Question_Analysis
-        app.globalData.Correct_Answer = Correct_Answer
-        
+        },
+        success(res) {
+          console.log(3)
+          var Question_body = res.data.Question_body
+          var A = res.data.A
+          var B = res.data.B
+          var C = res.data.C
+          var D = res.data.D
+          var Correct_Answer = res.data.Correct_Answer
+
+
+          var Examination_Place = res.data.Examination_Place
+          var Question_Analysis = res.data.Question_Analysis
+          app.globalData.Correct_Answer = Correct_Answer
+
           that.setData({
             dis: false,
             Question_body: Question_body,
@@ -629,8 +631,11 @@ Page({
             Examination_Place: Examination_Place,
             Question_Analysis: Question_Analysis,
           })
-        console.log(res.data)
-      }
-    })
+          console.log(res.data)
+        }
+      })
+
+    }
+
   }
 })

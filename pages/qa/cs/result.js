@@ -8,7 +8,8 @@ Page({
   data: {
  cstimu:app.globalData.cstimu,
  csrighttimu:app.globalData.csrighttimu,
-csscore:app.globalData.csscore 
+csscore:app.globalData.csscore ,
+    sj: app.globalData.sj
   },
 
   /**
@@ -22,12 +23,12 @@ csscore:app.globalData.csscore
 
 
      //成功后跳转界面
-    wx.navigateTo({ url: 'success', })
+    wx.redirectTo({ url: 'success', })
 
     //失败后跳转界面
    // wx.navigateTo({ url: 'fail', })
   }, gotoPage2: function () {
-    wx.navigateTo({ url: 'info', })
+    wx.redirectTo({ url: 'info', })
 
   },
 
@@ -45,8 +46,8 @@ csscore:app.globalData.csscore
     this.setData({
       cstimu: app.globalData.cstimu,
       csrighttimu: app.globalData.csrighttimu,
-      csscore: app.globalData.csscore.toFixed(0) 
-      
+      csscore: app.globalData.csscore.toFixed(0) ,
+      sj: app.globalData.sj
     })
   },
 
