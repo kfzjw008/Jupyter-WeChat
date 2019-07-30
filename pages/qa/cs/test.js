@@ -99,21 +99,8 @@ Page({
       ts : app.globalData.tishu
     })
     app.globalData.cspd1 == 0
-  },
+    this.countDown();
 
-  /**
-   * 生命周期函数--监听页面初次渲染完成
-   */
-  onReady: function () {
-    app.globalData.cspd1 == 0;
-  },
-
-  /**
-   * 生命周期函数--监听页面显示
-   */
-
-  onShow: function () {
-  this.countDown();
     app.globalData.cspd1 = 0;
     wx.showToast({
       title: '加载中',
@@ -144,7 +131,7 @@ Page({
           icon: 'none',
           duration: 2000
         })
-    
+
         var Question_body = res.data.Question_body
         var A = res.data.A
         var B = res.data.B
@@ -172,10 +159,25 @@ Page({
   },
 
   /**
+   * 生命周期函数--监听页面初次渲染完成
+   */
+  onReady: function () {
+    app.globalData.cspd1 == 0;
+  },
+
+  /**
+   * 生命周期函数--监听页面显示
+   */
+
+  onShow: function () {
+
+  },
+
+  /**
    * 生命周期函数--监听页面隐藏
    */
   onHide: function () {
-    clearInterval(this.data.intervarID);
+   // clearInterval(this.data.intervarID);
   },
 
   /**
