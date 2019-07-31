@@ -50,8 +50,8 @@ App({
   },
   globalData: {
     userInfo: null,
-    jd:"126.6",
-    wd:"45.7",
+    jd:"116.2",
+    wd:"39.9",
     id:1,
     Correct_Answer:"",
     search:"",

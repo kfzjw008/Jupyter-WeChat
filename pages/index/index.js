@@ -148,8 +148,14 @@ Page({
               P0: P0,
             })
             //console.log(res.data)
+            wx.reportAnalytics('search_p0', {
+              locat: location,
+              p0: P0
+            })
           }
         }) 
+    
+       // console.log(this.P0)
       }
     })
 
@@ -267,6 +273,10 @@ Page({
               lifted_index: lifted_index,
               P0: P0,
             
+            })
+            wx.reportAnalytics('search_p0', {
+              locat: location,
+              p0: P0
             })
             //console.log(res.data)
           }
@@ -386,6 +396,10 @@ Page({
               transparency:transparency,
               lifted_index:lifted_index,
               P0: P0,
+            })
+            wx.reportAnalytics('search_p0', {
+              locat: location,
+              p0: P0
             })
             //console.log(res.data)
           }
