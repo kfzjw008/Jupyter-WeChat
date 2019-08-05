@@ -1,6 +1,18 @@
 // pages/qa/testsj/index.js
 var app = getApp();
-
+function randomNum(minNum, maxNum) {
+  switch (arguments.length) {
+    case 1:
+      return parseInt(Math.random() * minNum + 1, 10);
+      break;
+    case 2:
+      return parseInt(Math.random() * (maxNum - minNum + 1) + minNum, 10);
+      break;
+    default:
+      return 0;
+      break;
+  }
+}
 
 Page({
 
@@ -108,7 +120,7 @@ Page({
       duration: 2000
     })
     console.log(app.globalData.id)
-    app.globalData.id = parseInt(Math.random() * app.globalData.allqs);
+    app.globalData.id = randomNum(1, app.globalData.allqs);
     var that = this
     wx.request({
       url: 'https://api.majorbillliu.com/questions/' + app.globalData.id,
@@ -576,7 +588,7 @@ Page({
     else{
       this.setData({ dis: true, jsq: jsq })
 
-      app.globalData.id = parseInt(Math.random() * app.globalData.allqs);
+      app.globalData.id = randomNum(1, app.globalData.allqs);
       //app.globalData.id = app.globalData.id+1
       console.log(app.globalData.id)
       var that = this

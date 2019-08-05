@@ -278,7 +278,7 @@ Page({
               locat: location,
               p0: P0
             })
-            //console.log(res.data)
+            console.log(res.data)
           }
         })
       }
@@ -401,7 +401,7 @@ Page({
               locat: location,
               p0: P0
             })
-            //console.log(res.data)
+            console.log(res.data)
           }
         }) 
        } 
