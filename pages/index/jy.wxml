@@ -3,7 +3,7 @@
         <view class="page__title">观测建议</view>
         <view class="page__desc">{{all}}</view>
          <view class="page__title">{{yue}}月推荐观测</view>
-          <image style="margin-left:auto;margin-right:auto;" src="{{pic3}}" />
+          <image style="margin-left:auto;margin-right:auto;width:300px;height:200px" src="{{pic3}}"  />
   <text class="page__desc">{{all2}}</text>
 
 
@@ -15,48 +15,43 @@
         <view class="tr">
             <view class="th">观测适宜度</view>
             <view class="th">评价</view>
-         
-           
-        
+
         </view>
 
         <view class="tr" >
             <view class="td" >0-55</view>
             <view class="td" style='font-size:12px;color:#3763BA ;font-weight:bolder '>不适宜观测</view>
-           
-           
-            
-         
-        </view>
+                 </view>
          <view class="tr" >
             <view class="td" >56-65</view>
             <view class="td" style='font-size:12px;color:#3763BA ;font-weight:bolder '>勉强可以观测</view>
-       
-          
+                 
            </view>
-
-
-
               <view class="tr" >
             <view class="td" >66-80</view>
-            <view class="td" style='font-size:12px;color:#3763BA ;font-weight:bolder '>可以观测</view>
-        
-          
+            <view class="td" style='font-size:12px;color:#3763BA ;font-weight:bolder '>可以观测</view>          
            </view>
               <view class="tr" >
             <view class="td" >81-95</view>
             <view class="td" style='font-size:12px;color:#3763BA ;font-weight:bolder '>适合观测</view>
-           
-          
            </view>
               <view class="tr" >
             <view class="td" >96-100</view>
             <view class="td" style='font-size:12px;color:#3763BA ;font-weight:bolder '>非常适合观测</view>
-        
-          
            </view>
         </view>
     </view>
+  <view class="page__title">名词解释</view>
+  <view class="page__desc"><span  style='color:#3763BA ;font-weight:bolder '   >云量</span></view>
+    <view class="page__desc">指云遮蔽天空视野的成数。</view>
+     <view class="page__desc"><span  style='color:#3763BA ;font-weight:bolder '   >大气视宁度</span></view>
+       <view class="page__desc">视宁度指望远镜显示图像的清晰度。它取决于大气湍流活动程度。</view>
+            <view class="page__desc"><span  style='color:#3763BA ;font-weight:bolder '   >大气透明度</span></view>
+              <view class="page__desc">电磁辐射透过大气的程度，为大气光学特性之一。为大气透过可见光性能优劣的参量，以透过光通量与入射光通量的比值表示。</view>
+ <view class="page__desc"><span  style='color:#3763BA ;font-weight:bolder '   >大气稳定度</span></view>
+   <view class="page__desc">叠加在大气背景场上的扰动能否随时间增强的量度。也指空中某大气团由于与周围空气存在密度、温度和流速等的强度差而产生的浮力使其产生加速度而上升或下降的程度。</view>
+ <view class="page__title">原理解释</view>
+ <view class="page__desc">本观测适宜度的评价不仅仅考虑了常见的云量因素，同时考虑了空气污染、体感温度、大气不稳定度等其他外部因素，依据AHP层次分析法为各个因素赋权计算，从而多维度获得最终的观测适宜度评价结果。</view>
       </view>
 
     
