@@ -24,6 +24,12 @@ Page({
  
   onLoad: function () {
 
+
+
+
+
+
+
     var that = this
 
     wx.getLocation({

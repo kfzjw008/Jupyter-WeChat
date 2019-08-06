@@ -1,6 +1,6 @@
 // pages/qa/testsj/index.js
 var app = getApp();
-
+//https://api.majorbillliu.com/media/
 Page({
 
   /**

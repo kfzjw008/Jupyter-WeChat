@@ -1,63 +1,78 @@
-<!--index.wxml-->
- <view class="weui-flex">
-            <view class="weui-flex__item">
-                <button class="btn2" hover-class='btn-hover' bindtap="gotoPage1">
-                <image class='btnImg' src="/image/01.png"></image>
-                </button>
-            </view>
-            <view class="weui-flex__item" style="text-align:center" ><text style="color: #3763ba;font-size:20px ">观测适宜度</text></view>
-             <view class="weui-flex__item"  style="text-align:right">
-              <button class="btn3" hover-class='btn-hover' bindtap="fresh">
-                <image class='btnImg' src="/image/02.png"></image>
-                </button>
-             </view>
-        </view>
+<view class='UCenter-bg'>
+<view class='space'>
+<view class="stars ">
+        <view class="star "></view>
+        <view class="star pink "></view>
+        <view class="star blue "></view>
+        <view class="star yellow "></view>
+    </view>
+</view>
+    
 
- <view class="weui-flex">
-         <view class="weui-flex__item" style="text-align:center">
-                  <text style='font-size:100px ;color:#333366'>{{P0}}</text>
+  <view class='margin-top-sm'>
+    <text style='font-size:15px ;color:#FFFFFF;text-align:center' >观测适宜度</text>
+  </view>
+      <view  style="text-align:center;margin-left:auto;margin-right:auto;">
+      
+                  <text style='font-size:100px ;color:#FFFFFF'>{{P0}}</text>
             </view>
+
+
+
      
-        </view>
- <view class="weui-flex">
-            <view class="weui-flex__item" style="margin-left:50px;" >
-                   <text style='font-size:15px;color:#000000 '>经度 \n</text>
-      <text style='font-size:15px;color:#000000'>纬度 \n</text>
-      <text style='font-size:15px;color:#000000'>城市 \n</text>
-      <text style='font-size:15px;color:#000000'>云量 \n</text>
-     <text style='font-size:15px;color:#000000'>大气视宁度 \n</text>
-      <text style='font-size:15px;color:#000000'>大气透明度 \n</text>
-     <text style='font-size:15px;color:#000000'>大气不稳定度 \n</text>
-      <text style='font-size:15px;color:#000000'>温度 \n</text>
-     <text style='font-size:15px;color:#000000'>体感温度 \n</text>
-         <text style='font-size:15px;color:#000000'>数据来源\n</text>
-      <text style='font-size:15px;color:#000000'>观测建议\n</text>
-   
-            </view>
-           
-             <view class="weui-flex__item"  style="text-align:right;margin-right:50px;">
-                <text style='font-size:15px;text-align:right'>{{jd}}\n</text>
-      <text style='font-size:15px;text-align:right'>{{wd}}\n</text>
-      <text style='font-size:15px;text-align:right'>{{locat}}\n</text>
-      <text style='font-size:15px;text-align:right'>{{cloudcover}}\n</text>
-     <text style='font-size:15px;text-align:right'>{{seeing}}\n</text>
-      <text style='font-size:15px;text-align:right'>{{transparency}}\n</text>
-     <text style='font-size:15px;text-align:right'>{{lifted_index}}\n</text>
-      <text style='font-size:15px;text-align:right'>{{temp2m}}°C\n</text>
-     <text style='font-size:15px;text-align:right'>{{temp}}°C\n</text>
-        <text style='font-size:15px;text-align:right'>7timer晴天钟\n</text>
-      <view style='font-size:15px;text-align:right'><button class="weui-btn mini-btn" type="default" size="mini"  style='color:#3763ba' bindtap="gotoPage6">详情</button></view>
-             </view>
-        </view> 
- 
-   <view >
-   <view class="weui-flex">
-           <view class="weui-flex__item" style="text-align:center;margin-right:50px;margin-left:50px">
-                   <button class="btn1" hover-class='btn-hover' bindtap="gotoPage3">变化趋势</button>
-            </view>
-        </view>
+  <image src='https://image.weilanwl.com/gif/wave.gif' mode='scaleToFill' class='gif-wave'></image>
+</view>
+
+        <view class="weui-flex">
+
+        <view class="weui-flex__item" style="text-align:center;margin-right:auto;margin-left:auto">
+
+<button class="cu-btn bg-gray     shadow" style="width:60%;height:100%;"  bindtap="gotoPage1">  <text class='icon-location text-gray'></text> {{locat}}</button></view>
+ <view class="weui-flex__item" style="text-align:center;margin-right:auto;margin-left:auto">
+<button class="cu-btn bg-gray    shadow"  style="width:60%;height:100%;" bindtap="fresh">  <text class='icon-refresh text-gray' ></text> 刷新</button></view>
+</view>
+
+<view class="cu-list menu card-menu margin-top-xl margin-bottom-xl shadow-lg" style=''>
+
+  <view class="cu-item ">
+  <text class='text-grey' style='text-align:left'>经度</text> <text  class='text-grey'  style='text-align:right'>{{jd}}</text>
   </view>
 
+  <view class="cu-item" > 
+      <text class='text-grey' style='text-align:left'>纬度</text> <text  class='text-grey'  style='text-align:right'>{{wd}}</text>
+  </view>
+
+  <view class="cu-item ">
+  <text class='text-grey' style='text-align:left'>城市</text> <text  class='text-grey'  style='text-align:right'>{{locat}}</text>
+    </view>
 
 
+  <view class="cu-item">
+  <text class='text-grey' style='text-align:left'>云量</text> <text  class='text-grey'  style='text-align:right'>{{cloudcover}}</text>
+  </view>
 
+  <view class="cu-item ">
+  <text class='text-grey ' style='text-align:left'>大气视宁度</text> <text  class='text-grey'  style='text-align:right'>{{seeing}}</text>
+  </view>
+
+    <view class="cu-item ">
+  <text class='text-grey' style='text-align:left'>大气透明度</text> <text  class='text-grey'  style='text-align:right'>{{transparency}}</text>
+  </view>
+    <view class="cu-item ">
+  <text class='text-grey' style='text-align:left'>大气不稳定度</text> <text  class='text-grey'  style='text-align:right'>{{lifted_index}}</text>
+  </view>
+    <view class="cu-item ">
+  <text class='text-grey' style='text-align:left'>温度</text> <text  class='text-grey'  style='text-align:right'>{{temp2m}}°C</text>
+  </view>
+    <view class="cu-item ">
+  <text class='text-grey' style='text-align:left'>体感温度</text> <text  class='text-grey'  style='text-align:right'>{{temp}}°C</text>
+  </view>
+</view>
+
+
+ <view class="weui-flex">
+
+        <view class="weui-flex__item" style="text-align:center;margin-right:auto;margin-left:auto">
+<button class="cu-btn lines-grey   lg shadow" bindtap="gotoPage3">  <text class='icon-rank text-gray'></text> 变化趋势</button></view>
+ <view class="weui-flex__item" style="text-align:center;margin-right:auto;margin-left:auto">
+<button class="cu-btn lines-grey   lg  shadow" bindtap="gotoPage6">  <text class='icon-mark text-gray'></text> 观测建议</button></view></view>

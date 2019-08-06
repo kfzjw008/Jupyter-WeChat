@@ -1,85 +1,41 @@
-/**index.wxss**/
-
-.btn1 {
-  width: 75%;
-  margin-top: 20rpx;
-  background-color: #3763ba;
-  color: #effef4;
-  border-radius: 98rpx;
+@import "stars.wxss";
+page{
+  padding-bottom: 100rpx;
+  background: white;
 }
-.btn1::after {
-  border-radius: 98rpx;
-  border:0;
-}
-
-.btn-hover{
-position: relative;
- top: 3rpx;
- box-shadow:0px 0px 8px #999 inset; 
-}
-
-.userinfo {
+.UCenter-bg {
+  background-image: url(https://surx.oss-cn-beijing.aliyuncs.com/image/sky-stars-constellations-astronomy-preview.jpg);
+  background-size: cover;
+  height: 550rpx;
   display: flex;
+  justify-content: center;
+  padding-top: 40rpx;
+  overflow: hidden;
+  position: relative;
   flex-direction: column;
   align-items: center;
-}
-text{
-  color: #888888;
-}
-.userinfo-avatar {
-  width: 128rpx;
-  height: 128rpx;
-  margin: 20rpx;
-  border-radius: 50%;
+  color: #fff;
+  font-weight: 300;
+  text-shadow: 0 0 3px rgba(0, 0, 0, 0.3);
 }
 
-.userinfo-nickname {
-  color: #aaa;
+.UCenter-bg text {
+  opacity: 0.8;
 }
 
-.usermotto {
-  margin-top: 200px;
+.UCenter-bg image {
+  width: 200rpx;
+  height: 200rpx;
 }
 
-.btn2{
-  width: 60rpx;
-  height: 60rpx;
-  margin-top: 5rpx;
-  margin-left: 8rpx;
-  padding: 5rpx;
-  background-color:#effef4;
-  color: #effef4;
-  display:flex;
-  border-radius: 15rpx;
-  flex-direction: column;
-  align-items:center;
-  justify-content: center;
+.UCenter-bg .gif-wave{
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+  left: 0;
+  z-index: 99;
+  mix-blend-mode: screen;  
+  height: 100rpx;   
 }
 
-.btnImg {
-  width: 45rpx;
-  height: 45rpx;
-}
 
-.btn2::after {
-  border-radius: 15rpx;
-}
-
-.btn3{
-  width: 60rpx;
-  height: 60rpx;
-  margin-top: 5rpx;
-  margin-right: 8rpx;
-  padding: 5rpx;
-  background-color:#effef4;
-  color: #effef4;
-  display:flex;
-  border-radius: 15rpx;
-  flex-direction: column;
-  align-items:center;
-  justify-content: center;
-}
-
-.btn3::after {
-  border-radius: 15rpx;
-}

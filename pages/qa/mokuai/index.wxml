@@ -1,6 +1,6 @@
 <view class="page">
     <view class="page__hd">
-        <view class="page__title">模块练习</view>
+        <view class="page__title">模块学习</view>
         <view class="page__desc">这里把题库中的所有试题进行分类，方便进行分类针对学习。</view>
     </view>
     <view class="page__bd">
@@ -166,6 +166,9 @@
                         <view class="weui-media-box__desc">第九届东北地区大学生天文知识竞赛备战题库。</view>
                     </view>
                 </navigator>
+
+       
+
             </view>
          
         </view>
