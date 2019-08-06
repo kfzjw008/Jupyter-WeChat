@@ -1,13 +1,13 @@
 /* pages/qa/mokuai/test.wxss */
 .btn2 {
-  width: 130rpx;
-  height: 60rpx;
-  margin-top: 20rpx;
-  margin-right: 15rpx;
+  width: 173rpx;
+  height: 80rpx;
+  margin-top: 25rpx;
+  margin-right: 20rpx;
   color: #3763ba;
   background-color: #effef4;
   border-radius: 98rpx;
-  font-size: 25rpx;
+  font-size: 32rpx;
   align-items: center;
   justify-content: center;
 }

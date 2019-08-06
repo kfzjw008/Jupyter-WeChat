@@ -1,5 +1,10 @@
 // pages/index/jy.js
-var app = getApp();   
+var app = getApp();  
+var util = require('../../utils/util.js'); 
+var base64 = require("../../dist/example/images/base64.js");
+function fix(num, length) {
+  return ('' + num).length < length ? ((new Array(length + 1)).join('0') + num).slice(-length) : '' + num;
+}
 Page({
 
   /**
@@ -22,7 +27,9 @@ Page({
     transparency: '加载中...',
     lifted_index: '加载中...',
     P0: "--",
-    all:'加载中……'
+    all:'加载中……',
+    all2: '加载中……',
+    yue:'-'
   },
 
   /**
@@ -49,6 +56,75 @@ Page({
     })
   },
   onShow: function () {
+
+
+    var time = util.formatTime(new Date());
+    //获取当前时间戳
+    var timestamp = Date.parse(new Date());
+    timestamp = timestamp / 1000;
+    console.log("当前时间戳为：" + timestamp);
+    //获取当前时间
+    var n = timestamp * 1000;
+    var date = new Date(n);
+    //年
+    var Y = date.getFullYear();
+    //月
+    var M = (date.getMonth() + 1 < 10 ? '0' + (date.getMonth() + 1) : date.getMonth() + 1);
+    //日
+    var D = date.getDate() < 10 ? '0' + date.getDate() : date.getDate();
+    //时
+    var h = date.getHours();
+    //分
+    var m = date.getMinutes();
+    //秒
+    var s = date.getSeconds();
+    console.log("当前时间：" + Y + M + D + h + ":" + m + ":" + s);
+    //转换为时间格式字符串
+    console.log(date.toDateString());
+    console.log(date.toGMTString());
+    console.log(date.toISOString());
+    console.log(date.toJSON());
+    console.log(date.toLocaleDateString());
+    console.log(date.toLocaleString());
+    console.log(date.toLocaleTimeString());
+    console.log(date.toString());
+    console.log(date.toTimeString());
+    console.log(date.toUTCString());
+    var all2;
+    //M=3
+if(M==6||M==7||M==8){
+  all2 = '夏季是看星的好时节，天黑以后向西看，就找到狮子星座。\n狮子座东面是室女座, 还有天蝎座。在天空南方，比较低的星空闪耀着一颗红色的亮星，它是天蝎座的主星心宿二，也是一颗处在黄道上的亮星．天蝎座的明显特征是有三颗星等距成弧摆开，心宿二恰在圆心．在中国古代天文学中，天蝎属商星，猎户属参星．刚好一升一落，永不相见，于是有诗人说："人生不相见，动如参与商"。\n天蝎座东面，就是人马座，人马座的东半部分，有六颗星，被称为南斗。\n在天蝎与人马一带的星空，有一条白茫茫的光带，那就是银河了．顺着银河向东北找，可以看到紧靠着一个四边形的织女星和带着左右两颗小星的牛郎星．而与着这两颗亮星组成一个三角形的一颗亮星，就是天津四，它和它所属的天鹅座的其它星组成了一个十字，很好辨认。\n北斗七星此时在西北天，找到牧夫座后，向东，在差不多天顶的位置，有个半圆形的星座，叫做北冕座，就象一个镶满珠宝的皇冠，这里聚集着大量的星系。'
+  this.setData({
+    yue: M,
+    all2: all2,
+     pic3: base64.pic31
+  })
+}
+    if (M == 9|| M ==10 || M == 11) {
+      all2 = '“飞马当空，银河斜挂”，是秋季星空的象征。\n秋季四边形的4颗星分别叫做室宿一、室宿二、壁宿一、壁宿二。\n秋夜星空多的是王公贵族：仙王，仙后，仙女，英仙，飞马，鲸鱼．\n天顶偏东是飞马座．仙女座就是在飞马座东北的一字形星座．仙女座北面是W形的仙后座．仙后座西面是仙王座，东面是英仙座．\n英仙座的大陵五是著名的食变星，鲸鱼座中有一个长周期变星叫刍蒿增二（即鲸鱼座ο星）。英仙座与仙后座之间是英仙座双重星团．仙女座则有一个著名的大星系：仙女座大星云．这是一个比银河系还大得多的星系，也是北半天中距离我们最近的一个星系．\n秋季星空的亮星较少， 但像仙女座河外星系（M31）这样的深空天体却比比皆是。\n'
+      this.setData({
+        yue: M,
+        all2: all2,
+        pic3: base64.pic32
+      })
+    }
+    if (M == 12 || M == 1 || M == 2) {
+      all2 = '冬季虽然寒冷，但星空却极其壮丽．\n猎户座是冬季星空的中心．\n在厦门的纬度，入夜后，就可看到三颗排列整齐的亮星，民间说"三星高照"就是它们了．三星的周围有四颗亮星和三星组成一个长方形，就是猎户座．三星就是猎户的腰带．\n三星连线想左下方延长，就能遇到全天最亮的恒星：天狼星．它是大犬座的主星．\n从三星向右上方延长就是红色亮星毕宿五．旁边是五车二．\n金牛座东边稍偏北是双子座，在向东是巨蟹座，再往东是狮子的头部了．\n猎户座的西南是漫长巨大却十分暗淡的波江座．主星水委一，要到广东才依稀看到\n猎户座正南方是天兔，天鸽座．在往南是船底座的主星老人星．\n猎户座的三星下方，有一片亮斑，那就是猎户座大星云．三星最左边的那颗旁边是马头星云．金牛座的昴星团是一个极好看的疏散星团．大约由500颗恒星组成。\n'
+      this.setData({
+        yue: M,
+        all2: all2,
+        pic3: base64.pic33
+      })
+    }
+    if (M == 3 || M == 4 || M == 5) {
+      all2 = '春季星空的主要星座有：大熊座、小熊座、狮子座、牧夫座、猎犬座、室女座、乌鸦座长蛇座。\n在天顶略偏东北的方向，可以看到北斗七星，斗口两颗星的连线，指向北极星．而此时的斗柄，正指向东，所以有云：斗柄东指，天下皆春．斗柄南指，天下皆夏．斗柄西指天下皆秋．斗柄北指，天下皆冬．\n而顺着斗柄的指向，可以找到一颗亮星，即牧夫座的大角．然后到达室女座的主星角宿一．在大熊座的附近，可以找到一个叫做猎犬座的小星座，其中有一个漩涡星云，即M51, 是有名的河外星系．\n长蛇头部的东北，是著名的狮子座．它是春夜星空最辉煌的中心．狮子星座的主星，中名轩辕十四，是处于黄道上的一颗一等星．有时有明亮的行星走近时，就非常好看了．\n春季星空最显著的是春季大三角。\n'
+      this.setData({
+        yue: M,
+        all2: all2,
+        pic3: base64.pic34
+      })
+    }
+
     var that = this
 
     wx.getLocation({

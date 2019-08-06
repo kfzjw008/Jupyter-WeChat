@@ -2,8 +2,62 @@
     <view class="page__hd">
         <view class="page__title">观测建议</view>
         <view class="page__desc">{{all}}</view>
+         <view class="page__title">{{yue}}月推荐观测</view>
+          <image style="margin-left:auto;margin-right:auto;" src="{{pic3}}" />
+  <text class="page__desc">{{all2}}</text>
+
+
+
+
+               <view class="page__title">数值说明</view>
+       <view class="weui-flex">
+    <view class="table">
+        <view class="tr">
+            <view class="th">观测适宜度</view>
+            <view class="th">评价</view>
+         
+           
+        
+        </view>
+
+        <view class="tr" >
+            <view class="td" >0-55</view>
+            <view class="td" style='font-size:12px;color:#3763BA ;font-weight:bolder '>不适宜观测</view>
+           
+           
+            
+         
+        </view>
+         <view class="tr" >
+            <view class="td" >56-65</view>
+            <view class="td" style='font-size:12px;color:#3763BA ;font-weight:bolder '>勉强可以观测</view>
+       
+          
+           </view>
+
+
+
+              <view class="tr" >
+            <view class="td" >66-80</view>
+            <view class="td" style='font-size:12px;color:#3763BA ;font-weight:bolder '>可以观测</view>
+        
+          
+           </view>
+              <view class="tr" >
+            <view class="td" >81-95</view>
+            <view class="td" style='font-size:12px;color:#3763BA ;font-weight:bolder '>适合观测</view>
+           
+          
+           </view>
+              <view class="tr" >
+            <view class="td" >96-100</view>
+            <view class="td" style='font-size:12px;color:#3763BA ;font-weight:bolder '>非常适合观测</view>
+        
+          
+           </view>
+        </view>
     </view>
-  
+      </view>
 
     
                 <button class="btn1" hover-class='btn-hover' bindtap="gotoPage2" >返回</button>
