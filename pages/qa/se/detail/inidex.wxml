@@ -30,6 +30,7 @@
                 <view class="weui-form-preview__item">
                     <view class="weui-form-preview__label">题目</view>
                     <view class="weui-form-preview__value">{{Name111}}</view>
+                    <image wx:if="{{Image}}" src='{{Image}}' style='margin-right:auto;margin-left:auto;width:200px;height:150px'></image>
                 </view>
                 <view class="weui-form-preview__item">
                     <view class="weui-form-preview__label">选项A</view>

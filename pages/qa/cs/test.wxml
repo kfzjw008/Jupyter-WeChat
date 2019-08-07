@@ -4,7 +4,7 @@
         <view class="page__title">在线测试</view>
         <view class="page__desc" >  第{{jsq+1}}题 共{{ts}}题 <span  style='color:#3763BA ;font-weight:bolder '   ><icon type="info_circle" size="14" style='color:#3763BA ;font-weight:bolder ' ></icon>剩余时间<span style=' font-weight:bolder ' >{{hourse}}</span>小时<span style='font-weight:bolder ' >{{minute}}</span>分<span style='font-weight:bolder ' >{{second}}</span>秒</span> </view>
         <view class="page__desc">{{Question_body}}</view>
-
+<image wx:if="{{Image}}" src='{{Image}}' style='margin-right:auto;margin-left:auto;width:200px;height:150px'></image>
 
     </view>
   <button class="weui-btn" class="weui-btn" type="default"  bindtap="gotoPage3"wx:if="{{inputShoweda1==true}}">A:{{A}}</button>

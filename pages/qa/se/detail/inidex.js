@@ -70,7 +70,7 @@ Page({
         var HIP111 = res.data.D
         var Right_ascension111 = res.data.Correct_Answer
         var Declination111 = res.data.Question_Analysis
-        
+        var Image = res.data.Image
         that.setData({
           id111: res.data.id,
           Name111: res.data.Question_body,
@@ -81,7 +81,7 @@ Page({
           HIP111: res.data.D,
           Right_ascension111: res.data.Correct_Answer,
           Declination111: res.data.Question_Analysis,
-         
+         Image:Image
         })
       
       }

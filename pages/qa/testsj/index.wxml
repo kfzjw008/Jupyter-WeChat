@@ -4,7 +4,7 @@
         <view class="page__title">随机练习-学习模式</view>
         <view class="page__desc">    </view>
         <view class="page__desc">{{Question_body}}</view>
-
+<image wx:if="{{Image}}" src='{{Image}}' style='margin-right:auto;margin-left:auto;width:200px;height:150px'></image>
 
     </view>
   <button class="weui-btn" class="weui-btn" type="default"  bindtap="gotoPage3"wx:if="{{inputShoweda1==true}}">A:{{A}}</button>

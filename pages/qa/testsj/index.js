@@ -99,6 +99,7 @@ Page({
         var Correct_Answer = res.data.Correct_Answer
         var Examination_Place = res.data.Examination_Place
         var Question_Analysis = res.data.Question_Analysis
+        var Image = res.data.Image
         app.globalData.Correct_Answer= Correct_Answer,
         that.setData({
            Question_body :Question_body,
@@ -107,7 +108,7 @@ Page({
         C : res.data.C,
          D : res.data.D,
          Correct_Answer:Correct_Answer,
-          
+          Image:Image,
          Examination_Place:Examination_Place,
          Question_Analysis:Question_Analysis,
         })
