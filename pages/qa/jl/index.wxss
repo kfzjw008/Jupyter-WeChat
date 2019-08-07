@@ -1,4 +1,7 @@
+page {
+  background: #ffffff;
 
+}
 .btn1 {
   width: 75%;
   margin-top: 20rpx;

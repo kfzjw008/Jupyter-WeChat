@@ -1,1 +1,5 @@
 /* pages/qa/cs/result.wxss */
+page {
+  background: #ffffff;
+
+}

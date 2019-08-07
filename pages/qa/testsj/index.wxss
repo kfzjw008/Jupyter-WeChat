@@ -1,4 +1,8 @@
 /* pages/qa/testsj/index.wxss */
+page {
+  background: #ffffff;
+
+}
 .btn2 {
   width: 240rpx;
   height: 80rpx;

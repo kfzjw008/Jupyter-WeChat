@@ -1,4 +1,8 @@
 /* pages/qa/mokuai/test.wxss */
+page {
+  background: #ffffff;
+
+}
 .btn2 {
   width: 173rpx;
   height: 80rpx;

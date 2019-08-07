@@ -4,7 +4,7 @@
         <view class="page__title">模块学习</view>
         <view class="page__desc">    </view>
         <view class="page__desc">{{Question_body}}</view>
-
+<image src='' style='margin-right:auto;margin-left:auto;width:auto;height:auto'></image>
 
     </view>
   <button class="weui-btn" class="weui-btn" type="default"  bindtap="gotoPage3"wx:if="{{inputShoweda1==true}}">A:{{A}}</button>

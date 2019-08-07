@@ -1,4 +1,5 @@
 @import "stars.wxss";
+@import '../../icon.wxss';
 page{
   padding-bottom: 100rpx;
   background: white;
