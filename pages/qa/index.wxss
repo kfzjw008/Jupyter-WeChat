@@ -1,3 +1,4 @@
+@import '../../icon.wxss';
 page {
   background: #ffffff;
 

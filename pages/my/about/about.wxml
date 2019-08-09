@@ -8,7 +8,9 @@
             <view class="weui-msg__desc">星云村集天文实时数据查询，资料查询，知识学习等模块于一体，方便广大天文爱好者学习知识开展观测活动。</view>
              <view class="weui-msg__desc">星云村由星云村开发团队支持开发 </view>
              <view class="weui-msg__desc">特别鸣谢：东北林业大学天文爱好者协会</view>
-               <view class="weui-msg__desc">目前版本V1.1  </view>
+             <view class="weui-msg__desc">数据来源：晴天钟7timer 银河说 中国天气网 </view>
+              <view class="weui-msg__desc">UI来源：weUI ColorUI </view>
+   <view class="weui-msg__desc">感谢小程序上线前，每一位申请体验者的宝贵意见！ </view>
               <view class="weui-msg__desc">  </view>
         </view>
 
@@ -16,7 +18,7 @@
         <view class="weui-msg__extra-area">
             <view class="weui-footer">
                 <view class="weui-footer__links">
-                    <navigator url="" class="weui-footer__link">星云村 V1.1</navigator>
+                    <navigator url="" class="weui-footer__link">星云村 V1.2</navigator>
                 </view>
                 <view class="weui-footer__text"> Email:zhangjunwei2018@qq.com</view>
             </view>

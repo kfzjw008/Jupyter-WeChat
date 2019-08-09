@@ -19,7 +19,8 @@ Page({
     temp2m: '加载中...',
     transparency: '加载中...',
     lifted_index: '加载中...',
-    P0:"--"
+    P0:"--",
+    jpg: 'https://api.majorbillliu.com/media/questions/images/66-80.jpg'
   },
  
   onLoad: function () {
@@ -142,6 +143,52 @@ Page({
             if (lifted_index == 6) { lifted_index = '6' }
             if (lifted_index == 10) { lifted_index = '9' }
             if (lifted_index == 15) { lifted_index = '>11' }
+
+            if (P0 <= 55) {
+              console.log(55)
+              console.log(P0)
+              that.setData({
+                jpg: 'https://api.majorbillliu.com/media/questions/images/0-55.jpg'
+
+              })
+
+            }
+            if (56 <= P0 && P0 <= 65) {
+              console.log(65)
+              console.log(P0)
+              that.setData({
+                jpg: 'https://api.majorbillliu.com/media/questions/images/56-65.jpg'
+
+              })
+
+            }
+            if (66 <= P0 && P0 <= 80) {
+              console.log(80)
+              console.log(P0)
+              that.setData({
+                jpg: 'https://api.majorbillliu.com/media/questions/images/66-80.jpg'
+
+              })
+
+            }
+            if (81 <= P0 && P0 <= 95) {
+              console.log(95)
+              console.log(P0)
+              that.setData({
+                jpg: 'https://api.majorbillliu.com/media/questions/images/81-95.jpg'
+
+              })
+
+            }
+            if (96 <= P0 && P0 <= 100) {
+              console.log(100)
+              console.log(P0)
+              that.setData({
+                jpg: 'https://api.majorbillliu.com/media/questions/images/96-100.jpg'
+
+              })
+
+            }
             that.setData({
               locat: location,
               cloudcover: cloudcover,
@@ -266,6 +313,52 @@ Page({
             if (lifted_index == 6) { lifted_index = '6' }
             if (lifted_index == 10) { lifted_index = '9' }
             if (lifted_index == 15) { lifted_index = '>11' }
+
+            if (P0 <= 55) {
+              console.log(55)
+              console.log(P0)
+              that.setData({
+                jpg: 'https://api.majorbillliu.com/media/questions/images/0-55.jpg'
+
+              })
+
+            }
+            if (56 <= P0 && P0 <= 65) {
+              console.log(65)
+              console.log(P0)
+              that.setData({
+                jpg: 'https://api.majorbillliu.com/media/questions/images/56-65.jpg'
+
+              })
+
+            }
+            if (66 <= P0 && P0 <= 80) {
+              console.log(80)
+              console.log(P0)
+              that.setData({
+                jpg: 'https://api.majorbillliu.com/media/questions/images/66-80.jpg'
+
+              })
+
+            }
+            if (81 <= P0 && P0 <= 95) {
+              console.log(95)
+              console.log(P0)
+              that.setData({
+                jpg: 'https://api.majorbillliu.com/media/questions/images/81-95.jpg'
+
+              })
+
+            }
+            if (96 <= P0 && P0 <= 100) {
+              console.log(100)
+              console.log(P0)
+              that.setData({
+                jpg: 'https://api.majorbillliu.com/media/questions/images/96-100.jpg'
+
+              })
+
+            }
             app.globalData.jd = longitude,
               app.globalData.wd = latitude
             that.setData({
@@ -392,6 +485,52 @@ Page({
             if (lifted_index == 6) { lifted_index = '6' }
             if (lifted_index == 10) { lifted_index = '9' }
             if (lifted_index == 15) { lifted_index = '>11' }
+
+            if (P0 <= 55) {
+              console.log(55)
+              console.log(P0)
+              that.setData({
+                jpg: 'https://api.majorbillliu.com/media/questions/images/0-55.jpg'
+
+              })
+
+            }
+            if (56 <= P0&&P0 <= 65) {
+              console.log(65)
+              console.log(P0)
+              that.setData({
+                jpg: 'https://api.majorbillliu.com/media/questions/images/56-65.jpg'
+
+              })
+
+            }
+            if (66 <= P0 && P0 <= 80) {
+              console.log(80)
+              console.log(P0)
+              that.setData({
+                jpg: 'https://api.majorbillliu.com/media/questions/images/66-80.jpg'
+
+              })
+
+            }
+            if (81 <= P0 && P0 <= 95) {
+              console.log(95)
+              console.log(P0)
+              that.setData({
+                jpg: 'https://api.majorbillliu.com/media/questions/images/81-95.jpg'
+
+              })
+
+            }
+            if (96 <= P0 && P0 <= 100) {
+              console.log(100)
+              console.log(P0)
+              that.setData({
+                jpg: 'https://api.majorbillliu.com/media/questions/images/96-100.jpg'
+
+              })
+
+            }
             that.setData({
               locat: location,
               cloudcover: cloudcover,

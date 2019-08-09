@@ -66,7 +66,7 @@
                     </view>
                     <view class="weui-media-box__bd weui-media-box__bd_in-appmsg">
                         <view class="weui-media-box__title">天文观测</view>
-                        <view class="weui-media-box__desc">涉及到星空、行星的命名、观测常识和操作，望远镜的使用等</view>
+                        <view class="weui-media-box__desc">观测小技巧及天文器材的使用等</view>
                     </view>
                 </navigator>
 
@@ -78,7 +78,7 @@
                     </view>
                     <view class="weui-media-box__bd weui-media-box__bd_in-appmsg">
                         <view class="weui-media-box__title">天文现象</view>
-                        <view class="weui-media-box__desc">日全食，日偏食，流星雨，极光</view>
+                        <view class="weui-media-box__desc">日食，月食，流星雨，极光等</view>
                     </view>
                 </navigator>
 
@@ -90,7 +90,7 @@
                     </view>
                     <view class="weui-media-box__bd weui-media-box__bd_in-appmsg">
                         <view class="weui-media-box__title">天文小知识</view>
-                        <view class="weui-media-box__desc">天文基础常识，天文天象基础知识</view>
+                        <view class="weui-media-box__desc">天文相关冷知识</view>
                     </view>
                 </navigator>
 
@@ -103,7 +103,7 @@
                     </view>
                     <view class="weui-media-box__bd weui-media-box__bd_in-appmsg">
                         <view class="weui-media-box__title">天文学发展史</view>
-                        <view class="weui-media-box__desc">天文学历史，著名天文人物</view>
+                        <view class="weui-media-box__desc">天文学历史上的大事件及著名人物</view>
                     </view>
                 </navigator>
 
@@ -127,7 +127,7 @@
                     </view>
                     <view class="weui-media-box__bd weui-media-box__bd_in-appmsg">
                         <view class="weui-media-box__title">星座，星图</view>
-                        <view class="weui-media-box__desc">四季星空，88星座，星图，识星等</view>
+                        <view class="weui-media-box__desc">四季星空、星座亮星数据及恒星观测定位</view>
                     </view>
                 </navigator>
 
@@ -151,7 +151,7 @@
                     </view>
                     <view class="weui-media-box__bd weui-media-box__bd_in-appmsg">
                         <view class="weui-media-box__title">中西方古代天文</view>
-                        <view class="weui-media-box__desc">中国传统文化，西方神话等</view>
+                        <view class="weui-media-box__desc">天文相关的中国传统文化，西方神话等</view>
                     </view>
                 </navigator>
 

@@ -97,7 +97,7 @@ if(M==6||M==7||M==8){
   this.setData({
     yue: M,
     all2: all2,
-     pic3: base64.pic31
+    pic3: 'https://api.majorbillliu.com/media/questions/images/xiaji.jpg'
   })
 }
     if (M == 9|| M ==10 || M == 11) {
@@ -105,7 +105,7 @@ if(M==6||M==7||M==8){
       this.setData({
         yue: M,
         all2: all2,
-        pic3: base64.pic32
+        pic3: 'https://api.majorbillliu.com/media/questions/images/qiuji.jpg'
       })
     }
     if (M == 12 || M == 1 || M == 2) {
@@ -113,7 +113,7 @@ if(M==6||M==7||M==8){
       this.setData({
         yue: M,
         all2: all2,
-        pic3: base64.pic33
+        pic3: 'https://api.majorbillliu.com/media/questions/images/dongji.jpg'
       })
     }
     if (M == 3 || M == 4 || M == 5) {
@@ -121,7 +121,7 @@ if(M==6||M==7||M==8){
       this.setData({
         yue: M,
         all2: all2,
-        pic3: base64.pic34
+        pic3: 'https://api.majorbillliu.com/media/questions/images/chunji.jpg'
       })
     }
 

@@ -8,6 +8,7 @@
             <block >
 
                 <navigator url="mokuai/index" class="weui-grid" hover-class="weui-grid_active">
+                
                     <image class="weui-grid__icon" src="../../dist/example/images/icon_nav_z-index.png" />
                     <view class="weui-grid__label">模块学习</view>
                 </navigator>
