@@ -42,9 +42,7 @@
       <text class='text-grey' style='text-align:left'>纬度</text> <text  class='text-grey'  style='text-align:right'>{{wd}}</text>
   </view>
 
-  <view class="cu-item ">
-  <text class='text-grey' style='text-align:left'>城市</text> <text  class='text-grey'  style='text-align:right'>{{locat}}</text>
-    </view>
+
 
 
   <view class="cu-item">
