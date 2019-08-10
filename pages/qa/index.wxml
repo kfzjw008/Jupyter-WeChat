@@ -32,6 +32,10 @@
                     <image class="weui-grid__icon" src="../../dist/example/images/icon_nav_nav.png" />
                     <view class="weui-grid__label">更多选项</view>
                 </navigator>
+                      <navigator url="more/index" class="weui-grid" hover-class="weui-grid_active">
+                    <image class="weui-grid__icon" src="../../dist/example/images/icon_nav_widget.png" />
+                    <view class="weui-grid__label">挑战赛<view class="weui-badge" style="margin-left: 5px;">HOT</view></view>
+                </navigator>
             </block>
         </view>
     </view>

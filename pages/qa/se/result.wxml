@@ -17,11 +17,11 @@
 
                       <navigator wx:if="{{count>0}}" bindtap='det' class="weui-media-box weui-media-box_text" wx:for="{{list}}" id="{{item.id}}" wx:key="list">
                     <view class="weui-media-box__title weui-media-box__title_in-text">{{item.Question_body}}</view>
-                    <view class="weui-media-box__desc">  A: {{item.A}}\n
+                    <text class="weui-media-box__desc">  A: {{item.A}}\n
             B: {{item.B}}\n
             C: {{item.C}}\n
             D: {{item.D}}
-            </view>
+            </text>
                     <view class="weui-media-box__info">
                         <view class="weui-media-box__info__meta">试题分类：</view>
                         <view class="weui-media-box__info__meta">{{item.Examination_Place}}</view>

@@ -11,10 +11,7 @@ Page({
     pgc: '',
     search: '',
     page: "",
-    list: [{
-    }, {
-
-    }]
+    list: []
   },
 
   /**
