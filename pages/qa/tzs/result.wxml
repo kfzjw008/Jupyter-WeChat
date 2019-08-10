@@ -51,12 +51,11 @@
                 </view>
             </view>
         </view>
-
-
         <view class="weui-msg__opr-area">
             <view class="weui-btn-area">
-                <button class="weui-btn" style='background: #3763BA;'  type="primary" bindtap="gotoPage6">上传竞赛记录</button>
+                <button class="btn1" hover-class="btn-hover" bindtap="gotoPage6">上传竞赛记录</button>
             </view>
         </view>
+      
     </view>
 </view>
