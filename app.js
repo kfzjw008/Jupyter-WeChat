@@ -66,6 +66,11 @@ App({
     csscore:0,
     cspd1:0,
     sj:600,
-    tishu:20
+    tishu:20,
+    name:'',
+    email:'',
+    school:'',
+    nickname:'',
+    location:'',
   }
 })

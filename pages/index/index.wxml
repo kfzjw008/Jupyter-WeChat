@@ -27,9 +27,9 @@
 
         <view class="weui-flex__item" style="text-align:center;margin-right:auto;margin-left:auto">
 
-<button class="cu-btn bg-gray     shadow" style="width:60%;height:100%;"  bindtap="gotoPage1">  <text class='icon-location text-gray'></text> {{locat}}</button></view>
+<button class="btn3"  bindtap="gotoPage1">  <text class='icon-location text-gray'></text> {{locat}}</button></view>
  <view class="weui-flex__item" style="text-align:center;margin-right:auto;margin-left:auto">
-<button class="cu-btn bg-gray    shadow"  style="width:60%;height:100%;" bindtap="fresh">  <text class='icon-refresh text-gray' ></text> 刷新</button></view>
+<button class="btn3"  bindtap="fresh">  <text class='icon-refresh text-gray' ></text> 刷新</button></view>
 </view>
 
 <view class="cu-list menu card-menu margin-top-xl margin-bottom-xl shadow-lg" style=''>
@@ -71,6 +71,6 @@
  <view class="weui-flex">
 
         <view class="weui-flex__item" style="text-align:center;margin-right:auto;margin-left:auto">
-<button class="cu-btn lines-grey   lg shadow" bindtap="gotoPage3">  <text class='icon-rank text-gray'></text> 变化趋势</button></view>
+<button class="btn1" hover-class='btn-hover' bindtap="gotoPage3"> 变化趋势</button></view>
  <view class="weui-flex__item" style="text-align:center;margin-right:auto;margin-left:auto">
-<button class="cu-btn lines-grey   lg  shadow" bindtap="gotoPage6">  <text class='icon-mark text-gray'></text> 观测建议</button></view></view>
+<button class="btn2" hover-class='btn-hover' bindtap="gotoPage6">观测建议</button></view></view>

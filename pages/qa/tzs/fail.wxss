@@ -1,0 +1,5 @@
+/* pages/qa/cs/fail.wxss */
+page {
+  background: #ffffff;
+
+}

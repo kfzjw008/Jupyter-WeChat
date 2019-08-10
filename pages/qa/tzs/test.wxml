@@ -1,0 +1,36 @@
+<!--pages/qa/testsj/index.wxml-->
+  <view class="page">
+  <view class="page__hd">
+        <view class="page__title">在线测试</view>
+        <view class="page__desc" >  第{{jsq+1}}题 共{{ts}}题 <span  style='color:#3763BA ;font-weight:bolder '   ><icon type="info_circle" size="14" style='color:#3763BA ;font-weight:bolder ' ></icon>剩余时间<span style=' font-weight:bolder ' >{{hourse}}</span>小时<span style='font-weight:bolder ' >{{minute}}</span>分<span style='font-weight:bolder ' >{{second}}</span>秒</span> </view>
+        <view class="page__desc">{{Question_body}}</view>
+<image wx:if="{{Image}}" src='{{Image}}' style='margin-right:auto;margin-left:auto;width:200px;height:150px'></image>
+
+    </view>
+  <button class="weui-btn" class="weui-btn" type="default"  bindtap="gotoPage3"wx:if="{{inputShoweda1==true}}" style="width:85%">A:{{A}}</button>
+   <button class="weui-btn" class="weui-btn" type="default" wx:if="{{inputShoweda2==true}}" style="width:85%">A:{{A}}</button>
+    <button class="weui-btn" class="weui-btn" type="primary" wx:if="{{inputShoweda3==true}}" style="width:85%">A:{{A}}</button>
+      <button class="weui-btn" class="weui-btn" type="warn"  wx:if="{{inputShoweda4==true}}" style="width:85%">A:{{A}}</button>
+
+        <button class="weui-btn" type="default" bindtap="gotoPage4" wx:if="{{inputShowedb1}}" style="width:85%">B:{{B}}</button>
+         <button class="weui-btn" type="default"wx:if="{{inputShowedb2}}" style="width:85%" >B:{{B}}</button>
+        <button class="weui-btn" type="primary" wx:if="{{inputShowedb3}}" style="width:85%">B:{{B}}</button>
+        <button class="weui-btn" type="warn" wx:if="{{inputShowedb4}}" style="width:85%">B:{{B}}</button>
+
+            <button class="weui-btn" type="default"  bindtap="gotoPage5" wx:if="{{inputShowedc1}}" style="width:85%">C:{{C}}</button>
+                  <button class="weui-btn" type="default" wx:if="{{inputShowedc2}}"  style="width:85%">C:{{C}}</button>
+                <button class="weui-btn" type="primary" wx:if="{{inputShowedc3}}" style="width:85%">C:{{C}}</button>
+                <button class="weui-btn" type="warn" wx:if="{{inputShowedc4}}" style="width:85%">C:{{C}}</button>
+
+                <button class="weui-btn" type="default" bindtap="gotoPage6" wx:if="{{inputShowedd1}}" style="width:85%">D:{{D}}</button>
+                <button class="weui-btn" type="default" wx:if="{{inputShowedd2}}" style="width:85%">D:{{D}}</button>
+                <button class="weui-btn" type="primary" wx:if="{{inputShowedd3}}" style="width:85%">D:{{D}}</button>
+                <button class="weui-btn" type="warn" wx:if="{{inputShowedd4}}" style="width:85%">D:{{D}}</button>
+<view class="page__desc" wx:if="{{inputShoweda1==false}}">正确答案：{{Correct_Answer}}</view>
+<view class="page__desc" wx:if="{{inputShoweda1==false}}">解析：{{Question_Analysis}}</view>
+ <button class="btn2" wx:if="{{inputShoweda1==false}}" bindtap="gotoPage2" hover-class='btn-hover' disabled="{{dis}}">下一题</button>
+
+</view>
+
+
+  

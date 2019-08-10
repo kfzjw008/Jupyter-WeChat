@@ -20,38 +20,37 @@
         </view>
      
     </view>
-
   <view class="weui-flex">
             <view class="weui-flex__item">
-            <button class="btn1" id="英仙座"  bindtap="hideInput2">英仙座</button>
+            <button class="btn1" id="太阳"  bindtap="hideInput2">太阳</button>
             </view>
             <view class="weui-flex__item">
             <button class="btn1" id="猎户座"  bindtap="hideInput2" >猎户座</button>
             </view>
             <view class="weui-flex__item">
-            <button class="btn1" id="武仙座" bindtap="hideInput2">武仙座</button>
+            <button class="btn1" id="大角" bindtap="hideInput2">大角</button>
             </view>
         </view>
           <view class="weui-flex">
             <view class="weui-flex__item">
-            <button class="btn2" id="金牛座"  bindtap="hideInput2">金牛座</button>
+            <button class="btn2" id="M31"  bindtap="hideInput2">M31</button>
             </view>
             <view class="weui-flex__item">
-            <button class="btn2" id="仙女座"  bindtap="hideInput2" >仙女座</button>
+            <button class="btn2" id="英仙座"  bindtap="hideInput2" >英仙座</button>
             </view>
             <view class="weui-flex__item">
-            <button class="btn2" id="人马座" bindtap="hideInput2">人马座</button>
+            <button class="btn2" id="毕宿" bindtap="hideInput2">毕宿</button>
             </view>
         </view>
         <view class="weui-flex">
             <view class="weui-flex__item">
-            <button class="btn2" id="御夫座"  bindtap="hideInput2">御夫座</button>
+            <button class="btn2" id="玉衡"  bindtap="hideInput2">玉衡</button>
             </view>
             <view class="weui-flex__item">
             <button class="btn2" id="牧夫座"  bindtap="hideInput2" >牧夫座</button>
             </view>
             <view class="weui-flex__item">
-            <button class="btn2" id="狮子座" bindtap="hideInput2">狮子座</button>
+            <button class="btn2" id="M45" bindtap="hideInput2">M45</button>
             </view>
         </view>
 

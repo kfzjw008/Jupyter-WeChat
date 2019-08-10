@@ -30,7 +30,14 @@
     "pages/qa/cs/success",
     "pages/qa/cs/info",
     "pages/qa/cs/fail",
-    "pages/qa/cs/zdy"
+    "pages/qa/cs/zdy",
+    "pages/qa/tzs/start",
+    "pages/qa/tzs/test",
+    "pages/qa/tzs/result",
+    "pages/qa/tzs/success",
+    "pages/qa/tzs/info",
+    "pages/qa/tzs/fail",
+    "pages/qa/tzs/zdy"
   ],
   "permission": {
     "scope.userLocation": {

@@ -454,6 +454,7 @@ Page({
         var A = res.data.A
         var B = res.data.B
         var C = res.data.C
+        var Image = res.data.Image
         var D = res.data.D
         var Correct_Answer = res.data.Correct_Answer
         var Examination_Place = res.data.Examination_Place
@@ -463,6 +464,7 @@ Page({
             Question_body: Question_body,
             A: A,
             B: res.data.B,
+          Image: Image,
             C: res.data.C,
             D: res.data.D,
             Correct_Answer: Correct_Answer,
@@ -499,7 +501,9 @@ Page({
         var A = res.data.A
         var B = res.data.B
         var C = res.data.C
+        
         var D = res.data.D
+        var Image = res.data.Image
         var Correct_Answer = res.data.Correct_Answer
         var Examination_Place = res.data.Examination_Place
         var Question_Analysis = res.data.Question_Analysis
@@ -510,6 +514,7 @@ Page({
             A: A,
             B: res.data.B,
             C: res.data.C,
+          Image: Image,
             D: res.data.D,
             Correct_Answer: Correct_Answer,
           inputShoweda1: true,

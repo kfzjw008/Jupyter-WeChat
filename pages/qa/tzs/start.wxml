@@ -1,0 +1,51 @@
+<view class="page">
+    <view class="weui-msg">
+        <view class="weui-msg__icon-area" style=' margin-bottom: 1px;'>
+             <image style="margin-left:auto;margin-right:auto;width:90px;height:90px" src="https://api.majorbillliu.com/media/questions/images/xingyuncunicon.png"  />
+           
+        </view>
+        <view class="weui-msg__text-area" >
+            <text class="weui-msg__title" style="margin-bottom: 0px;" >第一届”星云村“杯\n天文知识网络挑战赛</text>
+          
+            <view class="weui-msg__desc" style='  text-align: left;'>为宣传和普及天文知识，提高大众学习天文的积极性与热情，星云村开发团队特面向全体用户主办天文知识网络挑战赛。
+</view>
+<view class="weui-msg__desc" style='  text-align: left;'>比赛时间：2019年8月12-13日
+</view>
+<view class="weui-msg__desc" style='  text-align: left;'>比赛规则：在10分钟内完成20道天文试题。
+</view>
+<view class="weui-msg__desc" style='  text-align: left;'>评奖方式：一二三等奖分别按照5%、10%、15%的比例发放荣誉证书，所有用户均发放优秀参赛者证书。
+</view>
+        </view>
+
+          
+        <view class="weui-cells weui-cells_after-title">
+            <view class="weui-cell weui-cell_input">
+                <view class="weui-cell__hd">
+
+                    <view class="weui-label" style='font-size:15px'>姓名</view>
+                </view>
+                <view class="weui-cell__bd">
+                    <input class="weui-input" bindinput="jd" style='font-size:15px' placeholder="请输入姓名用于证书发放" />
+                </view>
+            </view>
+
+        </view>
+
+
+        <view class="weui-msg__opr-area">
+            <view class="weui-btn-area">
+                <button class="weui-btn" style='background: #3763BA;'  type="primary"  open-type="getUserInfo" lang="zh_CN" bindgetuserinfo="onGotUserInfo">登录并开始竞赛<view class="weui-badge" style="margin-left: 5px;">HOT</view></button> 
+ 
+
+            </view>
+        </view>
+        <view class="weui-msg__extra-area">
+            <view class="weui-footer">
+                <view class="weui-footer__links">
+                    <navigator url="" class="weui-footer__link">实时竞赛模块V1.0测试版</navigator>
+                </view>
+                <view class="weui-footer__text">题目来源：自命题和部分网络资料</view>
+            </view>
+        </view>
+    </view>
+</view>
