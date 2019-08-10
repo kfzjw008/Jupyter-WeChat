@@ -25,11 +25,18 @@
                     <view class="weui-form-preview__value_in-hd">{{Name111}}</view>
                 </view>
             </view>
+         
             <view class="weui-form-preview__bd">
+                  <view class="weui-form-preview__item">
+                    <view class="weui-form-preview__label">中国传统星名</view>
+                    <view class="weui-form-preview__value">{{Ancient_Chinese_Name}}</view>
+                </view>
                     <view class="weui-form-preview__item">
                     <view class="weui-form-preview__label">所属星座</view>
                     <view class="weui-form-preview__value">{{Constellation111}}</view>
                 </view>
+                  
+              
                 <view class="weui-form-preview__item">
                     <view class="weui-form-preview__label">拜耳命名</view>
                     <view class="weui-form-preview__value">{{Bayer111}}</view>

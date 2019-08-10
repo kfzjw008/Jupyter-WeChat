@@ -25,7 +25,8 @@
                     <view class="weui-media-box__info">
                         <view class="weui-media-box__info__meta">视星等</view>
                         <view class="weui-media-box__info__meta">{{item.Apparent_magnitude}}</view>
-                        <view class="weui-media-box__info__meta weui-media-box__info__meta_extra">绝对星等   {{item.Absolute_magnitude}}</view>
+                        <view class="weui-media-box__info__meta weui-media-box__info__meta_extra">中国传统星名   {{item.Ancient_Chinese_Name}}</view>
+                        
                     </view>
                 </navigator>
                   <view class="weui-flex">

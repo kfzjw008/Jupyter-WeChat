@@ -21,6 +21,7 @@ Page({
     Classification111: '',
     Notes111: '',
     Constellation111: '',
+    Ancient_Chinese_Name:''
   },
 
   /**
@@ -63,6 +64,7 @@ Page({
         //console.log(res)
         var id111 = res.data.id
         var Name111 = res.data.Name
+        var Ancient_Chinese_Name = res.data.Ancient_Chinese_Name
         var Bayer111 = res.data.Bayer
         var Fransted111 = res.data.Fransted
         var Variable_star111 = res.data.Variable_star
@@ -92,6 +94,7 @@ Page({
             Classification111: Classification111,
             Notes111: Notes111,
             Constellation111: Constellation111,
+            Ancient_Chinese_Name: Ancient_Chinese_Name
           })
         //console.log(res.data)
       }
