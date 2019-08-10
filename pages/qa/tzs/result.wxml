@@ -56,15 +56,6 @@
         <view class="weui-msg__opr-area">
             <view class="weui-btn-area">
                 <button class="weui-btn" style='background: #3763BA;'  type="primary" bindtap="gotoPage6">上传竞赛记录</button>
-             
-            </view>
-        </view>
-        <view class="weui-msg__extra-area">
-            <view class="weui-footer">
-                <view class="weui-footer__links">
-                    <navigator url="" class="weui-footer__link">在线测试模块V1.0测试版</navigator>
-                </view>
-                <view class="weui-footer__text">题目来源：自命题和部分网络资料</view>
             </view>
         </view>
     </view>

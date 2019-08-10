@@ -5,7 +5,7 @@
            
         </view>
         <view class="weui-msg__text-area" >
-            <text class="weui-msg__title" style="margin-bottom: 0px;" >第一届”星云村“杯\n天文知识网络挑战赛</text>
+            <text class="weui-msg__title" style="margin-bottom: 0px;" >第一届“星云村”杯\n天文知识网络挑战赛</text>
           
             <view class="weui-msg__desc" style='  text-align: left;'>为宣传和普及天文知识，提高大众学习天文的积极性与热情，星云村开发团队特面向全体用户主办天文知识网络挑战赛。
 </view>
@@ -39,13 +39,6 @@
 
             </view>
         </view>
-        <view class="weui-msg__extra-area">
-            <view class="weui-footer">
-                <view class="weui-footer__links">
-                    <navigator url="" class="weui-footer__link">实时竞赛模块V1.0测试版</navigator>
-                </view>
-                <view class="weui-footer__text">题目来源：自命题和部分网络资料</view>
-            </view>
-        </view>
+     
     </view>
 </view>
