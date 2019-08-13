@@ -46,6 +46,8 @@ Page({
    * 页面的初始数据
    */
   data: {
+    fjd:0,
+    fwd:0,
 jdg:'',
     wdg: '', polygons: [],
     controls: [{
@@ -92,7 +94,9 @@ jdg:'',
     var wd = parseFloat(e.markerId.split(",")[1]).toFixed(4);
     console.log(jd)
     console.log(wd)
-
+    app.globalData.fjd=jd
+    app.globalData.fwd=wd
+    
     this.setData({
       jd: jd,
       wd: wd
@@ -106,32 +110,41 @@ jdg:'',
   },
   onReady(e) {
     this.createMarkers()
-  },jd: function (e) {
-    //console.log(e)
+  },
+  
+  
+  jd: function (e) {
+    console.log(e)
     this.setData({
       
       jdg: e.detail.value
     })
-  }, wd: function (e) {
-    //console.log(e)
+    app.globalData.fjd = e.detail.value
+  },
+  
+   wd: function (e) {
+   console.log(e)
     this.setData({
       wdg: e.detail.value
     })
+  
+     app.globalData.fwd = e.detail.value
   },
   gotoPage2: function (e) {
     var that = this
+
     wx.navigateBack({
       delta: 1,
       success(res) {
       //  var jdg=
-          app.globalData.jd = that.data.jdg;
-        app.globalData.wd = that.data.wdg;
+        app.globalData.jd = app.globalData.fjd;
+        app.globalData.wd = app.globalData.fwd;
        
         wx.request({
           url: 'https://api.majorbillliu.com/getIndex',
           data: {
-            lon: that.data.jdg,
-            lat: that.data.wdg
+            lon: app.globalData.fjd,
+            lat: app.globalData.fwd
           }
         
       

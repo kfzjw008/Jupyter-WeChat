@@ -72,5 +72,7 @@ App({
     school:'',
     nickname:'',
     location:'',
+    fjd:0,
+    fwd:0
   }
 })
