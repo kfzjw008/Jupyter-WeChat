@@ -5,7 +5,7 @@
 </view>
     <view class="page__hd" style='  padding: 5px;'>
         <view class="page__title">输入经纬度</view>
-        <view class="page__desc">输入经纬度或者地图选点可以查看指定位置的观测适宜度，仅限中华人民共和国大陆境内。</view>
+        <view class="page__desc">输入经纬度或地图选点可查看指定位置观测适宜度，仅限中华人民共和国大陆境内。红色坐标闪烁即为录入成功。</view>
     </view>
 
    <view class="weui-cells__title">经纬度</view>

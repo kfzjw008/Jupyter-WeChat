@@ -17,7 +17,7 @@
                   <text style='font-size:100px ;color:#FFFFFF;padding:0rpx;line-height:0.95em;'>{{P0}}</text>
          
 
-    <view style='font-size:15px ;color:#FFFFFF;text-align:center;margin-bottom:60px' >{{q1}}</view>
+    <view style='font-size:18px ;color:#FFFFFF;text-align:center;margin-bottom:60px' >{{q1}}</view>
 
 
 
@@ -47,19 +47,20 @@
 
 
 
+
   <view class="cu-item">
-  <text class='text-grey' style='text-align:left'>云量</text> <text  class='text-gray'  style='text-align:right; margin-right:0rpx'>{{cloudcover}}</text>
+  <text class='text-grey' style='text-align:left'>云量：{{cloudcover}}</text> <text  class='text'  style='text-align:right;color:#3763BA ;font-weight:bolder'>{{scloudcover}}</text> 
   </view>
 
   <view class="cu-item ">
-  <text class='text-grey ' style='text-align:left'>大气视宁度</text> <text  class='text-grey'  style='text-align:right'>{{seeing}}</text>
+  <text class='text-grey ' style='text-align:left'>大气视宁度：{{seeing}}</text> <text  class='text'  style='text-align:right;color:#3763BA ;font-weight:bolder'>{{sseeing}}</text>
   </view>
 
     <view class="cu-item ">
-  <text class='text-grey' style='text-align:left'>大气透明度</text> <text  class='text-grey'  style='text-align:right'>{{transparency}}</text>
+  <text class='text-grey' style='text-align:left'>大气透明度：{{transparency}}</text> <text  class='text'  style='text-align:right;color:#3763BA ;font-weight:bolder'>{{strans}}</text>
   </view>
     <view class="cu-item ">
-  <text class='text-grey' style='text-align:left'>大气不稳定度</text> <text  class='text-grey'  style='text-align:right'>{{lifted_index}}</text>
+  <text class='text-grey' style='text-align:left'>抬升指数：{{lifted_index}}</text> <text  class='text'  style='text-align:right;color:#3763BA ;font-weight:bolder'>{{slifted}}</text>
   </view>
     <view class="cu-item ">
   <text class='text-grey' style='text-align:left'>温度</text> <text  class='text-grey'  style='text-align:right'>{{temp2m}}°C</text>

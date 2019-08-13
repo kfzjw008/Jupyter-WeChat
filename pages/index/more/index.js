@@ -1,7 +1,7 @@
 // pages/index/more/index.js
 var app = getApp();  
 
-const markersize = 30
+const markersize = 25
 
 function range(start, edge, step) {
   for (var ret = [];
@@ -60,7 +60,8 @@ jdg:'',
       },
       clickable: true
     }],
-    markers: []
+    markers: [],
+
   }, createMarkers() {
 
     this.mapCtx = wx.createMapContext('map')
@@ -86,9 +87,32 @@ jdg:'',
     })
   },
   regionchange(e) {
+    this.setData({
+      markers: [],
+
+    })
     this.createMarkers()
+    this.setData({
+
+      markers: [{
+        //   id: "1",
+        latitude: app.globalData.fwd,
+        longitude: app.globalData.fjd,
+        width: 100,
+        height: 100,
+
+      }],
+    })
   },
   markertap(e) {
+    this.setData({
+      markers: [],
+
+    })
+   this.createMarkers()
+
+
+    e.alpha=1
     console.log(e.markerId.split(","))
     var jd = parseFloat(e.markerId.split(",")[0]).toFixed(4);
     var wd = parseFloat(e.markerId.split(",")[1]).toFixed(4);
@@ -97,11 +121,19 @@ jdg:'',
     app.globalData.fjd=jd
     app.globalData.fwd=wd
     
-    this.setData({
-      jd: jd,
-      wd: wd
-    })
+   this.setData({
+    jd: jd,
+     wd: wd,
+     markers: [{
+     //   id: "1",
+       latitude: wd,
+       longitude: jd,
+       width: 100,
+      height: 100,
 
+      }],
+    })
+    console.log(e.alpha)
 
 
   },
