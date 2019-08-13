@@ -52,8 +52,8 @@ Page({
         },
         min: 0
       },
-      width: 320,
-      height: 200
+      width: 240,
+      height: 180
     });
   },
 

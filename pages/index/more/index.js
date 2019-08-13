@@ -1,7 +1,7 @@
 // pages/index/more/index.js
 var app = getApp();  
 
-const markersize = 25
+const markersize = 30
 
 function range(start, edge, step) {
   for (var ret = [];
@@ -176,6 +176,7 @@ jdg:'',
         }
       })
     }else{
+      app.globalData.inp = 1
       wx.navigateBack({
         delta: 1,
         success(res) {

@@ -1,21 +1,37 @@
 
-<view class="page">
+  <view class="cu-list menu card-menu margin-top-xl margin-bottom-xl shadow-lg radius">
 
- <view class="page__bd">
 
-        <view class="weui-cells weui-cells_after-title">
-                     <navigator bindtap='qk' class="weui-cell weui-cell_access" hover-class="weui-cell_active">
-                <view class="weui-cell__bd">清空答题数据</view>
-            </navigator>
-            <navigator url="" class="weui-cell weui-cell_access" hidden='true'  hover-class="weui-cell_active">
-                <view class="weui-cell__bd">清空收藏数据</view>
-   
-            </navigator>
+    <view class="cu-item arrow" style='min-height:90rpx'>
+      <navigator bindtap='qk' class="content"  hover-class="none">
+        <text class="cuIcon-rank text-blue"></text>
+        <text class="text-grey">清空答题数据</text>
+      </navigator>
 
-        </view>
-
-     
     </view>
-</view>
+ </view>
 
- 
+
+ <view class="cu-list menu card-menu margin-top-xl margin-bottom-xl shadow-lg radius">
+
+    <view class="cu-item arrow" style='min-height:90rpx'>
+      <button class="cu-btn content" open-type="contact">
+        <text class="cuIcon-service text-cyan"></text>
+        <text class="text-grey">客服对话</text>
+      </button>
+    </view>
+    <view class="cu-item arrow" style='min-height:90rpx'>
+      <button class="cu-btn content" open-type="openSetting">
+        <text class="cuIcon-punch text-cyan"></text>
+        <text class="text-grey">权限设置</text>
+      </button>
+    </view>
+        <view class="cu-item arrow" style='min-height:90rpx'>
+      <button class="cu-btn content" open-type="feedback">
+        <text class="cuIcon-mail text-cyan"></text>
+        <text class="text-grey">意见反馈</text>
+      </button>
+    </view>
+
+  </view>
+

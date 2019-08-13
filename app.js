@@ -73,6 +73,7 @@ App({
     nickname:'',
     location:'',
     fjd:0,
-    fwd:0
+    fwd:0,
+    inp:0
   }
 })

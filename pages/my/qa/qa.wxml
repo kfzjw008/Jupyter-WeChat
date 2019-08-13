@@ -1,51 +1,75 @@
-<view class="page">
-
-    <view class="page__bd">
-   
-        <view class="weui-panel weui-panel_access">
-            <view class="weui-panel__hd">常见问题</view>
-            <view class="weui-panel__bd">
-                <view class="weui-media-box weui-media-box_text">
-                    <view class="weui-media-box__title weui-media-box__title_in-text">Q：无法获取数据？</view>
-                    <view class="weui-media-box__desc">A：1、检查网络连接是否存在问题。2、是否在境外？本系统只提供中华人民共和国境内服务。3、服务器内部错误，请向我们反馈问题。4、检查GPS权限。</view>
-                </view>
-                <view class="weui-media-box weui-media-box_text">
-                    <view class="weui-media-box__title weui-media-box__title_in-text">Q：观测适宜度如何判断？</view>
-                    <view class="weui-media-box__desc">观测适宜度取值为0-100,55以上具备基础观测价值（可以看到星星），80以上具备较好的观测价值（野外大型观测）。数字越大，越适宜观测。</view>
-                </view>
-                          <view class="weui-media-box weui-media-box_text">
-                    <view class="weui-media-box__title weui-media-box__title_in-text">Q：哪些因素会影响观测适宜度呢？</view>
-                    <view class="weui-media-box__desc">A:大气因素诸如云量，视宁度，其他因素包括空气质量，风速，温度，湿度都会对观测的适宜度评价产生影响。</view>
-                </view>
-                          <view class="weui-media-box weui-media-box_text">
-                    <view class="weui-media-box__title weui-media-box__title_in-text">Q:观测适宜度的计算真的科学吗？</view>
-                    <view class="weui-media-box__desc">A:该项计算基于AHP层次分析法，通过天空因素，地面因素，体感温度等多重数据经过多次反复调研设计算法得出。目前该项研究成果已经由开发人员发表在中文科技核心期刊上，具有一定的参考价值。</view>
-                </view>
-                          <view class="weui-media-box weui-media-box_text">
-                    <view class="weui-media-box__title weui-media-box__title_in-text">Q:观测适宜度的数据更新时间？</view>
-                    <view class="weui-media-box__desc">A:每半小时会更新一次。目前支持 查看60小时以内的数据。</view>
-                </view>
-                     <view class="weui-media-box weui-media-box_text">
-                    <view class="weui-media-box__title weui-media-box__title_in-text">Q：题目的答案有问题怎么办？</view>
-                    <view class="weui-media-box__desc">如果在作答过程中发现题目有问题，可以截图通过“我的主页->更多设置->意见反馈”进行反馈，也可以使用客服会话功能与我们联络，我们在收到您的反馈后会第一时间进行处理</view>
-                </view>
-                     <view class="weui-media-box weui-media-box_text">
-                    <view class="weui-media-box__title weui-media-box__title_in-text">Q：恒星表有许多恒星名称有问题？</view>
-                    <view class="weui-media-box__desc">恒星表的恒星名称基于西方的命名规则修改而来，在我们多次调研中发现西方命名对于实际观测查询意义不大，且许多西方命名令人难以理解，甚至出现数据的错误。在后续版本中，我们会逐步加入中国古代恒星名称，敬请期待。</view>
-                </view>
-                     <view class="weui-media-box weui-media-box_text">
-                    <view class="weui-media-box__title weui-media-box__title_in-text">Q：数据加载缓慢？</view>
-                    <view class="weui-media-box__desc">本小程序的原理是借助数据源服务器，基于数据处理服务器来获取数据，经过两层服务器的传递势必会影响传递效率。另一方面，经过多次测试，数据源服务器系统数据返回较为缓慢是主要原因。</view>
-                </view>
-                     <view class="weui-media-box weui-media-box_text">
-                    <view class="weui-media-box__title weui-media-box__title_in-text">Q：练习记录无法永久保存？</view>
-                    <view class="weui-media-box__desc">是的，至今无法永久保存，不过我们在后期会逐步增加永久保存内容。</view>
-                </view>
-                 
-            </view>
- 
-        </view>
-
-    
-    </view>
+<view class='margin-xl bg-white padding-xl radius shadow-lg'>
+ <text class='text-center margin-bottom text-lg  text-grey'  style='text-align:right;color:#3763BA ;font-weight:bolder'>Q：无法获取数据？
+ </text>
+  <view class='text-content'>
+      <text >A：1、检查网络连接是否存在问题。2、是否在境外？本系统只提供中华人民共和国境内服务。3、服务器内部错误，请向我们反馈问题。4、检查GPS权限。
+      </text>
+  </view>
 </view>
+
+<view class='margin-xl bg-white padding-xl radius shadow-lg'>
+ <text class='text-center margin-bottom text-lg  text-grey'  style='text-align:right;color:#3763BA ;font-weight:bolder'>Q：观测适宜度如何判断？
+ </text>
+  <view class='text-content'>
+      <text >观测适宜度取值为0-100,55以上具备基础观测价值（可以看到星星），80以上具备较好的观测价值（野外大型观测）。数字越大，越适宜观测。
+      </text>
+  </view>
+</view>
+<view class='margin-xl bg-white padding-xl radius shadow-lg'>
+ <text class='text-center margin-bottom text-lg  text-grey'  style='text-align:right;color:#3763BA ;font-weight:bolder'>Q：哪些因素会影响观测适宜度呢？
+ </text>
+  <view class='text-content'>
+      <text >A:大气因素诸如云量，视宁度，其他因素包括空气质量，风速，温度，湿度都会对观测的适宜度评价产生影响。 
+      </text>
+  </view>
+</view>
+<view class='margin-xl bg-white padding-xl radius shadow-lg'>
+ <text class='text-center margin-bottom text-lg  text-grey'  style='text-align:right;color:#3763BA ;font-weight:bolder'>Q:观测适宜度的计算真的科学吗？
+ </text>
+  <view class='text-content'>
+      <text >A:该项计算基于AHP层次分析法，通过天空因素，地面因素，体感温度等多重数据经过多次反复调研设计算法得出。目前该项研究成果已经由开发人员发表在中文科技核心期刊上，具有一定的参考价值。 
+      </text>
+  </view>
+</view>
+<view class='margin-xl bg-white padding-xl radius shadow-lg'>
+ <text class='text-center margin-bottom text-lg  text-grey'  style='text-align:right;color:#3763BA ;font-weight:bolder'>Q:观测适宜度的数据更新时间？
+ </text>
+  <view class='text-content'>
+      <text >A:每半小时会更新一次。目前支持 查看60小时以内的数据.
+      </text>
+  </view>
+</view>
+<view class='margin-xl bg-white padding-xl radius shadow-lg'>
+ <text class='text-center margin-bottom text-lg  text-grey'  style='text-align:right;color:#3763BA ;font-weight:bolder'>Q：题目的答案有问题怎么办？
+ </text>
+  <view class='text-content'>
+      <text >如果在作答过程中发现题目有问题，可以截图通过“我的主页->设置->意见反馈”进行反馈，也可以使用客服会话功能与我们联络，我们在收到您的反馈后会第一时间进行处理
+      </text>
+  </view>
+</view>
+<view class='margin-xl bg-white padding-xl radius shadow-lg'>
+ <text class='text-center margin-bottom text-lg  text-grey'  style='text-align:right;color:#3763BA ;font-weight:bolder'>Q：恒星表有许多恒星名称有问题？
+ </text>
+  <view class='text-content'>
+      <text >恒星表的恒星名称基于西方的命名规则修改而来，在我们多次调研中发现西方命名对于实际观测查询意义不大，且许多西方命名令人难以理解，甚至出现数据的错误。在后续版本中，我们会逐步加入中国古代恒星名称，敬请期待。  
+      </text>
+  </view>
+</view>
+<view class='margin-xl bg-white padding-xl radius shadow-lg'>
+ <text class='text-center margin-bottom text-lg  text-grey'  style='text-align:right;color:#3763BA ;font-weight:bolder'>Q：数据加载缓慢？
+ </text>
+  <view class='text-content'>
+      <text >本小程序的原理是借助数据源服务器，基于数据处理服务器来获取数据，经过两层服务器的传递势必会影响传递效率。另一方面，经过多次测试，数据源服务器系统数据返回较为缓慢是主要原因。
+      </text>
+  </view>
+</view>
+<view class='margin-xl bg-white padding-xl radius shadow-lg'>
+ <text class='text-center margin-bottom text-lg  text-grey'  style='text-align:right;color:#3763BA ;font-weight:bolder'>Q：练习记录无法永久保存？
+ </text>
+  <view class='text-content'>
+      <text >是的，至今无法永久保存，不过我们在后期会逐步增加永久保存内容。
+      </text>
+  </view>
+</view>
+
+

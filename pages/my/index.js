@@ -1,4 +1,5 @@
 // pages/my/index.js
+var app = getApp();
 Page({
 
   /**
@@ -38,7 +39,13 @@ Page({
    * 生命周期函数--监听页面显示
    */
   onShow: function () {
+this.setData({
 
+  a1: app.globalData.allquestion,
+  a2: app.globalData.allquestionright,
+  a3: app.globalData.allquestionwrong
+
+})
   },
 
   /**
