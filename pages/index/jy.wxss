@@ -1,4 +1,5 @@
 /* pages/index/jy.wxss */
+@import '../../icon.wxss';
 .btn1 {
   width: 75%;
   margin-top: 20rpx;

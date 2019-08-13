@@ -165,25 +165,39 @@ jdg:'',
   gotoPage2: function (e) {
     var that = this
 
-    wx.navigateBack({
-      delta: 1,
-      success(res) {
-      //  var jdg=
-        app.globalData.jd = app.globalData.fjd;
-        app.globalData.wd = app.globalData.fwd;
-       
-        wx.request({
-          url: 'https://api.majorbillliu.com/getIndex',
-          data: {
-            lon: app.globalData.fjd,
-            lat: app.globalData.fwd
+    if (app.globalData.fjd == '' || app.globalData.fwd=='') {
+      wx.showModal({
+        content: '请输入完整的经纬度！',
+        showCancel: false,
+        success: function (res) {
+          if (res.confirm) {
+            console.log('用户点击确定')
           }
-        
-      
-        })
-        console.log(app.globalData.jd)
-      }
-    })
+        }
+      })
+    }else{
+      wx.navigateBack({
+        delta: 1,
+        success(res) {
+          //  var jdg=
+          app.globalData.jd = app.globalData.fjd;
+          app.globalData.wd = app.globalData.fwd;
+
+          wx.request({
+            url: 'https://api.majorbillliu.com/getIndex',
+            data: {
+              lon: app.globalData.fjd,
+              lat: app.globalData.fwd
+            }
+
+
+          })
+          console.log(app.globalData.jd)
+        }
+      })
+
+    }
+
   },
   /**
    * 生命周期函数--监听页面加载

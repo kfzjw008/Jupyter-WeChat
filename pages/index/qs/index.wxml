@@ -1,12 +1,22 @@
 <!--pages/index/qs/index.wxml-->
-    <view class="page__hd">
-        <view class="page__title">变化趋势</view>
-        <view class="page__desc">查看60小时(H)观测适宜度变化趋势。</view>
-    </view>
-       <canvas  canvas-id="lineCanvas"   style="margin-left:auto; margin-right:auto;width: 310px; height: 150px;"></canvas>
+<view class="cu-load bg-blue {{!isLoad?'loading':'over'}}" hidden='{{hid}}'></view>
+<view class="cu-load bg-red erro" hidden='{{hid2}}'></view>
 
-<view class="weui-flex">
-    <view class="table">
+
+<view class='margin-sm bg-white padding-sm radius shadow-lg'>
+  <view class='text-center margin-bottom text-lg  text-grey'>变化趋势图</view>
+  <view class='text-content'>
+    <view>查看60小时(H)观测适宜度变化趋势。</view>
+  <canvas  canvas-id="lineCanvas"   style="margin-left:auto; margin-right:auto;width: 95%; height: 150px;"></canvas>
+  </view>
+</view>
+
+<view class='margin-sm bg-white  radius shadow-lg' style=' padding: 10rpx;'>
+  <view class='text-center margin-bottom text-lg  text-grey'>变化趋势表</view>
+  <view class='text-content'>
+    <view>查看60小时(H)观测适宜度详细变化情况。</view>
+
+  <view class="table">
         <view class="tr">
             <view class="th">日期</view>
             <view class="th">适宜度</view>
@@ -90,7 +100,11 @@
           
         </view>
     </view>
+
+
+  </view>
 </view>
+
 
     
                 <button class="btn1" hover-class='btn-hover' bindtap="gotoPage2" >返回</button>

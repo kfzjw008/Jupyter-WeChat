@@ -53,17 +53,17 @@ Page({
   onShow: function () {
 
     var that = this
-
+    that.setData({
+      hid: false,
+      hid2:true,
+      isLoad: false
+    })
     wx.getLocation({
 
       type: 'wgs84',
       success: function (res) {
         ////console.log(res)
-        wx.showToast({
-          title: '数据加载中',
-          icon: 'loading',
-          duration: 6000
-        })
+ 
         that.setData({
           wd: app.globalData.wd,
           jd: app.globalData.jd,
@@ -75,11 +75,17 @@ Page({
             lat: app.globalData.wd
           },
           fail(res) {
-            wx.showToast({
-              title: '加载失败',
-              icon: "none",
-              duration: 2000
+       
+            that.setData({
+              hid: true,
+              hid2: false,
+              isLoad: false
             })
+            setTimeout(function () {
+              that.setData({
+                hid2: true
+              })
+            }, 2000)
             that.setData({
               locat: '加载失败',
               cloudcover: '加载失败',
@@ -107,7 +113,16 @@ Page({
             var sseeing = ''
             var strans = ''
             var slifted = ''
+            that.setData({
+              isLoad: true
+            })
+            setTimeout(function () {
+              that.setData({
+                hid: true
+              })
+              //要延时执行的代码
 
+            }, 2000)
             if (cloudcover == 1) { cloudcover = '3%', scloudcover = '万里无云' }
             if (cloudcover == 2) { cloudcover = '13%', scloudcover = '少量云朵，可忽略' }
             if (cloudcover == 3) { cloudcover = '25%', scloudcover = '云层稀薄' }
@@ -217,12 +232,14 @@ Page({
   },
   fresh: function (a) {
     //  //console.log(a)
-    wx.showToast({
-      title: '数据加载中',
-      icon: 'loading',
-      duration: 6000
-    })
+
     var that = this
+    that.setData({
+      hid: false,
+      hid2:true,
+      isLoad: false,
+      diss:true
+    })
     wx.getLocation({
 
       type: 'wgs84',
@@ -233,6 +250,7 @@ Page({
         that.setData({
           wd: latitude,
           jd: longitude,
+         
         })
         wx.request({
           url: 'https://api.majorbillliu.com/getIndex',
@@ -241,11 +259,7 @@ Page({
             lat: latitude
           },
           fail(res) {
-            wx.showToast({
-              title: '加载失败',
-              icon: "none",
-              duration: 2000
-            })
+      
             that.setData({
               locat: '加载失败',
               cloudcover: '加载失败',
@@ -255,16 +269,18 @@ Page({
               temp2m: '加载失败',
               transparency: '加载失败',
               lifted_index: '加载失败',
+              hid2: false,
               P0: "--",
+              diss: false
             })
-
+            setTimeout(function () {
+              that.setData({
+                hid2: true
+              })
+            }, 2000)
           },
           success(res) {
-            wx.showToast({
-              title: '加载成功',
-              icon: 'success',
-              duration: 2000
-            })
+       
             var location = res.data.location
             var cloudcover = res.data.astronomy[0].cloudcover
             var seeing = res.data.astronomy[0].seeing
@@ -278,7 +294,19 @@ Page({
             var sseeing = ''
             var strans = ''
             var slifted = ''
+            that.setData({
+              isLoad: true,
+               hid2: true,
+              diss: false
+            })
 
+            setTimeout(function () {
+              that.setData({
+                hid: true
+              })
+              //要延时执行的代码
+
+            }, 2000)
             if (cloudcover == 1) { cloudcover = '3%', scloudcover = '万里无云' }
             if (cloudcover == 2) { cloudcover = '13%', scloudcover = '少量云朵，可忽略' }
             if (cloudcover == 3) { cloudcover = '25%', scloudcover = '云层稀薄' }
@@ -393,12 +421,12 @@ Page({
   },
   onReady: function () {
     var that = this
-    wx.showToast({
-      title: '数据加载中',
-      icon: 'loading',
-      duration: 3000
-    })
 
+    that.setData({
+      hid: false,
+      hid2: true,
+      isLoad: false
+    })
 
     wx.getLocation({
       type: 'wgs84',
@@ -417,11 +445,7 @@ Page({
             lat: app.globalData.wd
           },
           fail(res) {
-            wx.showToast({
-              title: '加载失败',
-              icon: "none",
-              duration: 2000
-            })
+  
             that.setData({
               locat: '加载失败',
               cloudcover: '加载失败',
@@ -431,9 +455,14 @@ Page({
               temp2m: '加载失败',
               transparency: '加载失败',
               lifted_index: '加载失败',
+              hid2: false,
               P0: "--",
             })
-
+            setTimeout(function () {
+              that.setData({
+                hid2: true
+              })
+            }, 2000)
           },
           success(res) {
             var location = res.data.location
@@ -449,7 +478,16 @@ Page({
             var sseeing = ''
             var strans = ''
             var slifted = ''
+            that.setData({
+              isLoad: true
+            })
+            setTimeout(function () {
+              that.setData({
+                hid: true
+              })
+              //要延时执行的代码
 
+            }, 2000)
             if (cloudcover == 1) { cloudcover = '3%', scloudcover = '万里无云' }
             if (cloudcover == 2) { cloudcover = '13%', scloudcover = '少量云朵，可忽略' }
             if (cloudcover == 3) { cloudcover = '25%', scloudcover = '云层稀薄' }

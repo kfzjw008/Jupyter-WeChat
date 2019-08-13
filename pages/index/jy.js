@@ -126,17 +126,17 @@ if(M==6||M==7||M==8){
     }
 
     var that = this
-
+    that.setData({
+      hid: false,
+      hid2: true,
+      isLoad: false
+    })
     wx.getLocation({
 
       type: 'wgs84',
       success: function (res) {
         //console.log(res)
-        wx.showToast({
-          title: '数据加载中',
-          icon: 'loading',
-          duration: 6000
-        })
+     
         that.setData({
           wd: app.globalData.wd,
           jd: app.globalData.jd,
@@ -148,12 +148,18 @@ if(M==6||M==7||M==8){
             lat: app.globalData.wd
           },
           fail(res) {
-            //console.log(res)
-            wx.showToast({
-              title: '加载失败',
-              icon: "none",
-              duration: 2000
+            that.setData({
+              hid: true,
+              hid2: false,
+              isLoad: false
             })
+            setTimeout(function () {
+              that.setData({
+                hid2: true
+              })
+            }, 2000)
+            //console.log(res)
+      
             that.setData({
               locat: '加载失败',
               cloudcover: '加载失败',
@@ -167,11 +173,16 @@ if(M==6||M==7||M==8){
             })
           },
           success(res) {
-            wx.showToast({
-              title: '加载成功',
-              icon: 'success',
-              duration: 2000
+            that.setData({
+              isLoad: true
             })
+            setTimeout(function () {
+              that.setData({
+                hid: true
+              })
+              //要延时执行的代码
+
+            }, 2000)
             var location = res.data.location
             var cloudcover = res.data.astronomy[0].cloudcover
             var seeing = res.data.astronomy[0].seeing

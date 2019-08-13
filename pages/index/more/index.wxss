@@ -1,4 +1,6 @@
 /* pages/index/more/index.wxss */
+@import '../../../icon.wxss';
+@import '../../../colorui/main.wxss';
 .btn1 {
   width: 75%;
   margin-top: 20rpx;

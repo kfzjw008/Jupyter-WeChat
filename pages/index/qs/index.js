@@ -34,11 +34,7 @@ Page({
    */
   onReady: function () {
     var that = this
-    wx.showToast({
-      title: '数据加载中',
-      icon: 'loading',
-      duration: 5000
-    })
+
     var time = util.formatTime(new Date());
     //获取当前时间戳
     var timestamp = Date.parse(new Date());
@@ -543,7 +539,11 @@ Page({
 
 
     })
-
+    that.setData({
+      hid: false,
+      hid2: true,
+      isLoad: false
+    })
 
     wx.getLocation({
       type: 'wgs84',
@@ -554,6 +554,7 @@ Page({
           wd: app.globalData.wd,
           jd: app.globalData.jd,
         })
+    
         wx.request({
           url: 'https://api.majorbillliu.com/getIndex',
           data: {
@@ -561,11 +562,16 @@ Page({
             lat: app.globalData.wd
           },
           fail(res) {
-            wx.showToast({
-              title: '加载失败',
-              icon: "none",
-              duration: 2000
+            that.setData({
+              hid: true,
+              hid2: false,
+              isLoad: false
             })
+            setTimeout(function () {
+              that.setData({
+                hid2: true
+              })
+            }, 2000)
             that.setData({
               locat: '加载失败',
               cloudcover: '加载失败',
@@ -599,7 +605,16 @@ Page({
 
           },
           success(res) {
+            that.setData({
+              isLoad: true
+            })
+            setTimeout(function () {
+              that.setData({
+                hid: true
+              })
+              //要延时执行的代码
 
+            }, 2000)
             var P0 = res.data.astronomy[1].P
             var P1 = res.data.astronomy[2].P
             var P2 = res.data.astronomy[3].P

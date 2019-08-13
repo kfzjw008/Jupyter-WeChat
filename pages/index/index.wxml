@@ -1,3 +1,5 @@
+<view class="cu-load bg-blue {{!isLoad?'loading':'over'}}" hidden='{{hid}}'></view>
+<view class="cu-load bg-red erro" hidden='{{hid2}}'></view>
 <view class='UCenter-bg' style="background-image: url({{jpg}});">
 <view class='space'>
 <view class="stars ">
@@ -31,7 +33,7 @@
 
 <button class="btn3"  bindtap="gotoPage1">  <text class='icon-location text-gray'></text> {{locat}}</button></view>
  <view class="weui-flex__item" style="text-align:center;margin-right:auto;margin-left:auto">
-<button class="btn3"  bindtap="fresh">  <text class='icon-refresh text-gray' ></text> 刷新</button></view>
+<button class="btn3"  bindtap="fresh"  disabled="{{diss}}">  <text class='icon-refresh text-gray' ></text> 刷新</button></view>
 </view>
 
 <view class="cu-list menu card-menu margin-top-xl margin-bottom-xl shadow-lg" style=''>
@@ -63,10 +65,10 @@
   <text class='text-grey' style='text-align:left'>抬升指数：{{lifted_index}}</text> <text  class='text'  style='text-align:right;color:#3763BA ;font-weight:bolder'>{{slifted}}</text>
   </view>
     <view class="cu-item ">
-  <text class='text-grey' style='text-align:left'>温度</text> <text  class='text-grey'  style='text-align:right'>{{temp2m}}°C</text>
+  <text class='text-grey' style='text-align:left'>温度</text> <text  class='text-gray'  style='text-align:right'>{{temp2m}}°C</text>
   </view>
     <view class="cu-item ">
-  <text class='text-grey' style='text-align:left'>体感温度</text> <text  class='text-grey'  style='text-align:right'>{{temp}}°C</text>
+  <text class='text-grey' style='text-align:left'>体感温度</text> <text  class='text'  style='text-align:right;color:#3763BA ;font-weight:bolder'>{{temp}}°C</text>
   </view>
 </view>
 
