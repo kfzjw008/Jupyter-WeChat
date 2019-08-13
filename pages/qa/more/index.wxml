@@ -1,7 +1,33 @@
-<view class="page">
-    <view class="page__hd">
-        <view class="page__title">更多选项</view>
-        <view class="page__desc">该系统更多功能目前仍在开发中，敬请期待！</view>
-    </view>
-    <button class="btn1" hover-class='btn-hover' bindtap="gotoPage2" >返回</button>
+<view style="width:100%;height:80%">
+
+<map id="map" longitude="102.324520" latitude="40.099994" scale="4" bindcontroltap="controltap" polygons="{{polygons}}" bindregionchange="regionchange" markers="{{markers}}" bindmarkertap="markertap" show-location style="width: 100%; height: 300px;"></map>
+
 </view>
+    <view class="page__hd" style='  padding: 5px;'>
+        <view class="page__title">输入经纬度</view>
+        <view class="page__desc">输入经纬度或者地图选点可以查看指定位置的观测适宜度，仅限中华人民共和国大陆境内。</view>
+    </view>
+
+   <view class="weui-cells__title">经纬度</view>
+        <view class="weui-cells weui-cells_after-title">
+            <view class="weui-cell weui-cell_input">
+                <view class="weui-cell__hd">
+                    <view class="weui-label">经度</view>
+                </view>
+                <view class="weui-cell__bd">
+                    <input class="weui-input" bindinput="jd" placeholder="请输入经度" value='{{jd}}' type='digit'/>
+                </view>
+            </view>
+            <view class="weui-cell weui-cell_input">
+                <view class="weui-cell__hd">
+                    <view class="weui-label">纬度</view>
+                </view>
+                <view class="weui-cell__bd">
+                    <input class="weui-input" bindinput="wd" placeholder="请输入纬度"  value='{{wd}}' type='digit'/>
+                </view>
+            </view>
+      
+
+        
+        </view>
+                <button class="btn1" hover-class='btn-hover' bindtap="gotoPage2" >确定</button>

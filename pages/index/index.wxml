@@ -9,13 +9,15 @@
 </view>
     
 
-  <view class='margin-top-sm'>
-    <text style='font-size:15px ;color:#FFFFFF;text-align:center' >观测适宜度</text>
+  <view class='margin-top-sm' style='margin-bottom:50px'>
+    <text style='font-size:15px ;color:#FFFFFF;text-align:center;line-height:0.6em;' >观测适宜度</text>
   </view>
-      <view  style="text-align:center;margin-left:auto;margin-right:auto;">
+   
       
-                  <text style='font-size:100px ;color:#FFFFFF'>{{P0}}</text>
-            </view>
+                  <text style='font-size:100px ;color:#FFFFFF;padding:0rpx;line-height:0.95em;'>{{P0}}</text>
+         
+
+    <view style='font-size:15px ;color:#FFFFFF;text-align:center;margin-bottom:60px' >{{q1}}</view>
 
 
 
@@ -46,7 +48,7 @@
 
 
   <view class="cu-item">
-  <text class='text-grey' style='text-align:left'>云量</text> <text  class='text-grey'  style='text-align:right'>{{cloudcover}}</text>
+  <text class='text-grey' style='text-align:left'>云量</text> <text  class='text-gray'  style='text-align:right; margin-right:0rpx'>{{cloudcover}}</text>
   </view>
 
   <view class="cu-item ">

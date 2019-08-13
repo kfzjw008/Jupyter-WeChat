@@ -15,6 +15,7 @@ Page({
     cloudcover: '加载中...',
     seeing: '加载中...',
     rh2m: '加载中...',
+    q1:'正在计算',
     temp: '加载中...',
     temp2m: '加载中...',
     transparency: '加载中...',
@@ -111,6 +112,7 @@ Page({
             if (cloudcover == 7) { cloudcover = '75%' }
             if (cloudcover == 8) { cloudcover = '87%' }
             if (cloudcover == 9) { cloudcover = '97%' }
+      
             if (seeing == 1) { seeing = '<0.5"' }
             if (seeing == 2) { seeing = '0.75"' }
             if (seeing == 3) { seeing = '1"' }
@@ -149,7 +151,7 @@ Page({
               console.log(P0)
               that.setData({
                 jpg: 'https://api.majorbillliu.com/media/questions/images/0-55.jpg'
-
+,q1:'不适宜观测'
               })
 
             }
@@ -158,7 +160,7 @@ Page({
               console.log(P0)
               that.setData({
                 jpg: 'https://api.majorbillliu.com/media/questions/images/56-65.jpg'
-
+                , q1: '勉强可以观测'
               })
 
             }
@@ -167,7 +169,7 @@ Page({
               console.log(P0)
               that.setData({
                 jpg: 'https://api.majorbillliu.com/media/questions/images/66-80.jpg'
-
+                , q1: '可以观测'
               })
 
             }
@@ -176,7 +178,7 @@ Page({
               console.log(P0)
               that.setData({
                 jpg: 'https://api.majorbillliu.com/media/questions/images/81-95.jpg'
-
+                , q1: '适合观测'
               })
 
             }
@@ -185,7 +187,7 @@ Page({
               console.log(P0)
               that.setData({
                 jpg: 'https://api.majorbillliu.com/media/questions/images/96-100.jpg'
-
+                , q1: '非常适合观测'
               })
 
             }
@@ -313,13 +315,12 @@ Page({
             if (lifted_index == 6) { lifted_index = '6' }
             if (lifted_index == 10) { lifted_index = '9' }
             if (lifted_index == 15) { lifted_index = '>11' }
-
             if (P0 <= 55) {
               console.log(55)
               console.log(P0)
               that.setData({
                 jpg: 'https://api.majorbillliu.com/media/questions/images/0-55.jpg'
-
+                , q1: '不适宜观测'
               })
 
             }
@@ -328,7 +329,7 @@ Page({
               console.log(P0)
               that.setData({
                 jpg: 'https://api.majorbillliu.com/media/questions/images/56-65.jpg'
-
+                , q1: '勉强可以观测'
               })
 
             }
@@ -337,7 +338,7 @@ Page({
               console.log(P0)
               that.setData({
                 jpg: 'https://api.majorbillliu.com/media/questions/images/66-80.jpg'
-
+                , q1: '可以观测'
               })
 
             }
@@ -346,7 +347,7 @@ Page({
               console.log(P0)
               that.setData({
                 jpg: 'https://api.majorbillliu.com/media/questions/images/81-95.jpg'
-
+                , q1: '适合观测'
               })
 
             }
@@ -355,7 +356,7 @@ Page({
               console.log(P0)
               that.setData({
                 jpg: 'https://api.majorbillliu.com/media/questions/images/96-100.jpg'
-
+                , q1: '非常适合观测'
               })
 
             }
@@ -491,16 +492,16 @@ Page({
               console.log(P0)
               that.setData({
                 jpg: 'https://api.majorbillliu.com/media/questions/images/0-55.jpg'
-
+                , q1: '不适宜观测'
               })
 
             }
-            if (56 <= P0&&P0 <= 65) {
+            if (56 <= P0 && P0 <= 65) {
               console.log(65)
               console.log(P0)
               that.setData({
                 jpg: 'https://api.majorbillliu.com/media/questions/images/56-65.jpg'
-
+                , q1: '勉强可以观测'
               })
 
             }
@@ -509,7 +510,7 @@ Page({
               console.log(P0)
               that.setData({
                 jpg: 'https://api.majorbillliu.com/media/questions/images/66-80.jpg'
-
+                , q1: '可以观测'
               })
 
             }
@@ -518,7 +519,7 @@ Page({
               console.log(P0)
               that.setData({
                 jpg: 'https://api.majorbillliu.com/media/questions/images/81-95.jpg'
-
+                , q1: '适合观测'
               })
 
             }
@@ -527,7 +528,7 @@ Page({
               console.log(P0)
               that.setData({
                 jpg: 'https://api.majorbillliu.com/media/questions/images/96-100.jpg'
-
+                , q1: '非常适合观测'
               })
 
             }

@@ -1,7 +1,7 @@
 @import "stars.wxss";
 @import '../../icon.wxss';
 page{
-  padding-bottom: 100rpx;
+  padding-bottom: 30rpx;
   background: white;
 }
 .UCenter-bg {
