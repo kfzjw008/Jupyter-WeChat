@@ -1,4 +1,8 @@
 // pages/qa/mokuai/index.js
+
+
+
+
 var app = getApp();
 var base64 = require("../../../dist/example/images/base64.js");
 Page({

@@ -1,46 +1,53 @@
-<view class="page">
- <scroll-view scroll-top="{{scrollTop}}" scroll-y="true" style="height:{{scrollHeight}}px;" 
+   <scroll-view scroll-top="{{scrollTop}}" scroll-y="true" style="height:{{scrollHeight}}px;" 
           class="list" bindscrolltolower="bindDownLoad" bindscrolltoupper="topLoad"  bindscroll="scroll">
-    <view class="page__hd">
-        <view class="page__title">{{search}}</view>
-        <view class="page__title">分类试题</view>
-
-        
+  
+  <view class="cu-bar bg-white">
+    <view class="action title-style-3">
+      <text class="text-xl text-bold">{{search}}</text>
+      <text class="text-Abc text-gray self-end margin-left-sm">Search Result</text>
     </view>
-
-    <view class="page__bd">
-        <view class="weui-panel">
-            <view  class="weui-panel__hd">将搜索结果按照题库顺序排序</view>
-
-
+  </view>
+<view class='margin-0 bg-white padding-sm radius solid  shadow'>
+   <view class='text-center margin-bottom text-lg  text-grey'  style='margin-bottom:0rpx;'>将搜索结果按照题库顺序排序</view>
+</view>
 
 
-           
 
-    <navigator bindtap='det' class="weui-media-box weui-media-box_text" wx:for="{{list}}" id="{{item.id}}" wx:key="list">
-                    <view class="weui-media-box__title weui-media-box__title_in-text">{{item.Question_body}}</view>
-                
-
-                </navigator>
-        
-               
-
-           
-
-
-   
-
-        </view>
-   <view  wx:if="{{count==0}}" class="weui-loadmore weui-loadmore_line">
-            <view class="weui-loadmore__tips weui-loadmore__tips_in-line">暂无数据</view>
-        </view>
-
+<view class="cu-card article "  bindtap='det' wx:for="{{list}}" id="{{item.id}}" wx:key="list">
+  
+  <view class="cu-item shadow">
+    <view class="title">
+      <view class="text-cut">{{item.Question_body}}</view>
     </view>
+    <view class="content">
+   <image  wx:if="{{item.Image}}" src="{{item.Image}}" mode="aspectFill"></image>
+      <view class="desc">
+        <view >A: {{item.A}}</view>
+         <view>   B: {{item.B}}\n</view>
+         <view>   C: {{item.C}}\n</view>
+         <view>   D: {{item.D}} </view>
+        <view>
+          <view class="cu-tag bg-blue light sm round">{{item.Examination_Place}}</view>
+        </view>
+      </view>
+    </view>
+  </view>
 
-            </scroll-view>
-      
-    <view class="weui-loadmore" hidden="{{hidden}}" bindchange="loadingChange">
+  </view>
+
+
+   <view class="weui-loadmore" hidden="{{hidden}}" bindchange="loadingChange">
             <view class="weui-loading"></view>
             <view class="weui-loadmore__tips">正在加载</view>
         </view>
-</view>
+
+  </scroll-view>
+
+
+
+
+
+
+
+
+

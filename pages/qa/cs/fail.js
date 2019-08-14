@@ -19,7 +19,7 @@ Page({
 
     })
   }, gotoPage7: function () {
-
+    
   },
 
   /**

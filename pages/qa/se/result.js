@@ -132,9 +132,10 @@ Page({
           })
           var count = res.data.count
           console.log(app.globalData.page1)
-
+        
           that.setData({
             count: count,
+
             list: res.data.results,
             search: app.globalData.search,
             page: app.globalData.page1,

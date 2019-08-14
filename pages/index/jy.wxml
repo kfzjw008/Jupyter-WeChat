@@ -1,5 +1,5 @@
 <!--pages/index/qs/index.wxml-->
-  <view class="cu-load bg-blue {{!isLoad?'loading':'over'}}" hidden='{{hid}}'></view>
+  <view class="cu-load bg-bluee {{!isLoad?'loading':'over'}}" hidden='{{hid}}'></view>
 <view class="cu-load bg-red erro" hidden='{{hid2}}'></view>
 <view class='margin-xl bg-white padding-xl radius shadow-lg'>
   <view class='text-center margin-bottom text-lg  text-grey'>观测建议</view>

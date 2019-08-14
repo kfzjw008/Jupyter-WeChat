@@ -177,6 +177,7 @@ jdg:'',
       })
     }else{
       app.globalData.inp = 1
+      console.log(app.globalData.fjd)
       wx.navigateBack({
         delta: 1,
         success(res) {

@@ -1,29 +1,25 @@
-<view class="page">
-
-    <view class="page__bd">
-        <view class="weui-search-bar">
-            <view class="weui-search-bar__form">
-                <view class="weui-search-bar__box">
-                    <icon class="weui-icon-search_in-box" type="search" size="14"></icon>
-                    <input type="text" class="weui-search-bar__input" placeholder="搜索" value="{{inputVal}}" focus="{{inputShowed}}" bindinput="inputTyping" />
-                    <view class="weui-icon-clear" wx:if="{{inputVal.length > 0}}" bindtap="clearInput">
-                        <icon type="clear" size="14"></icon>
-                    </view>
-                </view>
-                <label class="weui-search-bar__label" hidden="{{inputShowed}}" bindtap="showInput">
-                    <icon class="weui-icon-search" type="search" size="14"></icon>
-                 
-                </label>
-            </view>
-
-            <view class="weui-search-bar__cancel-btn" style='color:#3763ba' hidden="{{!inputShowed}}" bindtap="hideInput">确定</view>
-        </view>
-     
+  <view class="cu-bar bg-white">
+    <view class="action title-style-3">
+      <text class="text-xl text-bold">知识题库查询</text>
+      <text class="text-Abc text-gray self-end margin-left-sm">Question data</text>
     </view>
-        <view class="page__hd">
-        <view class="page__title">知识题库查询</view>
-        <view class="page__desc">本次统计共近300道试题（截至2019年5月），蕴含行星、恒星、航空航天、星座等多方面知识。目前主要数据仍然为部分原创的选择题。\n
-   后续我们将会对题库进行逐步的扩充，并进行更为详细的分类和完善。</view>
-     <view class="page__desc">题目来源：原创和网络</view>
-    </view>
+  </view>
+<view class="cu-bar bg-white search " style="top:{{CustomBar}}px;background-color:#fcfcfc">
+  <view class="search-form round">
+    <text class="cuIcon-search" style='margin:0 30rpx;'></text>
+   <input type="text" class="weui-search-bar__input" placeholder="输入搜索的关键词" value="{{inputVal}}" focus="{{inputShowed}}" bindinput="inputTyping" />
+  </view>
+  <view class="action">
+    <button class="cu-btn bg-gradual-blue shadow-blur " bindtap="hideInput" >搜索</button>
+  </view>
 </view>
+
+
+<view class='margin-sm bg-white padding-lg radius solid  '>
+  <view class='text-content'>
+        <view >本次统计共近300道试题（截至2019年5月），蕴含行星、恒星、航空航天、星座等多方面知识。目前主要数据仍然为部分原创的选择题。
+   后续我们将会对题库进行逐步的扩充，并进行更为详细的分类和完善。</view>
+     <view >题目来源：原创和网络</view>
+</view></view>
+
+

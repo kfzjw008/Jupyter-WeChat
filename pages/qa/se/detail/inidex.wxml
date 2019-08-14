@@ -1,68 +1,56 @@
-<view class="page">
-    <view class="page__hd">
-        <view class="page__title">试题详细信息</view>
-        <view class="page__desc">题目来源：原创和网络</view>
+  <view class="cu-bar bg-white">
+    <view class="action title-style-3">
+      <text class="text-xl text-bold">试题详细信息</text>
+      <text class="text-Abc text-gray self-end margin-left-sm">Detail</text>
     </view>
-    <view class="page__bd">
-        <view class="weui-form-preview">
-            <view class="weui-form-preview__hd">
-                <view class="weui-form-preview__item">
-                 
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-                    <view class="weui-form-preview__label">试题分类</view>
-                    <view class="weui-form-preview__value_in-hd">{{Bayer111}}</view>
-                </view>
-            </view>
-            <view class="weui-form-preview__bd">
-             
-                <view class="weui-form-preview__item">
-                    <view class="weui-form-preview__label">题目</view>
-                    <view class="weui-form-preview__value">{{Name111}}</view>
-                    <image wx:if="{{Image}}" src='{{Image}}' style='margin-right:auto;margin-left:auto;width:200px;height:150px'></image>
-                </view>
-                <view class="weui-form-preview__item">
-                    <view class="weui-form-preview__label">选项A</view>
-                    <view class="weui-form-preview__value">{{Fransted111}}</view>
-                </view>
-                <view class="weui-form-preview__item">
-                    <view class="weui-form-preview__label">选项B</view>
-                    <view class="weui-form-preview__value">{{Variable_star111}}</view>
-                </view>
-                  <view class="weui-form-preview__item">
-                    <view class="weui-form-preview__label">选项C</view>
-                    <view class="weui-form-preview__value">{{HD111}}</view>
-                </view>
-                 <view class="weui-form-preview__item">
-                    <view class="weui-form-preview__label">选项D</view>
-                    <view class="weui-form-preview__value">{{HIP111}}</view>
-                </view>
-                 <view class="weui-form-preview__item">
-                    <view class="weui-form-preview__label">正确答案</view>
-                    <view class="weui-form-preview__value">{{Right_ascension111}}</view>
-                </view>
-                   <view class="weui-form-preview__item">
-                    <view class="weui-form-preview__label">解析</view>
-                    <view class="weui-form-preview__value">{{Declination111}}</view>
-                </view>
-                
-      
-            </view>
-            <view class="weui-form-preview__ft">
-                <navigator bindtap="sc" style='color:#3763ba' class="weui-form-preview__btn weui-form-preview__btn_primary" hover-class="weui-form-preview__btn_active">收藏试题</navigator>
-            </view>
-        </view>
-      
+ </view>
+
+  <view class="cu-bar justify-center bg-white">
+    <view class="action border-title">
+      <text class="text-lg  text-gray">{{Name111}}</text>
+      <text class="bg-gradual-blue" style="width:3rem"></text>
     </view>
-</view>
+  </view>
+
+
+
+<view class="cu-list menu card-menu margin-top-xl margin-bottom-xl shadow-lg" style=''>
+
+
+
+  <view class="cu-item" > 
+      <text class='text-grey' style='text-align:left'>试题分类</text> <text  class='text-grey'  style='text-align:right'>{{Bayer111}}</text>
+  </view>
+  <view class="cu-item">
+  <text class='text-grey' style='text-align:left'>A</text> <text  class='text-grey' style='text-align:right;'>{{Fransted111}}</text> 
+  </view>
+
+  <view class="cu-item ">
+  <text class='text-grey ' style='text-align:left'>B</text> <text   class='text-grey'  style='text-align:right;'>{{Variable_star111}}</text>
+  </view>
+
+    <view class="cu-item ">
+  <text class='text-grey' style='text-align:left'>C</text> <text   class='text-grey'  style='text-align:right;'>{{HD111}}</text>
+  </view>
+    <view class="cu-item ">
+  <text class='text-grey' style='text-align:left'>D</text> <text  class='text-grey'  style='text-align:right;'>{{HIP111}}</text>
+  </view>
+    <view class="cu-item ">
+  <text class='text-grey' style='text-align:left'>正确答案</text> <text  class='text-gray'  style='text-align:right'>{{Right_ascension111}}</text>
+  </view>
+    <view class="cu-item ">
+  <text class='text-grey' style='text-align:left'>解析</text> <text   class='text-grey'  style='text-align:right;'>{{Declination111}}</text>
+  </view> </view>
+  
+  
+  
+    		<view class='cu-btn bg-blue lg block shadow radius margin-xl'    bindtap='nextpage' data-target="viewModal">
+					返回
+				</view>
+
+
+
+
+
+
+

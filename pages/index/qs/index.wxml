@@ -1,5 +1,5 @@
 <!--pages/index/qs/index.wxml-->
-<view class="cu-load bg-blue {{!isLoad?'loading':'over'}}" hidden='{{hid}}'></view>
+<view class="cu-load bg-bluee {{!isLoad?'loading':'over'}}" hidden='{{hid}}'></view>
 <view class="cu-load bg-red erro" hidden='{{hid2}}'></view>
 
 
