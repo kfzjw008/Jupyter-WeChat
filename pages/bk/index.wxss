@@ -19,8 +19,8 @@ page {
 .indexBar .indexBar-box {
   width: 40rpx;
   height: auto;
-  background: #fff;
-  display: flex;
+  background: #f1f1f1;
+  display : flex;
   flex-direction: column;
   box-shadow: 0 0 20rpx rgba(0, 0, 0, 0.1);
   border-radius: 10rpx;
@@ -65,7 +65,7 @@ movable-view.indexBar-item::before {
   height: 100rpx;
   border-radius: 10rpx;
   margin: auto;
-  color: #fff;
+  color: #f1f1f1;
   line-height: 100rpx;
   text-align: center;
   font-size: 48rpx;
@@ -76,15 +76,14 @@ movable-view.indexBar-item::before {
 
 /* pages/bk/index.wxss */
 page{
-    background-color: #FFFFFF;
+    background-color: #fcfcfc;
 }
 .btn1 {
   width: 150rpx;
   height: 60rpx;
   margin-top: -60rpx;
-  margin-left: 45rpx;
   color: #3763ba;
-  background-color: #effef4;
+  background-color: #f1f1f1;
   border-radius: 98rpx;
   font-size: 25rpx;
   align-items: center;
@@ -103,9 +102,9 @@ position: relative;
   width: 150rpx;
   height: 60rpx;
   margin-top: 10rpx;
-  margin-left: 45rpx;
+
   color: #3763ba;
-  background-color: #effef4;
+  background-color: #f1f1f1;
   border-radius: 98rpx;
   font-size: 25rpx;
   align-items: center;

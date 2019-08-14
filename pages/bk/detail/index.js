@@ -115,6 +115,14 @@ Page({
    */
   onUnload: function () {
 
+  }, nextpage: function () {
+
+
+    var that = this
+    wx.navigateBack({
+      delta: 1,
+
+    })
   },
 
   /**

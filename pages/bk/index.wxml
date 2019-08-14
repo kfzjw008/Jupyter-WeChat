@@ -1,4 +1,4 @@
-<view class="cu-bar bg-white search " style="top:{{CustomBar}}px;">
+<view class="cu-bar bg-white search " style="top:{{CustomBar}}px;background-color:#fcfcfc">
   <view class="search-form round">
     <text class="cuIcon-search" style='margin:0 30rpx;'></text>
     <input type="text" placeholder="输入搜索的关键词" confirm-type="search" value="{{inputVal}}" focus="{{inputShowed}}" bindinput="inputTyping"></input>
@@ -7,67 +7,29 @@
     <button class="cu-btn bg-gradual-blue shadow-blur " bindtap="hideInput" >搜索</button>
   </view>
 </view>
-  <view class="bg-white padding">
+  <view class="bg-white padding" style='padding:60rpx;background-color:#fcfcfc'>
     <view class="grid col-3 margin-bottom text-center" wx:for="{{1}}" wx:key>
-        <view class="{{index%2==0?'bg-cyan':'bg-blue'}} padding" >111</view>
-      <view class="{{index%2==0?'bg-cyan':'bg-blue'}} padding" >222</view>
-      <view class="{{index%2==0?'bg-cyan':'bg-blue'}} padding" >222</view>
-      <view class="{{index%2==0?'bg-cyan':'bg-blue'}} padding" >222</view>
-      <view class="{{index%2==0?'bg-cyan':'bg-blue'}} padding" >222</view>
-      <view class="{{index%2==0?'bg-cyan':'bg-blue'}} padding" >222</view>
-      <view class="{{index%2==0?'bg-cyan':'bg-blue'}} padding" >222</view>
-      <view class="{{index%2==0?'bg-cyan':'bg-blue'}} padding" >222</view>
-      <view class="{{index%2==0?'bg-cyan':'bg-blue'}} padding" >222</view>
+        <view class=" padding"  style='padding:5rpx;' > <button class="btn1" id="太阳"  bindtap="hideInput2">太阳</button></view>
+      <view class=" padding" style='padding:5rpx;' >   <button class="btn1" id="猎户座"  bindtap="hideInput2" >猎户座</button></view>
+      <view class=" padding" style='padding:5rpx;' > <button class="btn1" id="大角" bindtap="hideInput2">大角</button></view>
+      <view class=" padding" style='padding:5rpx;' ><button class="btn2" id="M31"  bindtap="hideInput2">M31</button></view>
+      <view class=" padding" style='padding:5rpx;' >  <button class="btn2" id="英仙座"  bindtap="hideInput2" >英仙座</button></view>
+      <view class=" padding" style='padding:5rpx;' > <button class="btn2" id="毕宿" bindtap="hideInput2">毕宿</button></view>
+      <view class=" padding" style='padding:5rpx;' > <button class="btn2" id="玉衡"  bindtap="hideInput2">玉衡</button></view>
+      <view class=" padding" style='padding:5rpx;' >    <button class="btn2" id="牧夫座"  bindtap="hideInput2" >牧夫座</button></view>
+      <view class="padding" style='padding:5rpx;' > <button class="btn2" id="M45" bindtap="hideInput2">M45</button></view>
     </view>
   </view>
 
+<view class='margin-sm bg-white padding-lg radius solid  shadow-lg'>
+  <view class='text-center margin-bottom text-lg  text-grey'>恒星数据查询</view>
+  <view class='text-content'>
+    <view>输入经纬度或点击地图选点可查看指定位置观测适宜度，仅限中华人民共和国大陆境内。</view>
+        <view >本次统计共88个星座，11000+颗恒星和梅西耶天体表。统计信息包括恒星的巴耶恒星命名、赤经、赤纬、视星等、绝对星等和及一些注释信息等。</view>
+  <view>  尽管这份数据库包含了一万余颗恒星的数据，但目前人类观测到的恒星数量远超这些。本数据库只对恒星特征较明确，认知较全的部分恒星进行了统计。</view>
+     <view >数据源：银河说 GalaxSay.com</view>
 
 
-
-<view >
-
-
-  <view class="weui-flex">
-            <view class="weui-flex__item">
-            <button class="btn1" id="太阳"  bindtap="hideInput2">太阳</button>
-            </view>
-            <view class="weui-flex__item">
-            <button class="btn1" id="猎户座"  bindtap="hideInput2" >猎户座</button>
-            </view>
-            <view class="weui-flex__item">
-            <button class="btn1" id="大角" bindtap="hideInput2">大角</button>
-            </view>
-        </view>
-          <view class="weui-flex">
-            <view class="weui-flex__item">
-            <button class="btn2" id="M31"  bindtap="hideInput2">M31</button>
-            </view>
-            <view class="weui-flex__item">
-            <button class="btn2" id="英仙座"  bindtap="hideInput2" >英仙座</button>
-            </view>
-            <view class="weui-flex__item">
-            <button class="btn2" id="毕宿" bindtap="hideInput2">毕宿</button>
-            </view>
-        </view>
-        <view class="weui-flex">
-            <view class="weui-flex__item">
-            <button class="btn2" id="玉衡"  bindtap="hideInput2">玉衡</button>
-            </view>
-            <view class="weui-flex__item">
-            <button class="btn2" id="牧夫座"  bindtap="hideInput2" >牧夫座</button>
-            </view>
-            <view class="weui-flex__item">
-            <button class="btn2" id="M45" bindtap="hideInput2">M45</button>
-            </view>
-        </view>
+</view></view>
 
 
-
-
-        <view class="page__hd">
-        <view class="page__title">恒星数据查询</view>
-        <text class="page__desc">本次统计共88个星座，11000+颗恒星和梅西耶天体表。统计信息包括恒星的巴耶恒星命名、赤经、赤纬、视星等、绝对星等和及一些注释信息等。\n
-    尽管这份数据库包含了一万余颗恒星的数据，但目前人类观测到的恒星数量远超这些。本数据库只对恒星特征较明确，认知较全的部分恒星进行了统计。</text>
-     <view class="page__desc">数据源：银河说 GalaxSay.com</view>
-    </view>
-</view>
