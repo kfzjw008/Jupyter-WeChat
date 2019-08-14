@@ -8,7 +8,7 @@
         </view>
         <view class="weui-msg__opr-area">
             <view class="weui-btn-area">
-                		<view class='cu-btn bg-blue lg block shadow radius margin-xl'    bindtap='gotoPage2' data-target="viewModal">
+                		<view class='cu-btn bg-blue lg block shadow radius margin-xl'    bindtap='gotoPage6' data-target="viewModal">
 			返回主页
 				</view>
             </view>

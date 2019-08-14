@@ -77,10 +77,9 @@
 <view  wx:if="{{inputShoweda1==false}}">解析：{{Question_Analysis}}</view>
   </view>
 </view>
-       	<view class='cu-btn bg-blue lg block shadow radius margin-xl'   data-target="viewModal" wx:if="{{inputShoweda1==false}}" bindtap="gotoPage2"  disabled="{{dis}}">
+            	<button class='cu-btn bg-blue lg block shadow radius margin-xl'   data-target="viewModal" wx:if="{{inputShoweda1==false}}" bindtap="gotoPage2"  disabled="{{dis}}">
 		下一题
-				</view>
-
+				</button>
 
 
 
