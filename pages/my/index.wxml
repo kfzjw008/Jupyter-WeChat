@@ -35,9 +35,7 @@
         <text class="cuIcon-post  text-grey"></text>
         <text class="text-grey">修改资料</text>
       </view>
-          <view class="action">
-        <text class="text-grey text-sm">点击此处完善资料</text>
-      </view>
+
     </view>
 
   <view class="cu-item arrow" style='min-height:90rpx'>
@@ -61,9 +59,7 @@
         <text class="cuIcon-rank text-blue"></text>
         <text class="text-grey">数据统计</text>
       </navigator>
-         <view class="action">
-        <text class="text-grey text-sm">知识问答数据统计</text>
-      </view>
+ 
     </view>
 
 
@@ -73,14 +69,16 @@
 
   <view class="cu-list menu card-menu margin-top-xl margin-bottom-xl shadow-lg radius">
 
+
+
+
+
      <view class="cu-item arrow" style='min-height:90rpx'>
       <navigator class="content" url="sz/sz" hover-class="none">
         <text class="cuIcon-settings  text-gray"></text>
-        <text class="text-grey">设置</text>
+        <text class="text-grey">设置与反馈</text>
       </navigator>
-         <view class="action">
-        <text class="text-grey text-sm">通用设置与意见反馈</text>
-      </view>
+     
     </view>
 
     
