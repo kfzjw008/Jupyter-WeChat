@@ -1,25 +1,32 @@
-<view class="page">
-
-    <view class="page__bd">
-        <view class="weui-search-bar">
-            <view class="weui-search-bar__form">
-                <view class="weui-search-bar__box">
-                    <icon class="weui-icon-search_in-box" type="search" size="14"></icon>
-                    <input type="text" class="weui-search-bar__input" placeholder="搜索" value="{{inputVal}}" focus="{{inputShowed}}" bindinput="inputTyping" />
-                    <view class="weui-icon-clear" wx:if="{{inputVal.length > 0}}" bindtap="clearInput">
-                        <icon type="clear" size="14"></icon>
-                    </view>
-                </view>
-                <label class="weui-search-bar__label" hidden="{{inputShowed}}" bindtap="showInput">
-                    <icon class="weui-icon-search" type="search" size="14"></icon>
-                 
-                </label>
-            </view>
-
-            <view class="weui-search-bar__cancel-btn" hidden="{{!inputShowed}}" bindtap="hideInput" style='color:#3763ba'>确定</view>
-        </view>
-     
+<view class="cu-bar bg-white search " style="top:{{CustomBar}}px;">
+  <view class="search-form round">
+    <text class="cuIcon-search" style='margin:0 30rpx;'></text>
+    <input type="text" placeholder="输入搜索的关键词" confirm-type="search" value="{{inputVal}}" focus="{{inputShowed}}" bindinput="inputTyping"></input>
+  </view>
+  <view class="action">
+    <button class="cu-btn bg-gradual-blue shadow-blur " bindtap="hideInput" >搜索</button>
+  </view>
+</view>
+  <view class="bg-white padding">
+    <view class="grid col-3 margin-bottom text-center" wx:for="{{1}}" wx:key>
+        <view class="{{index%2==0?'bg-cyan':'bg-blue'}} padding" >111</view>
+      <view class="{{index%2==0?'bg-cyan':'bg-blue'}} padding" >222</view>
+      <view class="{{index%2==0?'bg-cyan':'bg-blue'}} padding" >222</view>
+      <view class="{{index%2==0?'bg-cyan':'bg-blue'}} padding" >222</view>
+      <view class="{{index%2==0?'bg-cyan':'bg-blue'}} padding" >222</view>
+      <view class="{{index%2==0?'bg-cyan':'bg-blue'}} padding" >222</view>
+      <view class="{{index%2==0?'bg-cyan':'bg-blue'}} padding" >222</view>
+      <view class="{{index%2==0?'bg-cyan':'bg-blue'}} padding" >222</view>
+      <view class="{{index%2==0?'bg-cyan':'bg-blue'}} padding" >222</view>
     </view>
+  </view>
+
+
+
+
+<view >
+
+
   <view class="weui-flex">
             <view class="weui-flex__item">
             <button class="btn1" id="太阳"  bindtap="hideInput2">太阳</button>
