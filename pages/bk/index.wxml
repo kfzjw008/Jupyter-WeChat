@@ -30,7 +30,7 @@
 
 <view class='margin-sm bg-white padding-lg radius solid  shadow-lg'>
   <view class='text-content'>
-    <view>输入经纬度或点击地图选点可查看指定位置观测适宜度，仅限中华人民共和国大陆境内。</view>
+
         <view >本次统计共88个星座，11000+颗恒星和梅西耶天体表。统计信息包括恒星的巴耶恒星命名、赤经、赤纬、视星等、绝对星等和及一些注释信息等。</view>
   <view>  尽管这份数据库包含了一万余颗恒星的数据，但目前人类观测到的恒星数量远超这些。本数据库只对恒星特征较明确，认知较全的部分恒星进行了统计。</view>
      <view >数据源：银河说 GalaxSay.com</view>

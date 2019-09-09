@@ -32,6 +32,7 @@ Page({
 
 
 
+
     var that = this
 
     wx.getLocation({
@@ -423,6 +424,37 @@ app.globalData.inp=0
     })
   },
   onReady: function () {
+    wx.request({
+      url: 'https://api.majorbillliu.com/questions/10000',
+
+      fail(res) {
+
+
+      },
+      success(res) {
+        var aa = res.data.Question_body
+       
+        var bb = res.data.Question_Analysis
+var  a=aa
+ var b=bb
+        that.setData({
+          a: aa,
+          b:bb,
+        })
+        wx.showModal({
+          content: b,
+          title: a,
+          showCancel: false,
+          success: function (res) {
+            if (res.confirm) {
+              console.log('用户点击确定')
+            }
+          }
+        })
+        console.log(666)
+      }
+    })
+
     var that = this
 
     that.setData({

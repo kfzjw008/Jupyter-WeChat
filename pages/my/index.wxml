@@ -28,6 +28,20 @@
         <text class="cuIcon-roundclose"></text> 错误题数</view>
     </view>
   </view>
+    <view class="cu-list menu card-menu margin-top-xl margin-bottom-xl shadow-lg radius">
+
+
+    <view class="cu-item arrow" style='min-height:90rpx'>
+      <navigator class="content" url="gg/gg" hover-class="none">
+        <text class="cuIcon-notificationfill text-blue"></text>
+        <text class="text-grey">通知公告</text>
+      </navigator>
+ 
+    </view>
+
+
+
+  </view>
   <view class="cu-list menu card-menu margin-top-xl margin-bottom-xl shadow-lg radius">
 
     <view class="cu-item arrow" style='min-height:90rpx'>

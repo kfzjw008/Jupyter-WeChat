@@ -212,7 +212,20 @@
     </view>
   </view>
 
-
+     <view class="cu-item shadow"  id="暂未分类" bindtap="resul">
+    <view class="title">
+      <view class="text-cut">未分类试题</view>
+    </view>
+    <view class="content">
+   <image    src="{{pic9}}" mode="aspectFill"></image>
+      <view class="desc">
+        <view >部分尚未分类试题。</view>
+        <view>
+         
+        </view>
+      </view>
+    </view>
+  </view>
 
 
 

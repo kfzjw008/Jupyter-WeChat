@@ -65,6 +65,16 @@
       </navigator>
     </view>
 
+   <view class="cu-item " >
+    <navigator url="activity/start">
+      <view class="cuIcon-presentfill text-red ">
+        <view class="cu-tag badge " >
+          <block >NEW</block>
+        </view>
+      </view>
+      <text>有奖答题活动</text>
+      </navigator>
+    </view>
 </view>
 
 

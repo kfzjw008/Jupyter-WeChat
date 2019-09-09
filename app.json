@@ -37,7 +37,11 @@
     "pages/qa/tzs/success",
     "pages/qa/tzs/info",
     "pages/qa/tzs/fail",
-    "pages/qa/tzs/zdy"
+    "pages/qa/tzs/zdy",
+    "pages/qa/activity/start",
+    "pages/my/gg/gg",
+    "pages/qa/activity/test",
+    "pages/qa/activity/result"
   ],
   "permission": {
     "scope.userLocation": {

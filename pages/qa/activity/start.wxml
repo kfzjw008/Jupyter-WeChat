@@ -1,0 +1,32 @@
+<view class="page">
+    <view class="weui-msg">
+        <view class="weui-msg__icon-area" style=' margin-bottom: 1px;'>
+             <image style="margin-left:auto;margin-right:auto;width:90px;height:90px" src="https://api.majorbillliu.com/media/questions/images/邮到沈阳沈阳_-_副本.png"  />
+           
+        </view>
+        <view class="weui-msg__text-area" >
+            <text class="weui-msg__title" style="margin-bottom: 0px;" >东北林业大学天文爱好者协会\n2019招新天文科普答题活动</text>
+          
+            <view class="weui-msg__desc" style='  text-align: left;'>为宣传和普及天文知识，提高大学生学习天文的积极性与热情，星云村开发团队特联合东北林业大学天文爱好者协会，面向全校同学主办天文知识答题活动。
+</view>
+<view class="weui-msg__desc" style='  text-align: left;'>活动时间：2019年9月16-30日
+</view>
+<view class="weui-msg__desc" style='  text-align: left;'>活动方式：线上答题，在10分钟内完成3道天文科普题目并回答正确2题及以上，即可凭结果页截图在协会招新现场或者新会员见面会现场兑换精美礼品哦。
+</view>
+<view class="weui-msg__desc" style='  text-align: left;'>活动规则：同一微信号可以无限次答题，但是只可兑换一份礼品~活动主要面向本校学生参加，外校或者其他人士如有条件到现场兑奖也可以参与本活动哦~更多活动详情请关注公众号：NF天协。
+</view>
+        </view>
+
+
+
+
+        <view class="weui-msg__opr-area">
+            <view class="weui-btn-area">
+                <button class="btn1" hover-class="btn-hover"  open-type="getUserInfo" lang="zh_CN" bindgetuserinfo="onGotUserInfo">开始答题</button> 
+ 
+
+            </view>
+        </view>
+  
+    </view>
+</view>
