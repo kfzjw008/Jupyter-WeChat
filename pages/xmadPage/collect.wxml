@@ -1,0 +1,58 @@
+<!--pages/xmadPage/collect.wxml-->
+<view class="xmad-h5">
+
+  <view wx:for="{{dataJson}}" wx:for-index="index" wx:key="index" wx:for-item="it">
+
+    <view wx:if="{{it.type == 'banner'}}" class="img-container">
+      <swiper class="swiper-container" indicator-dots="{{indicatorDots}}" autoplay="{{autoplay}}"
+        interval="{{interval}}" duration="{{duration}}" circular="{{circular}}">
+        <swiper-item wx:for="{{it.data}}" wx:for-index="index1" wx:key="index1" wx:for-item="url">
+          <image src="{{url}}" style="width: 100%; height: 100%"/>
+        </swiper-item>
+      </swiper>
+    </view>
+
+    <view wx:if="{{it.type == 'imgs'}}" class="image-container">
+      <image src="{{it.imgUrl}}" style="width: 100%" mode="widthFix"/>
+    </view>
+
+    <view wx:if="{{it.type == 'form'}}" class="form-container">
+      <view class="form-title">
+        <text class="h2">{{it.data.config.formTitle}}</text>
+      </view>
+      <view class="form-content">
+        <form bindsubmit="submitForm">
+          <view wx:if="{{it.data.needs.name}}" class="form-item">
+            <input name="name" placeholder="姓名"/>
+          </view>
+          <view wx:if="{{it.data.needs.sex}}" class="form-item">
+            <radio-group name="sex" class="radio-group">
+              <label class="radio" wx:for="{{genders}}" wx:for-index="index2" wx:key="index2" wx:for-item="gender">
+                <radio value="{{gender.value}}" checked="{{gender.checked}}"/>{{gender.name}}
+              </label>
+            </radio-group>
+          </view>
+          <view wx:if="{{it.data.needs.phone}}" class="form-item">
+            <input name="phone" type="number" placeholder="手机号码"/>
+          </view>
+          <view wx:if="{{it.data.needs.area}}" class="form-item">
+            <picker name="area" mode="region" bindchange="areaChange" value="{{area}}">
+              <view wx:if="{{area.length}}">
+                {{area}}
+              </view>
+              <view wx:else class="placeholder">地区</view>
+            </picker>
+          </view>
+          <view wx:if="{{it.data.needs.leave_msg}}" class="form-item item-textarea">
+            <textarea name="leave_msg" rows="5" placeholder="留言"></textarea>
+          </view>
+          <view class="form-item">
+            <button class="sub-button" hover-class="none" formType="submit">{{it.data.config.button2}}</button>
+          </view>
+        </form>
+      </view>
+    </view>
+
+  </view>
+
+</view>

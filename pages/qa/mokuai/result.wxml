@@ -11,6 +11,12 @@
    <view class='text-center margin-bottom text-lg  text-grey'  style='margin-bottom:0rpx;'>将搜索结果按照题库顺序排序</view>
 </view>
 
+<view class="xm_banner" style="width:100%">
+  <xm-ad data-id="{{xmad.ad.banner}}" adData="{{xmad.adData}}" bindadload="adImgLoad"
+    bindclick="appoIntView" bindclose="xmadClose" class="xm_component">
+  </xm-ad>
+</view>
+
 
 
 <view class="cu-card article "  bindtap='det' wx:for="{{list}}" id="{{item.id}}" wx:key="list">

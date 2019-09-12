@@ -75,7 +75,13 @@
       <text>有奖答题活动</text>
       </navigator>
     </view>
-</view>
 
+
+</view>
+<view class="xm_banner" style="width:100%">
+  <xm-ad data-id="{{xmad.ad.banner}}" adData="{{xmad.adData}}" bindadload="adImgLoad"
+    bindclick="appoIntView" bindclose="xmadClose" class="xm_component">
+  </xm-ad>
+</view>
 
    

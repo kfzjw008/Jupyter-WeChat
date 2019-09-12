@@ -1,7 +1,13 @@
 var app = getApp();  
-
+var Page = require('../../utils/xmadx_sdk.min.js').xmad(Page).xmPage;
   Page({
     data: {
+      xmad: {
+        adData: {},
+        ad: {
+          banner: "xm9065dd29902f0f3959d5fb0becfa6d", 
+        }
+      },
       inputShowed: false,
       inpu: ''
     },

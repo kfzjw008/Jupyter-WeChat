@@ -1,3 +1,5 @@
+
+var Page = require('../../../utils/xmadx_sdk.min.js').xmad(Page).xmPage;
 // pages/bk/result.js
 var app = getApp();
 var page = 0;
@@ -75,7 +77,13 @@ Page({
    */
   data: {
     count: '',
+    xmad: {
+      adData: {},
+      ad: {
+        banner: "xmdf545d1398c83a9b923dfc919f1385", // 按需引入
 
+      }
+    },
     search: '',
     page: "",
     list: []

@@ -1,3 +1,5 @@
+
+var Page = require('../../../utils/xmadx_sdk.min.js').xmad(Page).xmPage;
 // pages/qa/testsj/index.js
 var app = getApp();
 //https://api.majorbillliu.com/media/
@@ -7,6 +9,13 @@ Page({
    * 页面的初始数据
    */
   data: {
+    xmad: {
+      adData: {},
+      ad: {
+        banner: "xm1466db9d06be27fe7a409a5798f754", // 按需引入
+
+      }
+    },
     AA: false,
     BB: false,
     CC: false,

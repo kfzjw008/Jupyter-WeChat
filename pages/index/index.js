@@ -1,9 +1,16 @@
 //index.js
 //获取应用实例
 var app = getApp();
-
+var Page = require('../../utils/xmadx_sdk.min.js').xmad(Page).xmPage;
 Page({
   data: {
+    xmad: {
+      adData: {},
+      ad: {
+        banner: "xmab28abed83f4d088e56bc3301b3d54", 
+
+      }
+    },
     motto: 'Hello World',
     time: (new Date()).toString(),
     userInfo: {},
@@ -425,7 +432,7 @@ app.globalData.inp=0
   },
   onReady: function () {
     wx.request({
-      url: 'https://api.majorbillliu.com/questions/10000',
+      url: 'https://api.majorbillliu.com/questions/10000/',
 
       fail(res) {
 

@@ -1,6 +1,9 @@
 {
   "pages": [
     "pages/index/index",
+    "pages/xmadPage/copyInfo", 
+    "pages/xmadPage/sell", 
+    "pages/xmadPage/collect", 
     "pages/qa/index",
     "pages/logs/logs",
     "pages/bk/index",

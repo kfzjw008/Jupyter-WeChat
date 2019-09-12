@@ -72,6 +72,13 @@
 <view  wx:if="{{inputShoweda1==false}}">解析：{{Question_Analysis}}</view>
   </view>
 </view>
+
+<view class="xm_banner" style="width:100%">
+  <xm-ad data-id="{{xmad.ad.banner}}" adData="{{xmad.adData}}" bindadload="adImgLoad"
+    bindclick="appoIntView" bindclose="xmadClose" class="xm_component">
+  </xm-ad>
+</view>
+
        	<view class='cu-btn bg-blue lg block shadow radius margin-xl'   data-target="viewModal" wx:if="{{inputShoweda1==false}}" bindtap="gotoPage2"  disabled="{{dis}}">
 	返回
 				</view>
