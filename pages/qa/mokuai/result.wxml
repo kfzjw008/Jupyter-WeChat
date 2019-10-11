@@ -10,18 +10,18 @@
 <view class='margin-0 bg-white padding-sm radius solid  shadow'>
    <view class='text-center margin-bottom text-lg  text-grey'  style='margin-bottom:0rpx;'>将搜索结果按照题库顺序排序</view>
 </view>
-
-
-
-
-
-<view class="cu-card article "  bindtap='det' wx:for="{{list}}" id="{{item.id}}" wx:key="list">
-    <view class="cu-item shadow" wx:if="{{item.id%8==2}}" >
+<view class="cu-card article ">
+    <view class="  cu-item shadow"  >
     <view class="title">
       <view class="text-cut">推广</view>
     </view>
 <ad unit-id="adunit-c6876c51910bbecd"  ad-intervals="30"></ad>
   </view>
+  </view>
+
+
+<view class="cu-card article "  bindtap='det' wx:for="{{list}}" id="{{item.id}}" wx:key="list">
+
 
 
   <view class="cu-item shadow">
