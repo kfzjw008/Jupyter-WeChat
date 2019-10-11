@@ -74,13 +74,9 @@
 
 
  <view class="weui-flex">
-
         <view class="weui-flex__item" style="text-align:center;margin-right:auto;margin-left:auto">
 <button class="btn1" hover-class='btn-hover' bindtap="gotoPage3"> 变化趋势</button></view>
  <view class="weui-flex__item" style="text-align:center;margin-right:auto;margin-left:auto">
 <button class="btn2" hover-class='btn-hover' bindtap="gotoPage6">观测建议</button></view></view>
-<view class="xm_banner" style="width:100%">
-  <xm-ad data-id="{{xmad.ad.banner}}" adData="{{xmad.adData}}" bindadload="adImgLoad"
-    bindclick="appoIntView" bindclose="xmadClose" class="xm_component">
-  </xm-ad>
-</view>
+<ad unit-id="adunit-47419d0a0aa17c4c" ad-intervals="30"></ad>
+

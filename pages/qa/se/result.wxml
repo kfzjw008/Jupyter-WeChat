@@ -9,8 +9,9 @@
    <view class='text-center margin-bottom text-lg  text-grey'  style='margin-bottom:0rpx;'>将搜索结果按照题库顺序排序</view>
 </view>
 
-
-
+ <view class="cu-item shadow">
+<ad unit-id="adunit-a4d5abc5e96d501b"></ad>
+ </view>
 <view class="cu-card article "  wx:if="{{count>0}}" bindtap='det'  wx:for="{{list}}" id="{{item.id}}" wx:key="list">
   
   <view class="cu-item shadow">

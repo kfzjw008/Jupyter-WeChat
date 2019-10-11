@@ -36,8 +36,4 @@
      <view >数据源：银河说 GalaxSay.com</view>
 </view></view>
 
-<view class="xm_banner" style="width:100%">
-  <xm-ad data-id="{{xmad.ad.banner}}" adData="{{xmad.adData}}" bindadload="adImgLoad"
-    bindclick="appoIntView" bindclose="xmadClose" class="xm_component">
-  </xm-ad>
-</view>
+<ad unit-id="adunit-219bea0a7a106745"></ad>

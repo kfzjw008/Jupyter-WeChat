@@ -43,7 +43,7 @@
   </view> </view>
   
   
-  
+  <ad unit-id="adunit-2178e49d2514a13f"></ad>
     		<view class='cu-btn bg-blue lg block shadow radius margin-xl'    bindtap='nextpage' data-target="viewModal">
 					返回
 				</view>

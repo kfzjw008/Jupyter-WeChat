@@ -10,7 +10,7 @@
 </view>
 
 
-
+<ad unit-id="adunit-757f6940d6f0f10b"></ad>
 <view class="cu-card article " wx:if="{{count>0}}" bindtap='det'  wx:for="{{list}}" id="{{item.id}}" wx:key="list">
   
   <view class="cu-item shadow">

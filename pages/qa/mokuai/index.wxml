@@ -31,6 +31,16 @@
     </view>
   </view>
 
+
+
+  <view class="cu-item shadow" >
+    <view class="title">
+      <view class="text-cut">推广</view>
+    </view>
+<ad unit-id="adunit-48ed2416e81eadf7"></ad>
+  </view>
+
+
   <view class="cu-item shadow"  id="航空航天" bindtap="resul">
     <view class="title">
       <view class="text-cut">航空航天</view>

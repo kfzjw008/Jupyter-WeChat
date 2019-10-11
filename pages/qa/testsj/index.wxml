@@ -72,6 +72,7 @@
 <view  wx:if="{{inputShoweda1==false}}">解析：{{Question_Analysis}}</view>
   </view>
 </view>
+<ad unit-id="adunit-7d1677a8e2534db0" ad-intervals="30"></ad>
        	<button class='cu-btn bg-blue lg block shadow radius margin-xl'   data-target="viewModal" wx:if="{{inputShoweda1==false}}" bindtap="gotoPage2"  disabled="{{dis}}">
 		下一题
 				</button>

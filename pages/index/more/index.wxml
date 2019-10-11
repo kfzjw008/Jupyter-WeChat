@@ -19,5 +19,5 @@
 </view>
 
 
-
+<ad unit-id="adunit-f647cd563c7ef27d"></ad>
                 <button class="btn1" hover-class='btn-hover' bindtap="gotoPage2" >确定</button>

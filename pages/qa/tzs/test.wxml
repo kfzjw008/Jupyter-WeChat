@@ -80,6 +80,7 @@
             	<button class='cu-btn bg-blue lg block shadow radius margin-xl'   data-target="viewModal" wx:if="{{inputShoweda1==false}}" bindtap="gotoPage2"  disabled="{{dis}}">
 		下一题
 				</button>
+        <ad unit-id="adunit-91a60d160afb5af4" ad-intervals="30"></ad>
 
 
 

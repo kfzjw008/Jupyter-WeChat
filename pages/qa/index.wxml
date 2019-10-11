@@ -78,10 +78,6 @@
 
 
 </view>
-<view class="xm_banner" style="width:100%">
-  <xm-ad data-id="{{xmad.ad.banner}}" adData="{{xmad.adData}}" bindadload="adImgLoad"
-    bindclick="appoIntView" bindclose="xmadClose" class="xm_component">
-  </xm-ad>
-</view>
+<ad unit-id="adunit-f422b15cafd9a7cc" ad-intervals="30"></ad>
 
    

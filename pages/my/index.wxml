@@ -28,6 +28,7 @@
         <text class="cuIcon-roundclose"></text> 错误题数</view>
     </view>
   </view>
+
     <view class="cu-list menu card-menu margin-top-xl margin-bottom-xl shadow-lg radius">
 
 
@@ -125,6 +126,6 @@
 
   <view class="cu-tabbar-height"></view>
 </scroll-view>
-
+  <ad unit-id="adunit-b8072ed672f5d5bb"></ad>
 
 

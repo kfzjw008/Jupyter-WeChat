@@ -1,5 +1,13 @@
 //index.js
 //获取应用实例
+// 在页面中定义插屏广告
+
+
+// 在页面onLoad回调事件中创建插屏广告实例
+let interstitialAd = null
+
+// 在适合的场景显示插屏广告
+
 var app = getApp();
 var Page = require('../../utils/xmadx_sdk.min.js').xmad(Page).xmPage;
 Page({
@@ -15,7 +23,6 @@ Page({
     time: (new Date()).toString(),
     userInfo: {},
     hasUserInfo: false,
-    canIUse: wx.canIUse('button.open-type.getUserInfo'),
     wd: '加载中...',
     jd: '加载中...',
     locat: '定位中...',
@@ -30,10 +37,19 @@ Page({
     P0: "--",
     jpg: 'https://api.majorbillliu.com/media/questions/images/66-80.jpg'
   },
-
+  
   onLoad: function () {
 
-
+   // console.log(wx.createInterstitialAd)
+    if (wx.createInterstitialAd) {
+      interstitialAd = wx.createInterstitialAd({
+        adUnitId: 'adunit-fd7fc791b116e85f'
+      })
+      console.log('插屏2')
+      interstitialAd.onLoad(() => { console.log('插屏 广告加载成功') })
+      interstitialAd.onError((err) => { console.log('插屏 广告加载失败') })
+      interstitialAd.onClose(() => { })
+    }
 
 
 
@@ -59,6 +75,13 @@ Page({
 
   },
   onShow: function () {
+    console.log(interstitialAd)
+    if (interstitialAd) {
+      console.log(interstitialAd)
+      interstitialAd.show().catch((err) => {
+        console.error(err)
+      })
+    }
 if(app.globalData.inp==1){
   var that = this
   that.setData({
@@ -458,7 +481,7 @@ var  a=aa
             }
           }
         })
-        console.log(666)
+     
       }
     })
 
@@ -636,35 +659,7 @@ var  a=aa
 
   }
   ,
-  onLoad: function () {
 
-    if (app.globalData.userInfo) {
-      this.setData({
-        userInfo: app.globalData.userInfo,
-        hasUserInfo: true
-      })
-    } else if (this.data.canIUse) {
-      // 由于 getUserInfo 是网络请求，可能会在 Page.onLoad 之后才返回
-      // 所以此处加入 callback 以防止这种情况
-      app.userInfoReadyCallback = res => {
-        this.setData({
-          userInfo: res.userInfo,
-          hasUserInfo: true
-        })
-      }
-    } else {
-      // 在没有 open-type=getUserInfo 版本的兼容处理
-      wx.getUserInfo({
-        success: res => {
-          app.globalData.userInfo = res.userInfo
-          this.setData({
-            userInfo: res.userInfo,
-            hasUserInfo: true
-          })
-        }
-      })
-    }
-  },
 
   gotoPage1: function () {
     wx.navigateTo({ url: 'more/index', })
@@ -674,13 +669,6 @@ var  a=aa
     wx.navigateTo({ url: 'qs/index', })
   }, gotoPage6: function () {
     wx.navigateTo({ url: 'jy', })
-  },
-  getUserInfo: function (e) {
-    //console.log(e)
-    app.globalData.userInfo = e.detail.userInfo
-    this.setData({
-      userInfo: e.detail.userInfo,
-      hasUserInfo: true
-    })
   }
+
 })
