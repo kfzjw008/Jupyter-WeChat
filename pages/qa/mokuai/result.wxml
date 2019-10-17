@@ -19,7 +19,6 @@
   </view>
   </view>
 
-
 <view class="cu-card article "  bindtap='det' wx:for="{{list}}" id="{{item.id}}" wx:key="list">
 
 

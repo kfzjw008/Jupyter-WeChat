@@ -53,8 +53,8 @@
       <text>练习记录</text>
       </navigator>
     </view>
-
-   <view class="cu-item " >
+ <!-- 
+   <view class="cu-item " hidden="true" >
     <navigator url="tzs/start">
       <view class="cuIcon-upstagefill text-yellow ">
         <view class="cu-tag badge " >
@@ -65,7 +65,7 @@
       </navigator>
     </view>
 
-   <view class="cu-item " >
+   <view class="cu-item " hidden="true" >
     <navigator url="activity/start">
       <view class="cuIcon-presentfill text-red ">
         <view class="cu-tag badge " >
@@ -74,7 +74,7 @@
       </view>
       <text>有奖答题活动</text>
       </navigator>
-    </view>
+    </view>  与 --> 
 
 
 </view>
