@@ -1,33 +1,20 @@
-// pages/my/index.js
-var app = getApp();
+// pages/qa/rz/school.js
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-    userInfo: {},
-    hasUserInfo: false,
-    canIUse: wx.canIUse('button.open-type.getUserInfo'),
-    wd: '',
-    jd: ''
+
   },
 
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-   
+
   },
 
-  getUserInfo: function (e) {
-    //console.log(e)
-    app.globalData.userInfo = e.detail.userInfo
-    this.setData({
-      userInfo: e.detail.userInfo,
-      hasUserInfo: true
-    })
-  },
   /**
    * 生命周期函数--监听页面初次渲染完成
    */
@@ -39,13 +26,7 @@ Page({
    * 生命周期函数--监听页面显示
    */
   onShow: function () {
-this.setData({
 
-  a1: app.globalData.allquestion,
-  a2: app.globalData.allquestionright,
-  a3: app.globalData.allquestionwrong
-
-})
   },
 
   /**
@@ -65,18 +46,10 @@ this.setData({
   /**
    * 页面相关事件处理函数--监听用户下拉动作
    */
-  kt: function () {
-    wx.showToast({
-      title: '此功能后续开通',
-      icon: 'success',
-      duration: 3000
-    })
+  onPullDownRefresh: function () {
+
   },
-  url: function () {
-    wx.navigateTo({
-      url: '../qa/rz/index',
-    })
-  },
+
   /**
    * 页面上拉触底事件的处理函数
    */

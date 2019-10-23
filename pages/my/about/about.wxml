@@ -1,5 +1,5 @@
 <view class='margin-xl bg-white padding-xl radius shadow-lg'>
-  <view class='text-center margin-bottom text-lg  text-grey'>关于星云村V1.3</view>
+  <view class='text-center margin-bottom text-lg  text-grey'>关于星云村V1.6</view>
   <view class='text-content'>
     <view>星云村集天文实时数据查询，资料查询，知识学习等模块于一体，方便广大天文爱好者学习知识开展观测活动。</view>
   <view >星云村由星云村开发团队支持开发 </view>

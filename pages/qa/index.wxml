@@ -8,6 +8,7 @@
   <view class='text-content'>
     <view>这里有目前较全的天文知识练习题，可以用作天文知识学习及知识竞赛备战。</view>
     <view >高校天文协会认证用户可以使用独家专属题库。</view>
+     <view >目前可用题数：{{timu}}</view>
   </view>
 </view>
 
@@ -51,6 +52,17 @@
       <view class="cuIcon-selectionfill text-red">
       </view>
       <text>练习记录</text>
+      </navigator>
+    </view>
+
+       <view class="cu-item " hidden="true" >
+    <navigator url="rz/index">
+      <view class="cuIcon-profilefill text-blue ">
+        <view class="cu-tag badge " >
+          <block >NEW</block>
+        </view>
+      </view>
+      <text>用户认证</text>
       </navigator>
     </view>
  <!-- 

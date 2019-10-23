@@ -1,0 +1,38 @@
+  <view class="cu-bar bg-white">
+    <view class="action title-style-3">
+      <text class="text-xl text-bold">用户认证</text>
+      <text class="text-Abc text-gray self-end margin-left-sm">Question</text>
+    </view>
+  </view>
+<view class='margin-sm bg-white padding-lg radius solid  '>
+  <view class='text-content'>
+    <view>高校天协会员认证临时入口。已经接入认证的高校协会可以直接输入学号与姓名进行临时认证。后续会推出永久性质的绑定认证模块。</view>
+    <view >高校天文协会认证用户可以使用全部题库，普通用户只可以使用部分试题。</view>
+    <view >目前可用题数：{{timu}}</view>
+  </view>
+</view>
+<view class='margin-sm bg-white padding-sm radius shadow-lg'>
+  <view class='text-center margin-bottom text-lg  text-grey'>输入个人资料</view>
+  <view class='text-content'>
+    <view>输入姓名和学号即可进行临时认证，仅限本次打开时有效，下次打开仍需认证。</view>
+ 	<view class="cu-form-group margin-top">
+		<view class="title">姓名</view>
+	 <input class="weui-input"  placeholder="请输入姓名" value='{{xming}}' bindinput="xm"/>
+	</view>
+	<view class="cu-form-group">
+		<view class="title">学号</view>
+	 <input class="weui-input"  placeholder="请输入学号"  value='{{xhing}}' bindinput="xh" type='digit'/>
+	</view>
+  </view>
+</view>
+<button class='cu-btn bg-blue lg block shadow radius margin-xl' bindtap="rz"  >
+		确定
+				</button>
+<button class='cu-btn bg-write lg block shadow radius margin-xl' bindtap="gotoPage2"   >
+		查看支持协会名单
+				</button>
+
+
+<ad unit-id="adunit-b9e77c2673267c52"></ad>
+
+   

@@ -1,4 +1,6 @@
 var app = getApp();  
+// 在页面中定义插屏广告
+let interstitialAd = null
 var Page = require('../../utils/xmadx_sdk.min.js').xmad(Page).xmPage;
   Page({
     data: {
@@ -51,7 +53,25 @@ var Page = require('../../utils/xmadx_sdk.min.js').xmad(Page).xmPage;
     app.globalData.search = e.detail.value
     //console.log(this.inpu);
     //console.log(e.detail.value);
-  }
-
-});
- 
+    },
+    onLoad: function (options) {
+      // 在页面onLoad回调事件中创建插屏广告实例
+      // 在页面onLoad回调事件中创建插屏广告实例
+      if (wx.createInterstitialAd) {
+        interstitialAd = wx.createInterstitialAd({
+          adUnitId: 'adunit-eb36e0673d1c9991'
+        })
+        interstitialAd.onLoad(() => { })
+        interstitialAd.onError((err) => { })
+        interstitialAd.onClose(() => { })
+      }
+    },
+    onShow: function (options) {
+      // 在适合的场景显示插屏广告
+      if (interstitialAd) {
+        interstitialAd.show().catch((err) => {
+          console.error(err)
+        })
+      }
+    }
+  })

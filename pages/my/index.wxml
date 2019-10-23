@@ -54,7 +54,7 @@
     </view>
 
   <view class="cu-item arrow" style='min-height:90rpx'>
-      <view class="content" bindtap='kt' >
+      <view class="content" bindtap='url' >
         <text class="cuIcon-card text-blue"></text>
         <text class="text-grey">身份认证</text>
       </view>

@@ -14,10 +14,7 @@ Page({
   data: {
     xmad: {
       adData: {},
-      ad: {
-        banner: "xmab28abed83f4d088e56bc3301b3d54", 
 
-      }
     },
     motto: 'Hello World',
     time: (new Date()).toString(),

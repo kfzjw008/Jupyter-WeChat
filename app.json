@@ -1,9 +1,9 @@
 {
   "pages": [
     "pages/index/index",
-    "pages/xmadPage/copyInfo", 
-    "pages/xmadPage/sell", 
-    "pages/xmadPage/collect", 
+    "pages/xmadPage/copyInfo",
+    "pages/xmadPage/sell",
+    "pages/xmadPage/collect",
     "pages/qa/index",
     "pages/logs/logs",
     "pages/bk/index",
@@ -44,7 +44,9 @@
     "pages/qa/activity/start",
     "pages/my/gg/gg",
     "pages/qa/activity/test",
-    "pages/qa/activity/result"
+    "pages/qa/activity/result",
+    "pages/qa/rz/index",
+    "pages/qa/rz/school"
   ],
   "permission": {
     "scope.userLocation": {

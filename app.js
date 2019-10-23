@@ -61,7 +61,7 @@ App({
     allquestion:0,
     allquestionright:0,
     allquestionwrong:0,
-    allqs:623,
+    allqs:100,//总题目623题，未认证用户此处为100题
     cstimu:0,
     csrighttimu:0,
     csscore:0,
@@ -75,6 +75,8 @@ App({
     location:'',
     fjd:0,
     fwd:0,
-    inp:0
+    inp:0,
+    rz:0,
+    allqsxs:100
   }
 })

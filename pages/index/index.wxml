@@ -79,4 +79,3 @@
  <view class="weui-flex__item" style="text-align:center;margin-right:auto;margin-left:auto">
 <button class="btn2" hover-class='btn-hover' bindtap="gotoPage6">观测建议</button></view></view>
 <ad unit-id="adunit-47419d0a0aa17c4c" ad-intervals="30"></ad>
-

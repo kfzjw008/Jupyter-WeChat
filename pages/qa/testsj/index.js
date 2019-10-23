@@ -477,6 +477,10 @@ Page({
     })
   },
   gotoPage2: function () {
+    wx.redirectTo({ url: 'index', })
+
+/*
+
     this.setData({ dis:true})
     
     app.globalData.id = randomNum(1, app.globalData.allqs);
@@ -538,6 +542,7 @@ Page({
           })
         console.log(res.data)
       }
-    })
+      
+    })*/
   }
 })

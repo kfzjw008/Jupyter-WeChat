@@ -1,0 +1,18 @@
+  <view class="cu-bar bg-white">
+    <view class="action title-style-3">
+      <text class="text-xl text-bold">支持协会名单</text>
+      <text class="text-Abc text-gray self-end margin-left-sm">List</text>
+    </view>
+  </view>
+<view class='margin-sm bg-white padding-lg radius solid  '>
+  <view class='text-content'>
+    <view>目前支持协会名单如下：</view>
+    <view >东北林业大学天文爱好者协会</view>
+    <view >如希望加入支持协会名单与高校天文协会会员认证体系，请联系后台客服或进行意见反馈。</view>
+  </view>
+</view>
+
+
+<ad unit-id="adunit-72f2b69e4b7b8987" ad-intervals="30"></ad>
+
+   
