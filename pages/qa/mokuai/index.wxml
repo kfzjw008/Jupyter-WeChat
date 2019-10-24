@@ -7,7 +7,7 @@
 
           <view class='margin-sm bg-white padding-lg radius solid  '  >
   <view class='text-content'>
-  <view >这里把题库中的所有试题进行分类，方便进行分类针对学习。</view>
+  <view >这里把题库中的所有试题进行分类，方便进行分类针对学习。由于服务器压力过大，未认证用户使用该模块会受到限制。</view>
   </view>
 </view>
 

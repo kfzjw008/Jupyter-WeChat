@@ -132,7 +132,8 @@ Page({
           })
           var count = res.data.count
           console.log(app.globalData.page1)
-        
+          /*权限设置 */
+          if (app.globalData.rz == 0&&count>1 )count=1
           that.setData({
             count: count,
 
@@ -141,9 +142,27 @@ Page({
             page: app.globalData.page1,
             pgc: count / 20
           })
+          if (app.globalData.rz == 0 && res.data.results!=null) {
+            that.setData({
+   
+
+              list: [res.data.results[0]],
+
+            })
+
+          }
+          if (app.globalData.rz == 2 && res.data.results != null) {
+            that.setData({
+              count: res.data.count,
+              pgc:1
+            })
+
+          }
+        
           var count = res.data.count
+          if (app.globalData.rz == 0 && count > 1) count = 1
           var pgc = count / 20
-          console.log(pgc)
+          console.log(res.data.results)
         }
       })
 

@@ -41,10 +41,13 @@ var loadMore = function (that) {
       var count = res.data.count
 
       var list = that.data.list;
-
+      var length = res.data.results.length
+      /*     以下为未认证受限代码 */
+      //if (app.globalData.rz == 0)length=1
+      //if (app.globalData.rz == 2)length=2
       //console.log('插入？？？？？')
       //console.log(that.data.list)
-      for (var i = 0; i < res.data.results.length; i++) {
+      for (var i = 0; i < length; i++) {
         list.push(res.data.results[i]);
         //console.log('插入！！！！！！！！')
 
@@ -52,7 +55,13 @@ var loadMore = function (that) {
         //console.log(res.data.results[i])
       }
       //console.log(list)
-      app.globalData.page1 = app.globalData.page1 + 1;
+      /*     以下为未认证受限代码 */
+      if (app.globalData.rz == 0 ) app.globalData.page1 = app.globalData.page1
+      if (app.globalData.rz == 2 && app.globalData.page1 > 1) app.globalData.page1 = app.globalData.page1
+      else{
+        app.globalData.page1 = app.globalData.page1 + 1;
+      }
+    
       //console.log(app.globalData.page1)
 
       that.setData({
@@ -63,8 +72,16 @@ var loadMore = function (that) {
         page: app.globalData.page1,
 
         hidden: true
-      })
+      })   
       var count = res.data.count
+      if (app.globalData.rz == 0 && res.data.results != null) {
+        that.setData({
+
+
+          list: [res.data.results[0]],
+
+        })
+      }
 
       //console.log(pgc)
     }
