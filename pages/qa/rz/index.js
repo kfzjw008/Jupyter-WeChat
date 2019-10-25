@@ -101,8 +101,6 @@ var bj=0
 
 //以下为认证信息
 if(a=='张峻巍'&&b=='2016214345')bj=1  //0为未认证，1为本校，2为外校
-    if (a == '1' && b == '2') bj = 1
-    if (a == '1' && b == '3') bj = 2
     if (a == '刘明' && b == '0501170113') bj = 2
     if (a == '李秋悦' && b == '1001190304') bj = 2
     if (a == '何双甫' && b == '0703180110') bj = 2
@@ -395,8 +393,8 @@ if(a=='张峻巍'&&b=='2016214345')bj=1  //0为未认证，1为本校，2为外�
 
     else {
       if (bj == 1) {
-        app.globalData.allqs = 623 //认证之后题目数量
-        app.globalData.allqsxs = 623//用户可以看到的数字
+        app.globalData.allqs = 1010//认证之后题目数量
+        app.globalData.allqsxs = 1010//用户可以看到的数字
         app.globalData.rz = 1//已认证
         wx.showModal({
           content: "您已经可以使用全部题库！（请注意，下次打开仍需要进行认证）",
@@ -418,7 +416,7 @@ if(a=='张峻巍'&&b=='2016214345')bj=1  //0为未认证，1为本校，2为外�
         })
       } else if (bj == 2){
         app.globalData.allqs = 200 //认证之后实际题目数量
-        app.globalData.allqsxs = 623//用户可以看到的数字
+        app.globalData.allqsxs = 1010//用户可以看到的数字
         app.globalData.rz = 2//已认证
         wx.showModal({
           content: "您已经可以使用全部题库！（请注意，下次打开仍需要进行认证）",

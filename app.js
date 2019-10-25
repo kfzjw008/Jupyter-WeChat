@@ -61,7 +61,7 @@ App({
     allquestion:0,
     allquestionright:0,
     allquestionwrong:0,
-    allqs:100,//总题目623题，未认证用户此处为100题
+    allqs:100,//总题目623题，未认证用户此处为100题，认证后题目数据修改在相应界面
     cstimu:0,
     csrighttimu:0,
     csscore:0,
